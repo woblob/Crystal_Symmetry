@@ -201,6 +201,19 @@ def listadous(macierz, punktprzes, ilepow):
             punkt = np.around(punkt,5)
             lista.append(punkt)
     return lista #yield'''
+
+def listadous(macierz, punktprzes):
+    punkt = np.dot(macierz,punktprzes)  
+    punkt = np.around(punkt,5)
+    while not np.allclose(punkt, punktprzes):   # porownajPunkty
+        yield punkt
+        punkt = np.dot(macierz,punkt)   
+        punkt = np.around(punkt,5) 
+
+# punkcik = np.array([0.5,0.25,0.33])
+# trans = "6"
+# for i in listadous2mod(Matrixes[trans]["001"], punkcik):
+#     print(i)
 '''
 if __name__ == "__main__":
     punkcik = np.array([0,1,1])
@@ -329,37 +342,26 @@ def znajdzpunktyCZYSAmod(mylist,zbior2):
 # mylist = listadous2(Matrixes['-4']['100'],np.array([1,1,0]))
 # %timeit znajdzpunktymod(mylist,komorkamod)
 
-def findindexmodxd(szukana, lista):         
+def findindex(szukana, lista):         
     numL, numR = 0, len(lista[0])
     indexL, indexR = 0, len(lista[0])        
     for abc in range(len(lista)): 
         numR = BSR(lista[abc][indexL: indexR], szukana[abc])
         numL = BSL(lista[abc][indexL: indexR], szukana[abc])
+        indexL += numL
         if numL < numR:
             indexR = indexL + numR
-            indexL += numL
         elif numL == numR:
-            return indexL        
+            if not indexL == len(lista[0]):
+                return indexL
+            return -1
         else:
-            return -1 
+            return -1        
     return indexL 
 
 # pmck = komorka.T
 # arr = np.array([-1,0,0])
 # %timeit findindex(arr, pmck)
-
-def listadous2(macierz, punktprzes):
-    punkt = np.dot(macierz,punktprzes)  
-    punkt = np.around(punkt,5)
-    while not np.allclose(punkt, punktprzes):   # porownajPunkty
-        yield punkt
-        punkt = np.dot(macierz,punkt)   
-        punkt = np.around(punkt,5) 
-
-# punkcik = np.array([0.5,0.25,0.33])
-# trans = "6"
-# for i in listadous2mod(Matrixes[trans]["001"], punkcik):
-#     print(i)
 
 #findindexmod(punktprzek, lista)
 def znajdzpunkty(mylist,zbior2):
@@ -397,3 +399,35 @@ def zaaplikujprzeksztalceniasymetryczne2(zbior):
 # n=0
 # komorkabez = np.append(komorka[:n],komorka[n+1:],axis = 0)
 # zaaplikujprzeksztalceniasymetryczne2(komorkabez)
+
+def odleglosciPomiedzyPunktami():
+    maciorka = []
+    for km in komorka:
+        for el in mojalista1[-2:-1]:
+            od = odlegloscmiedzypunktami(*km,*el)
+            maciorka.append(list((od,el,km)))
+    maciorka = sorted(maciorka, key=lambda maciorka_entry: maciorka_entry[0]) 
+    for m in maciorka:
+        print(m[0],'\t',m[1],m[2])
+        
+#   
+#         
+
+'''def findAntiPoints(mylist,zbior2):
+    for punktprzek in mylist:    
+        for punkt2 in zbior2:
+            if np.allclose(punktprzek, punkt2): #porownajPunkty
+                return False
+    return True'''
+
+def findAntiPoints(mylist,zbior2):
+    for punktprzek in mylist:
+        indx = findindex(punktprzek,zbior2)
+        if np.allclose(zbior2[:,indx],punktprzek): #porownajPunkty
+            return False
+    return True
+
+'''mylist = np.array([[1,2,3],[1,1,2],[1,1,1]])
+%timeit findAntiPoints(mylist,komorka)#it -r 10 -n 10
+%timeit -r 10 -n 100 findAntiPoints_MOD(mylist,komorka.T)
+'''
