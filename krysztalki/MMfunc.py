@@ -80,13 +80,13 @@ def printmat(Matrixes):
             print(Matrixes[os][kier])
 
 def ortogonalCheck(matrix):
-    prod = np.dot(matrix,matrix.T)
-    return np.all(abs(prod - np.eye(3)) < 10**-15)
+    prod = np.matmul(matrix,matrix.T)
+    return np.allclose(prod, np.eye(matrix.shape[0])) 
 #all(all(ortogonalCheck(Matrixes[os][kier]) for kier in Matrixes[os]) for os in Matrixes)
 
 def supercell(matrix, size):
     if size == 1:
-        return matrix
+        return np.unique(matrix,axis=0)*2-1
     elif size < 1:
         return None
     cell = matrix.copy()
@@ -203,16 +203,16 @@ def listadous(macierz, punktprzes, ilepow):
     return lista #yield'''
 
 def listadous(macierz, punktprzes):
-    punkt = np.dot(macierz,punktprzes)  
+    punkt = np.matmul(macierz,punktprzes)  # np.matmul
     punkt = np.around(punkt,5)
     while not np.allclose(punkt, punktprzes):   # porownajPunkty
         yield punkt
-        punkt = np.dot(macierz,punkt)   
+        punkt = np.matmul(macierz,punkt)   
         punkt = np.around(punkt,5) 
 
 # punkcik = np.array([0.5,0.25,0.33])
 # trans = "6"
-# for i in listadous2mod(Matrixes[trans]["001"], punkcik):
+# for i in listadous(Matrixes[trans]["001"], punkcik):
 #     print(i)
 '''
 if __name__ == "__main__":
@@ -270,7 +270,7 @@ def generateSymmetryGroup(transformacje): # sprawdzic
     while i < len(sgroup)-1:
         j = len(sgroup)-1
         while j >0: 
-            pomoc = np.dot( sgroup[i], sgroup[j])
+            pomoc = np.matmul( sgroup[i], sgroup[j])
             found = False
             for oska in sgroup:
                 if np.all(pomoc == oska):
@@ -343,7 +343,6 @@ def znajdzpunktyCZYSAmod(mylist,zbior2):
 # %timeit znajdzpunktymod(mylist,komorkamod)
 
 def findindex(szukana, lista):         
-    numL, numR = 0, len(lista[0])
     indexL, indexR = 0, len(lista[0])        
     for abc in range(len(lista)): 
         numR = BSR(lista[abc][indexL: indexR], szukana[abc])
@@ -352,8 +351,9 @@ def findindex(szukana, lista):
             indexR = indexL + numR
             indexL += numL
         elif numL == numR:
-            if not indexL + numL == len(lista[0]):
-                return indexL + numL
+            indexL += numL
+            if not indexL == len(lista[0]):
+                return indexL
             return -1
         else:
             return -1        
@@ -425,9 +425,9 @@ def findAntiPoints(mylist,zbior2):
             return False
     return True
 
-def findAntiSym_InnerLoop(zbior, wycinek, el0, el1):
+def findAntiSym_InnerLoop(zbior, wycinek, Matrix):
     for punkt in wycinek:
-        listpunktprzek = listadous(Matrixes[el0][el1],punkt)
+        listpunktprzek = listadous(Matrix,punkt)
         if not findAntiPoints(listpunktprzek,zbior.T):
             return False
     return True
@@ -437,9 +437,9 @@ def findAntiSym_MOD(zbior, wycinek):
     if wycinek.shape == (3,):
         wycinek = np.array([wycinek])
     mylist2 = []    
-    for el in mylist:
-        if findAntiSym_InnerLoop(zbior, wycinek, *el):
-            mylist2.append(el)           
+    for el0, el1 in mylist:
+        if findAntiSym_InnerLoop(zbior, wycinek, Matrixes[el0][el1] ):
+            mylist2.append((el0, el1))           
     return mylist2 
 
 # def findAntiSym_MOD_gen(zbior, wycinek):
@@ -453,3 +453,29 @@ def findAntiSym_MOD(zbior, wycinek):
 # n=14
 # komorkabez = np.append(komorka[:n],komorka[n+1:],axis = 0)
 # %timeit findAntiSym_MOD(komorkabez,komorka[n])
+
+def findPoints_MIXED(mylist,zbior2,Anti = False):
+    for punktprzek in mylist:
+        indx = findindex(punktprzek,zbior2)     
+        if Anti:
+            if indx + 1 and np.allclose(zbior2[:,indx],punktprzek): #porownajPunkty()             
+                return False
+        else:
+            if not (indx + 1 and np.allclose(zbior2[:,indx],punktprzek)): #porownajPunkty()           
+                return False
+    return True 
+
+
+def findSym_Base_mod2_innerLoop(zbior, Matrix): #to samo co w anty?
+    for punkt in zbior:
+        listpunktprzek = listadous(Matrix,punkt)          
+        if not findPoints_MIXED(listpunktprzek,zbior.T):
+            return False
+    return True
+
+def findSym_Base_mod2(zbior, mozliwosci=makelist()):
+    mylist2 = []
+    for el0, el1 in mozliwosci:                
+        if findSym_Base_mod2_innerLoop(zbior, Matrixes[el0][el1]):
+            mylist2.append((el0, el1))
+    return mylist2
