@@ -264,7 +264,7 @@ else:
 def odlegloscmiedzypunktami(px1,py1,pz1,px2,py2,pz2):
     return np.round(np.sqrt((px1-px2)**2+(py1-py2)**2+(pz1-pz2)**2),4)
 
-def generateSymmetryGroup(transformacje):
+def generateSymmetryGroup(transformacje): # sprawdzic 
     sgroup = transformacje[:]
     i = 0 
     while i < len(sgroup)-1:
@@ -428,7 +428,7 @@ def findAntiPoints(mylist,zbior2):
 def findAntiSym_InnerLoop(zbior, wycinek, el0, el1):
     for punkt in wycinek:
         listpunktprzek = listadous(Matrixes[el0][el1],punkt)
-        if not findAntiPoints(listpunktprzek,zbior.T): #
+        if not findAntiPoints(listpunktprzek,zbior.T):
             return False
     return True
 
