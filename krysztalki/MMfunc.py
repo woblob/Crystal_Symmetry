@@ -96,7 +96,7 @@ def supercell(matrix, size):
         for _ in range(1,size):        
             subcell[:,os] += 1
             listcell = np.append(listcell,subcell,axis =0)   
-        cell = np.append(cell,listcell,axis =0)         
+        cell = np.append(cell,listcell,axis =0)   
     return np.unique(cell,axis = 0)/(size/2)-1
 
 '''def supercellprob(matrix, size):
@@ -226,7 +226,7 @@ def usunkoor(koorZEW, oski):
     for os in oski:
         j = 0 
         while j < len(koorWEW):            
-            for punktdous in listadous2(os, koorWEW[j]):#,myswitch("m")):
+            for punktdous in listadous(os, koorWEW[j]):#,myswitch("m")):
                 try:
                     i = koorWEW[j+1:].index(punktdous.tolist())
                     del koorWEW[i+j+1]      
@@ -347,13 +347,13 @@ def findindex(szukana, lista):
     indexL, indexR = 0, len(lista[0])        
     for abc in range(len(lista)): 
         numR = BSR(lista[abc][indexL: indexR], szukana[abc])
-        numL = BSL(lista[abc][indexL: indexR], szukana[abc])
-        indexL += numL
+        numL = BSL(lista[abc][indexL: indexR], szukana[abc])        
         if numL < numR:
             indexR = indexL + numR
+            indexL += numL
         elif numL == numR:
-            if not indexL == len(lista[0]):
-                return indexL
+            if not indexL + numL == len(lista[0]):
+                return indexL + numL
             return -1
         else:
             return -1        
@@ -409,25 +409,47 @@ def odleglosciPomiedzyPunktami():
     maciorka = sorted(maciorka, key=lambda maciorka_entry: maciorka_entry[0]) 
     for m in maciorka:
         print(m[0],'\t',m[1],m[2])
-        
-#   
-#         
+            
 
-'''def findAntiPoints(mylist,zbior2):
-    for punktprzek in mylist:    
-        for punkt2 in zbior2:
-            if np.allclose(punktprzek, punkt2): #porownajPunkty
-                return False
-    return True'''
+# def findAntiPoints(mylist,zbior2):
+#     for punktprzek in mylist:    
+#         for punkt2 in zbior2:
+#             if np.allclose(punktprzek, punkt2): #porownajPunkty
+#                 return False
+#     return True
 
 def findAntiPoints(mylist,zbior2):
     for punktprzek in mylist:
-        indx = findindex(punktprzek,zbior2)
-        if np.allclose(zbior2[:,indx],punktprzek): #porownajPunkty
+        indx = findindex(punktprzek,zbior2)               
+        if indx + 1 and np.allclose(zbior2[:,indx],punktprzek): #porownajPunkty()
             return False
     return True
 
-'''mylist = np.array([[1,2,3],[1,1,2],[1,1,1]])
-%timeit findAntiPoints(mylist,komorka)#it -r 10 -n 10
-%timeit -r 10 -n 100 findAntiPoints_MOD(mylist,komorka.T)
-'''
+def findAntiSym_InnerLoop(zbior, wycinek, el0, el1):
+    for punkt in wycinek:
+        listpunktprzek = listadous(Matrixes[el0][el1],punkt)
+        if not findAntiPoints(listpunktprzek,zbior.T): #
+            return False
+    return True
+
+def findAntiSym_MOD(zbior, wycinek):
+    mylist = makelist()
+    if wycinek.shape == (3,):
+        wycinek = np.array([wycinek])
+    mylist2 = []    
+    for el in mylist:
+        if findAntiSym_InnerLoop(zbior, wycinek, *el):
+            mylist2.append(el)           
+    return mylist2 
+
+# def findAntiSym_MOD_gen(zbior, wycinek):
+#     mylist = makelist()
+#     if wycinek.shape == (3,):
+#         wycinek = np.array([wycinek]) 
+#     for el in mylist:
+#         if findAntiSym_InnerLoop(zbior, wycinek, *el):
+#             yield el           
+
+# n=14
+# komorkabez = np.append(komorka[:n],komorka[n+1:],axis = 0)
+# %timeit findAntiSym_MOD(komorkabez,komorka[n])
