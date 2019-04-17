@@ -326,21 +326,6 @@ def porownajMacierze(m1,m2):
 # %timeit -r 10 -n 10000 np.all(m1 == m2)
 # %timeit -r 10 -n 1000 np.allclose(m1, m2)
 
-'''def znjdzpnktmdCZYSA(punktprzek, zbior2):
-    for punkt2 in zbior2:
-        if porownajPunkty(punktprzek, punkt2):
-            return True
-    return False
-
-def znajdzpunktyCZYSAmod(mylist,zbior2):
-    for punktprzek in mylist:    
-        if not znjdzpnktmd(punktprzek, zbior2):
-            return True
-    return False'''
-
-# komorka = supercell(koordynaty,2)
-# mylist = listadous2(Matrixes['-4']['100'],np.array([1,1,0]))
-# %timeit znajdzpunktymod(mylist,komorkamod)
 
 def findindex(szukana, lista):         
     indexL, indexR = 0, len(lista[0])        
@@ -363,52 +348,26 @@ def findindex(szukana, lista):
 # arr = np.array([-1,0,0])
 # %timeit findindex(arr, pmck)
 
-#findindexmod(punktprzek, lista)
-def znajdzpunkty(mylist,zbior2):
-    nr = 0 
-    for indx,punktprzek in enumerate(mylist,1):  
-        for punkt2 in zbior2:
-            if np.allclose(punktprzek, punkt2): #porownajPunkty
-                nr += 1
-                break
-        if nr != indx:
-            return False
-    return True
+
 
 # p = np.array([0,1,0])
 # somelist = listadous2(Matrixes["4"]["001"],p)
 # print(znajdzpunkty(somelist,komorka))
 
-def zaaplikujprzeksztalceniasymetryczne2(zbior):
-    mylist =  makelist()
-    mylist2 = []
-    for el1,el2 in mylist:
-        numerek = 0
-        for punkt in zbior:
-            listpunktprzek = listadous2(Matrixes[el1][el2],punkt)    
-            
-            if znajdzpunkty(listpunktprzek,zbior):
-                numerek += 1 
-            else:
-                break              
-                
-        if numerek == len(zbior):
-            mylist2.append((el1,el2))
-    return mylist2
 
 # n=0
 # komorkabez = np.append(komorka[:n],komorka[n+1:],axis = 0)
 # zaaplikujprzeksztalceniasymetryczne2(komorkabez)
 
-def odleglosciPomiedzyPunktami():
-    maciorka = []
-    for km in komorka:
-        for el in mojalista1[-2:-1]:
-            od = odlegloscmiedzypunktami(*km,*el)
-            maciorka.append(list((od,el,km)))
-    maciorka = sorted(maciorka, key=lambda maciorka_entry: maciorka_entry[0]) 
-    for m in maciorka:
-        print(m[0],'\t',m[1],m[2])
+# def odleglosciPomiedzyPunktami():
+#     maciorka = []
+#     for km in komorka:
+#         for el in mojalista1[-2:-1]:
+#             od = odlegloscmiedzypunktami(*km,*el)
+#             maciorka.append(list((od,el,km)))
+#     maciorka = sorted(maciorka, key=lambda maciorka_entry: maciorka_entry[0]) 
+#     for m in maciorka:
+#         print(m[0],'\t',m[1],m[2])
             
 
 # def findAntiPoints(mylist,zbior2):
@@ -425,20 +384,20 @@ def findAntiPoints(mylist,zbior2):
             return False
     return True
 
-def findAntiSym_InnerLoop(zbior, wycinek, Matrix):
+def findAntiSym_InnerLoop(Matrix, zbior, wycinek):
     for punkt in wycinek:
         listpunktprzek = listadous(Matrix,punkt)
         if not findAntiPoints(listpunktprzek,zbior.T):
             return False
     return True
 
-def findAntiSym_MOD(zbior, wycinek):
+def findAntiSym_MOD(matrixes, zbior, wycinek):
     mylist = makelist()
     if wycinek.shape == (3,):
         wycinek = np.array([wycinek])
     mylist2 = []    
     for el0, el1 in mylist:
-        if findAntiSym_InnerLoop(zbior, wycinek, Matrixes[el0][el1] ):
+        if findAntiSym_InnerLoop(matrixes[el0][el1], zbior, wycinek):
             mylist2.append((el0, el1))           
     return mylist2 
 
@@ -466,16 +425,16 @@ def findPoints_MIXED(mylist,zbior2,Anti = False):
     return True 
 
 
-def findSym_Base_mod2_innerLoop(zbior, Matrix): #to samo co w anty?
+def findSym_Base_mod2_innerLoop(Matrix, zbior): #to samo co w anty?
     for punkt in zbior:
         listpunktprzek = listadous(Matrix,punkt)          
         if not findPoints_MIXED(listpunktprzek,zbior.T):
             return False
     return True
 
-def findSym_Base_mod2(zbior, mozliwosci=makelist()):
+def findSym_Base_mod2(matrixes, zbior, mozliwosci=makelist(),):
     mylist2 = []
     for el0, el1 in mozliwosci:                
-        if findSym_Base_mod2_innerLoop(zbior, Matrixes[el0][el1]):
+        if findSym_Base_mod2_innerLoop(matrixes[el0][el1], zbior):
             mylist2.append((el0, el1))
     return mylist2
