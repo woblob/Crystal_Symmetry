@@ -181,6 +181,7 @@ def myswitch(nr):
         punkt = np.around(punkt,5)
         lista.append(punkt)
     return lista'''
+
 '''def listadous2(macierz, punktprzes):
     punkt = np.dot(macierz,punktprzes) 
     lista = []
@@ -400,15 +401,7 @@ def findAntiSym_MOD(matrixes, zbior, wycinek):
         if findAntiSym_InnerLoop(matrixes[el0][el1], zbior, wycinek):
             mylist2.append((el0, el1))           
     return mylist2 
-
-# def findAntiSym_MOD_gen(zbior, wycinek):
-#     mylist = makelist()
-#     if wycinek.shape == (3,):
-#         wycinek = np.array([wycinek]) 
-#     for el in mylist:
-#         if findAntiSym_InnerLoop(zbior, wycinek, *el):
-#             yield el           
-
+  
 # n=14
 # komorkabez = np.append(komorka[:n],komorka[n+1:],axis = 0)
 # %timeit findAntiSym_MOD(komorkabez,komorka[n])
@@ -423,7 +416,8 @@ def findPoints_MIXED(mylist,zbior2,Anti = False):
             if not (indx + 1 and np.allclose(zbior2[:,indx],punktprzek)): #porownajPunkty()           
                 return False
     return True 
-
+    #       if     indx + 1    and np.allclose(zbior2[:,indx],punktprzek): Antipoints/Wakancje
+    #       if not indx + 1 or not np.allclose(zbior2[:,indx],punktprzek): TruePoints/Atomy  #porownajPunkty 
 
 def findSym_Base_mod2_innerLoop(Matrix, zbior): #to samo co w anty?
     for punkt in zbior:
@@ -438,3 +432,33 @@ def findSym_Base_mod2(matrixes, zbior, mozliwosci=makelist(),):
         if findSym_Base_mod2_innerLoop(matrixes[el0][el1], zbior):
             mylist2.append((el0, el1))
     return mylist2
+
+# from MMfunc import *
+# #import numpy as np
+# p = np.array([0,1,0])
+# Matrixes = generateSymetryBase()
+# somelist = listadous(Matrixes["4"]["001"],p)
+# koordynaty = np.array([[0,0,0],[0,0,1],[0,1,0],[1,1,0],[1,0,0],[1,1,1],[1,0,1],[0,1,1],
+#               [0.5,0.5,0],[0.5,0,0.5],[0,0.5,0.5],[0.5,0.5,1],[0.5,1,0.5],[1,0.5,0.5],
+#              [0.75,0.25,0.25],[0.25,0.75,0.25],[0.25,0.25,0.75],[0.75,0.75,0.75]])
+# komorka = supercell(koordynaty, size = 2)
+
+# %timeit findPoints_Mixed(somelist,komorka.T)
+# %timeit findPoints_Mixed_mod(somelist,komorka.T)
+# %timeit findPoints_BASE_mod(somelist,komorka.T)
+
+
+# komorkabez = np.append(komorka[:n],komorka[n+1:],axis = 0)
+# mozliwosci = findAntiSym_MOD(Matrixes, komorkabez, komorka[n])
+# SYM = findSym_Base_mod2(Matrixes, komorkabez, mozliwosci)
+
+# %timeit -r 10 -n 100 findAntiSym_MOD(Matrixes, komorkabez, komorka[n])
+# %timeit -r 10 -n 10 findSym_Base_mod2(Matrixes, komorkabez, mozliwosci)
+# %timeit -r 10 -n 10 findSym_Base_mod2(Matrixes, komorkabez, makelist())
+
+# n = 0
+# while n < len(komorka):        
+#     komorkaWAK = np.append(komorka[:n],komorka[n+1:],axis = 0)
+#     print(n, komorka[n])
+#     print(zaaplikujprzeksztalceniasymetryczne2(komorkaWAK),end='\n\n')
+#     n+=1
