@@ -14,7 +14,7 @@ def generateSymetryBase():
 
             "110":np.array([[0,-1,0],[-1,0,0],[0,0,1]]),            
             "011":np.array([[1,0,0],[0,0,-1],[0,-1,0]]),
-            "101":np.array([[-1,0,0],[0,1,0],[0,0,-1]]),
+            "101":np.array([[0,0,-1],[0,1,0],[-1,0,0]]),
             
             "-101":np.array([[0,0,1],[0,1,0],[1,0,0]]),
             "-110":np.array([[0,1,0],[1,0,0],[0,0,1]]),
@@ -174,6 +174,17 @@ def myswitch(nr):
     return mydict[nr]
 #myswitch("m")
 
+def makeCellWithVacancies(cell,indexes):
+    indexes = set(indexes)
+    cellVac = []
+    Vac = []
+    for nr, p in enumerate(cell):
+        if nr not in indexes:
+            cellVac.append(p)
+        else:
+            Vac.append(p)
+    return np.array(cellVac), np.array(Vac)
+
 '''def listadous(macierz, punkt, ilepow):
     lista = []
     for i in range(ilepow): 
@@ -205,11 +216,11 @@ def listadous(macierz, punktprzes, ilepow):
 
 def listadous(macierz, punktprzes):
     punkt = np.matmul(macierz,punktprzes)  # np.matmul
-    punkt = np.around(punkt,5)
+    punkt = np.around(punkt,6)
     while not np.allclose(punkt, punktprzes):   # porownajPunkty
         yield punkt
         punkt = np.matmul(macierz,punkt)   
-        punkt = np.around(punkt,5) 
+        punkt = np.around(punkt,6) 
 
 # punkcik = np.array([0.5,0.25,0.33])
 # trans = "6"
@@ -223,32 +234,19 @@ if __name__ == "__main__":
         print(el)'''
 
 def usunkoor(koorZEW, oski):
-    koorWEW = koorZEW.copy().tolist() # sprawdzic
+    koorWEW = koorZEW.copy()
     for os in oski:
-        j = 0 
+        j = 1
         while j < len(koorWEW):            
-            for punktdous in listadous(os, koorWEW[j]):#,myswitch("m")):
-                try:
-                    i = koorWEW[j+1:].index(punktdous.tolist())
-                    del koorWEW[i+j+1]      
-                except:
-                    pass            
+            for punktdous in listadous(os, koorWEW[j]):                
+                i = findindex(punktdous, koorWEW.T[:,j:])                
+                if i + 1 and porownajPunkty(koorWEW[i+j],punktdous):
+                    koorWEW = np.delete(koorWEW, i+j, 0)
             j += 1
-    return np.unique(koorWEW,axis = 0)
+    return koorWEW
 
-'''def usunkoor2(koorZEW, oski):
-    koorWEW = koorZEW.copy().tolist() # sprawdzic
-    for os in oski:
-        j = 0 
-        while j < len(koorWEW):            
-            for punktdous in listadous(os, koorWEW[j],myswitch("m")):
-                try:
-                    i = koorWEW.index(punktdous.tolist(),j+1)
-                    del koorWEW[i+j+1]      
-                except:
-                    pass            
-            j += 1
-    return np.unique(koorWEW,axis = 0)
+'''
+    
 
 komorka = supercell(koordynaty,size = 2)
 mojalista1 = usunkoor(komorka, oski2) 
@@ -265,27 +263,27 @@ else:
 def odlegloscmiedzypunktami(px1,py1,pz1,px2,py2,pz2):
     return np.round(np.sqrt((px1-px2)**2+(py1-py2)**2+(pz1-pz2)**2),4)
 
-def generateSymmetryGroup(transformacje): # sprawdzic 
-    sgroup = transformacje[:]
-    i = 0 
-    while i < len(sgroup)-1:
-        j = len(sgroup)-1
-        while j >0: 
-            pomoc = np.matmul( sgroup[i], sgroup[j])
-            found = False
-            for oska in sgroup:
-                if np.all(pomoc == oska):
-                    found = True        
-                    break                
-            if not found:
-                sgroup.append(pomoc)
-            j -= 1            
-        i += 1         
-    for nr, oska in enumerate(sgroup):
-        if np.allclose(np.linalg.inv(oska) == oska):
-            del sgroup[nr]
-            nr -= 1
-    return sgroup
+# def generateSymmetryGroup(transformacje): # sprawdzic 
+#     sgroup = transformacje[:]
+#     i = 0 
+#     while i < len(sgroup)-1:
+#         j = len(sgroup)-1
+#         while j >0: 
+#             pomoc = np.matmul( sgroup[i], sgroup[j])
+#             found = False
+#             for oska in sgroup:
+#                 if np.all(pomoc == oska):
+#                     found = True        
+#                     break                
+#             if not found:
+#                 sgroup.append(pomoc)
+#             j -= 1            
+#         i += 1         
+#     for nr, oska in enumerate(sgroup):
+#         if np.allclose(np.linalg.inv(oska) == oska):
+#             del sgroup[nr]
+#             nr -= 1
+#     return sgroup
 
 def printsym():
     for Mainkey in Matrixes.keys():
@@ -408,12 +406,13 @@ def findAntiSym_MOD(matrixes, zbior, wycinek):
 
 def findPoints_MIXED(mylist,zbior2,Anti = False):
     for punktprzek in mylist:
-        indx = findindex(punktprzek,zbior2)     
+        indx = findindex(punktprzek,zbior2) 
+        cond = indx + 1 and np.allclose(zbior2[:,indx],punktprzek)
         if Anti:
-            if indx + 1 and np.allclose(zbior2[:,indx],punktprzek): #porownajPunkty()             
+            if cond: #porownajPunkty()             
                 return False
         else:
-            if not (indx + 1 and np.allclose(zbior2[:,indx],punktprzek)): #porownajPunkty()           
+            if not cond: #porownajPunkty()           
                 return False
     return True 
     #       if     indx + 1    and np.allclose(zbior2[:,indx],punktprzek): Antipoints/Wakancje
@@ -426,7 +425,7 @@ def findSym_Base_mod2_innerLoop(Matrix, zbior): #to samo co w anty?
             return False
     return True
 
-def findSym_Base_mod2(matrixes, zbior, mozliwosci=makelist(),):
+def findSym_Base_mod2(matrixes, zbior, mozliwosci=makelist()):
     mylist2 = []
     for el0, el1 in mozliwosci:                
         if findSym_Base_mod2_innerLoop(matrixes[el0][el1], zbior):
