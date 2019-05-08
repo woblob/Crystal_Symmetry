@@ -99,49 +99,6 @@ def supercell(matrix, size):
         cell = np.append(cell,listcell,axis =0)   
     return np.unique(cell,axis = 0)/(size/2)-1
 
-'''def supercellprob(matrix, size):
-"""
-wyciac 3 scianki 
-powielic do superkomorki
-wyciac trzy sciany superkomorki
-odjac dlugosc komorki od scian albo pomonozyc przez -1 calosc
-(inwersja jest chyba szybsza) 
-"""
-    if size == 1:
-        return matrix
-    elif size < 1:
-        return None
-    cell = matrix.copy()
-    pomcell = cell.T
-    subcell = cell.copy()[(pomcell[0]!=0)&(pomcell[1]!=0)&(pomcell[2]!=0)]
-    for os in range(3):            
-        listcell = subcell.copy()
-        for _ in range(1,size):        
-            subcell[:,os] += 1
-            listcell = np.append(listcell,subcell,axis =0)   
-        cell = np.append(cell,listcell,axis =0) 
-        
-#     print(cell)
-#     pomcell = cell.T
-#     scianki = (cell.copy()[(pomcell[0]==size)|(pomcell[1]==size)|(pomcell[2]==size)])#*-1 + size
-#     print(scianki)
-#     scianki = scianki*-1 + size
-        
-    subcellFACEX = matrix.copy()[pomcell[0]==0]
-    subcellFACEY = matrix.copy()[(pomcell[1]==0)]
-    subcellFACEZ = matrix.copy()[(pomcell[2]==0)]
-    tupleofsubcells = (subcellFACEX,subcellFACEY,subcellFACEZ)
-    costam = (0,2),(1,2),(0,1)
-    for nr,side in enumerate(tupleofsubcells):
-        subcell = side.copy()        
-        for os in costam[nr]:
-            listcell = subcell.copy()
-            for _ in range(1,size):
-                subcell[:,os] += 1
-                listcell = np.append(listcell,subcell,axis =0)   
-        cell = np.append(cell,listcell,axis =0) 
-    return np.unique(cell,axis = 0)/(size/2)-1
-#supercellprob(koordynaty,size = 2)    
 
 
 

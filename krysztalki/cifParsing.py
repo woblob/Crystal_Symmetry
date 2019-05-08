@@ -23,13 +23,13 @@ def allEqPoints(CELL):
         CELL = np.append(CELL,eqPoints(point),axis =0)
     return np.unique(CELL,axis=0)
 
-def getSCell(func, filename, size = 1): 
+def getSCell(func, filename, size): 
     file = func(filename)  
-    points = file.supercell(size,size,size).itersorted()   
+    points = file.supercell(size,size,size).itersorted()      
     if size%2:
         cell = np.array([1,1,1])
     else:
-        cell = points.__next__().coords_fractional/(size/2)-1   
+        cell = points.__next__().coords_fractional/(size/2)-1           
     for el in points:
         cell = np.vstack((cell,el.coords_fractional/(size/2)-1))
     return allEqPoints(cell)
