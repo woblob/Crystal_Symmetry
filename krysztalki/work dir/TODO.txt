@@ -1,0 +1,19 @@
+- przed wakancjami i szukaniem symetrii trzeba zmodyfikowac koordynaty komorki wedlug pierwotnej klasy symetrii
+
+- ogarnąc translacje:
+  - wektory i plaszczyzny:
+    - czy muszą przechodic przez p(0,0,0)
+    - ustawienie wzgledem siebie
+  - czy trzeba dorabiac ghostpoint'y dla 3_0001 
+  - czy trzeba przerabiać komorke elementarną 
+  
+- zrobic konwerter elementow symentrii na klase symentrii
+
+- zmniejszyc zakres przegladanych symetrii na kazdy uklad 
+
+- wyciagac info o rodzaju atomow z lib crystal 
+  - uaktualnic funkcje szukajace koordynatow by najpierw podzielily punkty na grupy 
+
+-(opc) dodac funkcje "usunkoor" w celu zwiekszenia wydajnosci (~2-10x szybciej w zaleznoci od klasy symmetrii)
+
+-(opc) multiprocessing

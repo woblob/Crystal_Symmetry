@@ -1,6 +1,6 @@
 import cProfile, pstats, io
 def profile(fnc):    
-    """A decorator that uses cProfile to profile a function"""    
+    """A decorator that uses cProfile to a function"""    
     def inner(*args, **kwargs):        
         pr = cProfile.Profile()
         pr.enable()
