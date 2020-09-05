@@ -1,19 +1,69 @@
+- posprzatać zanim cokolwiek zacznie sie robic !!!!!
+
+- zmienic podstawe szukania wakancji w komorce, makecellwithvacs przerobic na szukanie czy :
+przeksztalcone punkty sa w indexach vakancji , potem sprawdzic cala komorke
+(ograniczenie zuz pamieci oraz potencjalne przyspieszenie)
+
+-dorobic antisymmsincells dla nowej koncepcji
+    -HashedCell dla tej funkcji
+-dorobic symmsincells dla nowej koncepcji
+    -np.all(arr)
+-wrzucic nowa koncepcje do drzewa
+
+-przerzucic importy z funkcji full_transform na zewnątrz
+    -posprzatac nie użytki
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+- uaktualnic funkcje szukajace koordynatow by najpierw podzielily punkty na grupy
+- wszystkie inforamcje do jednego obiektu (cell, base, syms, vacs, etc.)
+
+- zrobic konwerter elementow symentrii na klase symentrii 
+ eksportowac wynik do spglib?
+
+- argparse / click
+
+- cif parsing i usunkoorrecur kolizja oznaczen 'reduced_cell'
+
+-(opc) dodac funkcje "usunkoor" w celu zwiekszenia wydajnosci (~2-10x szybciej w zaleznoci od klasy symmetrii)
+    przemnozyc punkt przez transforamcje, porownac czy jest to ten sam punkt.
+    jezeli jest, to usuniecie go nie spowoduje usuniecia symetrii.
+    (bez sortowania porownac punkty po trans i zwrocic nie zmienione)
+
+-(opc) multiprocessing
+
+-(opc) LaTeX output of symmetries and group symetries
+
+
+------------------------------------------------------------------------------------------------------------------------
+zrobione:
+
+- zestakowac wszystkie macierze transformacyjne , przemnozyc przez zestaw punktow i sprawdzic ktore zbiory sa takie
+same jak oryginal
+- przerobic funkcje listadous na przemnarzanie macierzy (wszystkie punkty obrot i sprawdznie czy istnieja w komorce
+[matmul -> unique axis=0 -> array_equal])
+
+- znalesc na stack overflow czy jest jakis algorytm apropo zaganiania punktow do przedzialu od 0 do 1
+ma.masked_outside ponoc 
+
 - przed wakancjami i szukaniem symetrii trzeba zmodyfikowac koordynaty komorki wedlug pierwotnej klasy symetrii
+
+- wyciagac info o rodzaju atomow z lib crystal
+
+- nowa koncepcja:
+    przetransformowac calą komorke przez wszystkie macierze, zapisac wynik, a potem szukac jak w tabeli czy dany punkt
+    istnieje w komorce idealnej albo w wakancjach
+------------------------------------------------------------------------------------------------------------------------
+odrzucone:
+
+# nei wiem czy zadziala- antisym dla mnozenia macierzy: wyznaczanie indexu szukanego punktu poprzez dzielenie x, y, z
+ na grupy
 
 - ogarnąc translacje:
   - wektory i plaszczyzny:
     - czy muszą przechodic przez p(0,0,0)
     - ustawienie wzgledem siebie
-  - czy trzeba dorabiac ghostpoint'y dla 3_0001 
-  - czy trzeba przerabiać komorke elementarną 
-  
-- zrobic konwerter elementow symentrii na klase symentrii
-
-- zmniejszyc zakres przegladanych symetrii na kazdy uklad 
-
-- wyciagac info o rodzaju atomow z lib crystal 
-  - uaktualnic funkcje szukajace koordynatow by najpierw podzielily punkty na grupy 
-
--(opc) dodac funkcje "usunkoor" w celu zwiekszenia wydajnosci (~2-10x szybciej w zaleznoci od klasy symmetrii)
-
--(opc) multiprocessing
+  - czy trzeba dorabiac ghostpoint'y dla 3_0001 (transformacja a potem przesuniecie do komorki jezeli jest
+  poza [0 > wartosc > SIZE])
+  - czy trzeba przerabiać komorke elementarną ( pewnie nie )

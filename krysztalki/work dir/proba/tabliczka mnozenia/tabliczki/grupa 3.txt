@@ -1,0 +1,33 @@
+miss_3_xxx_h00_miss ID_000
+['3_1_Hxtxx_ttt', 'ID_000', 'miss_3_xxx_h00_miss']
+
+miss_3_xmxmx_h00_miss ID_000
+['3_hxmxmx', 'ID_000', 'miss_3_xmxmx_h00_miss']
+
+miss_m3_mxxmx_h00_miss ID_000
+['3_hmxxmx', 'ID_000', 'miss_m3_mxxmx_h00_miss']
+
+m3_mxmhmxx_qmqmq ID_000
+['3_2_Hmxtmxx_ttmt', 'ID_000', 'm3_mxmhmxx_qmqmq']
+
+4_2_x00_h00 ID_000
+['2_x00', '4_2_x00_h00', 'ID_000']
+
+m4_x00_q00 ID_000
+['2_x00', 'ID_000', 'm4_x00_q00']
+
+miss_3_mxxmx_0h0_miss ID_000
+['3_mxhxmx', 'ID_000', 'miss_3_mxxmx_0h0_miss']
+
+miss_3_mxmxx_0h0_miss ID_000
+['3_mxhmxx', 'ID_000', 'miss_3_mxmxx_0h0_miss']
+
+miss_m3_xxx_0h0_miss ID_000
+['3_1_mtmHxx_ttt', 'ID_000', 'miss_m3_xxx_0h0_miss']
+
+m3_mhxhmxmx_mqqmq ID_000
+['3_2_txmHmxmx_mttt', 'ID_000', 'm3_mhxhmxmx_mqqmq']
+
+miss_m3_mxxmx_0h0_miss ID_000
+['3_mxhxmx', 'ID_000', 'miss_m3_mxxmx_0h0_miss']
+

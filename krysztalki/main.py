@@ -1,12 +1,20 @@
+"""
+
+"""
+
 from SYMfunc import *
-from cifParsing import *
+from cif_parsing import *
 
 # filename = '1100043.cif'
 # FUNC = Crystal.from_cif
 filename = 1100043
+SIZE = 2
+SUMOFVACANCIES = 2
 FUNC = Crystal.from_cod
 
-SUPERCELL = getSCell(FUNC, filename, size = 2)
-Options = abcde(SUPERCELL,sumVac = 2) 
+# Size = 2, Vacancies = 2, atoms in unitcell = 18 --> time ~ 10[s]
 
-saveOutput(Options)
+SUPERCELL, BASE = getSCell(FUNC, filename, size = SIZE)
+Options = checkAllCells(SUPERCELL,BASE,sumVac = SUMOFVACANCIES) 
+
+saveOutput(Options, filename = "OUTPUT.txt")

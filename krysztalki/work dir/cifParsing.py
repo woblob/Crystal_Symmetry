@@ -1,44 +1,91 @@
 from crystals import Crystal
 import numpy as np
 
-class FROM():
-  CIF = Crystal.from_cif
-  COD = Crystal.from_cod
-#   ASE = Crystal.from_ase
-#   PWSCF = Crystal.from_pwscf
 
-def millerORweber(ITN):
-    """
-    Determine which coordinates to choose.
-    All numbers between [143-194] are for hexagonal groups.
-    """
-    if ITN > 194 or ITN < 143:
-        return "m" #"rest"
-    return "w"    #"hP, hR"
+def get_super_cell(file_name, size):
+    # """
+    # Get cell from cod/cif/else.
+    # Expand it to super_cell size.
+    # Place points between -1 and less than 1
+    # Add missing walls of a cell.
+    # """
+    file = getfile(file_name)
+    base_type = miller_or_weber(file)
+    lattice_vectors = np.around(file.lattice_vectors, 10)
 
-def allEqPoints(POINT,SIZE):
-  mPOINT = POINT.copy()
-  for i in range(mPOINT[0].size):
-    zera = np.where(mPOINT[:,i] == 0)[0]
-    mylist = []
-    for nr in range(len(mPOINT[zera])):
-      NP = mPOINT[zera][nr].copy()
-      NP[i] += SIZE
-      mylist.append(NP)
-    mPOINT = np.append(mPOINT,np.array(mylist),axis=0)
-  return np.unique(mPOINT,axis=0)
+    full_cell, output_atomic_numbers = all_eq_points(file, size)
+    compact_cell = full_cell / (size/2) - 1
+    output_cell = np.around(compact_cell, 10)
+    _handle_negative_zeroes(output_cell)
 
-  
-def getSCell(fromwhere, filename, size): 
+    output_cell_indexes = np.arange(len(output_cell))
+
+    return output_cell, output_atomic_numbers, output_cell_indexes, \
+        lattice_vectors, base_type
+
+
+def getfile(file_name):
     """
-    Get cell from cod/cif/else. 
-    Expand it to supercell size.
-    Place points between -1 and less than 1
-    Add missing walls of a cell.
+    open cif file from local repository
+    or
+    download file from Crystallography Open Database
+
+    file_name can be either:
+        integer: COD number
+        string:  CIF file
+
+    examples:
+        file_name = 1000041 # NaCl Fm-3m
+        file_name = 'path/to/file.cif'
     """
-    file = fromwhere(filename)
-    basetype = millerORweber(file.symmetry()['international_number'])
-    points = file.supercell(size,size,size).itersorted() 
-    mylist = np.array([point.coords_fractional for point in points])
-    mylist = np.around(allEqPoints(mylist,size)/(size/2)-1,6)
-    return np.unique(mylist,axis=0), basetype
+    if isinstance(file_name, int):
+        func = Crystal.from_cod
+    elif isinstance(file_name, str):
+        func = Crystal.from_cif
+    else:
+        raise TypeError("Wrong file type")
+    return func(file_name)
+
+
+def miller_or_weber(cell_info):
+    # """
+    # Determine which coordinates to choose:
+    # (3D for Parallelepiped or '4'D for hexagonal).
+    # All numbers between [143-194] are for hexagonal groups.
+    # """
+    international_number = cell_info.symmetry()['international_number']
+    if 194 >= international_number >= 143:
+        return "w"    # "hP, hR"
+    return "m"  # "rest"
+
+
+def all_eq_points(file, size):
+    # """
+    # building missing outer walls of a cell
+    # with labels
+    # """
+    reduced_cell = file.supercell(size, size, size).itersorted()
+    whole_cell = np.array(
+        [np.append(point.coords_fractional, point.atomic_number)
+         for point in reduced_cell]
+    )
+
+    for i in range(3):
+        mask = np.where(whole_cell[:, i] == 0)
+        points_with_zeroes = whole_cell[mask]
+        points_with_zeroes[:, i] += size
+        whole_cell = np.append(whole_cell, points_with_zeroes, axis=0)
+    sorted_cell = np.unique(whole_cell, axis=0)
+
+    return sorted_cell[:, :-1], sorted_cell[:, -1]
+
+
+def _handle_negative_zeroes(cell):
+    mask = np.where(cell == 0)
+    cell[mask] += 1
+    cell[mask] -= 1
+
+
+if __name__ == "__main__":
+    args = get_super_cell('cif files/ZnS-Sfaleryt.cif', size=2)
+    print(args)

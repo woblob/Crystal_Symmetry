@@ -1,0 +1,624 @@
+miss_2_x00_h00_miss 4_1_x0q_q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss miss_m4_x00_qqq_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', 'ID_000', 'm4_xhmq_3ohmq', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss miss_4_x00_3qqq_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss miss_m4_x00_3qqq_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', 'ID_000', 'm4_xhmq_3ohmq', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss miss_4_x00_q3qq_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss miss_m4_x00_q3qq_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', 'ID_000', 'm4_xhmq_3ohmq', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss 4_1_xmqh_q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss m4_xhq_ohq
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', 'ID_000', 'm4_xhmq_3ohmq', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss 4_1_x03q_q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss miss_m4_x00_q3q3q_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', 'ID_000', 'm4_xhmq_3ohmq', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss 4_3_xmqh_3q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss miss_m4_x00_3qq3q_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', 'ID_000', 'm4_xhmq_3ohmq', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss 4_3_xqh_3q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss m4_xhmq_3ohmq
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', 'ID_000', 'm4_xhmq_3ohmq', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss miss_4_x00_3q3q3q_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_h00_miss miss_m4_x00_3q3q3q_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', 'ID_000', 'm4_xhmq_3ohmq', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_qy0 4_1_qy0_0q0
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_qy0 4_1_hymq_0q0
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_qy0 miss_4_0y0_q3qq_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_qy0 miss_4_0y0_qq3q_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_qy0 4_3_hyq_03q0
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_qy0 miss_4_0y0_3qq3q_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_qy0 4_3_hymq_03q0
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_qy0 miss_4_0y0_3q3q3q_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_00z_h00_miss 4_1_0qz_00q
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_00z_h00_miss miss_4_00z_3qqq_miss
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_00z_h00_miss 4_1_mqhz_00q
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_00z_h00_miss miss_4_00z_qq3q_miss
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_00z_h00_miss 4_3_mqhz_003q
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_00z_h00_miss 4_3_qhz_003q
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_00z_h00_miss 4_1_03qz_00q
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_00z_h00_miss miss_4_00z_3q3q3q_miss
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+4_2_x00_h00 inv_ooo
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_oyz_03q3q', 'd_oyz_03qq', 'd_oyz_0q3q', 'd_oyz_0qq', 'inv_o3o3o', 'inv_o3oo', 'inv_oo3o', 'inv_ooo', 'm4_xhmq_3ohmq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 d_oyz_0qq
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_oyz_03q3q', 'd_oyz_03qq', 'd_oyz_0q3q', 'd_oyz_0qq', 'inv_o3o3o', 'inv_o3oo', 'inv_oo3o', 'inv_ooo', 'm4_xhmq_3ohmq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 miss_m4_x00_qqq_miss
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_3oyz_0qq', 'inv_3o3o3o', 'inv_3o3oo', 'inv_3oo3o', 'inv_3ooo', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 inv_3ooo
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_3oyz_0qq', 'inv_3o3o3o', 'inv_3o3oo', 'inv_3oo3o', 'inv_3ooo', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 d_3oyz_0qq
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_3oyz_0qq', 'inv_3o3o3o', 'inv_3o3oo', 'inv_3oo3o', 'inv_3ooo', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 miss_m4_x00_3qqq_miss
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_oyz_03q3q', 'd_oyz_03qq', 'd_oyz_0q3q', 'd_oyz_0qq', 'inv_o3o3o', 'inv_o3oo', 'inv_oo3o', 'inv_ooo', 'm4_xhmq_3ohmq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 inv_o3oo
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_oyz_03q3q', 'd_oyz_03qq', 'd_oyz_0q3q', 'd_oyz_0qq', 'inv_o3o3o', 'inv_o3oo', 'inv_oo3o', 'inv_ooo', 'm4_xhmq_3ohmq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 d_oyz_03qq
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_oyz_03q3q', 'd_oyz_03qq', 'd_oyz_0q3q', 'd_oyz_0qq', 'inv_o3o3o', 'inv_o3oo', 'inv_oo3o', 'inv_ooo', 'm4_xhmq_3ohmq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 miss_m4_x00_q3qq_miss
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_3oyz_0qq', 'inv_3o3o3o', 'inv_3o3oo', 'inv_3oo3o', 'inv_3ooo', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 inv_oo3o
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_oyz_03q3q', 'd_oyz_03qq', 'd_oyz_0q3q', 'd_oyz_0qq', 'inv_o3o3o', 'inv_o3oo', 'inv_oo3o', 'inv_ooo', 'm4_xhmq_3ohmq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 d_oyz_0q3q
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_oyz_03q3q', 'd_oyz_03qq', 'd_oyz_0q3q', 'd_oyz_0qq', 'inv_o3o3o', 'inv_o3oo', 'inv_oo3o', 'inv_ooo', 'm4_xhmq_3ohmq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 m4_xhq_ohq
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_3oyz_0qq', 'inv_3o3o3o', 'inv_3o3oo', 'inv_3oo3o', 'inv_3ooo', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 inv_o3o3o
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_oyz_03q3q', 'd_oyz_03qq', 'd_oyz_0q3q', 'd_oyz_0qq', 'inv_o3o3o', 'inv_o3oo', 'inv_oo3o', 'inv_ooo', 'm4_xhmq_3ohmq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 d_oyz_03q3q
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_oyz_03q3q', 'd_oyz_03qq', 'd_oyz_0q3q', 'd_oyz_0qq', 'inv_o3o3o', 'inv_o3oo', 'inv_oo3o', 'inv_ooo', 'm4_xhmq_3ohmq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 miss_m4_x00_q3q3q_miss
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_3oyz_0qq', 'inv_3o3o3o', 'inv_3o3oo', 'inv_3oo3o', 'inv_3ooo', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 inv_3oo3o
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_3oyz_0qq', 'inv_3o3o3o', 'inv_3o3oo', 'inv_3oo3o', 'inv_3ooo', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 d_3oyz_0q3q
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_3oyz_0qq', 'inv_3o3o3o', 'inv_3o3oo', 'inv_3oo3o', 'inv_3ooo', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 miss_m4_x00_3qq3q_miss
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_oyz_03q3q', 'd_oyz_03qq', 'd_oyz_0q3q', 'd_oyz_0qq', 'inv_o3o3o', 'inv_o3oo', 'inv_oo3o', 'inv_ooo', 'm4_xhmq_3ohmq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 inv_3o3oo
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_3oyz_0qq', 'inv_3o3o3o', 'inv_3o3oo', 'inv_3oo3o', 'inv_3ooo', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 d_3oyz_03qq
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_3oyz_0qq', 'inv_3o3o3o', 'inv_3o3oo', 'inv_3oo3o', 'inv_3ooo', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 m4_xhmq_3ohmq
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_oyz_03q3q', 'd_oyz_03qq', 'd_oyz_0q3q', 'd_oyz_0qq', 'inv_o3o3o', 'inv_o3oo', 'inv_oo3o', 'inv_ooo', 'm4_xhmq_3ohmq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 inv_3o3o3o
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_3oyz_0qq', 'inv_3o3o3o', 'inv_3o3oo', 'inv_3oo3o', 'inv_3ooo', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 d_3oyz_03q3q
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_3oyz_0qq', 'inv_3o3o3o', 'inv_3o3oo', 'inv_3oo3o', 'inv_3ooo', 'm4_xhq_ohq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_q3q3q_miss', 'miss_m4_x00_q3qq_miss', 'miss_m4_x00_qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_2_x00_h00 miss_m4_x00_3q3q3q_miss
+['2_x00', '2_x0q', '2_xqq', '4_2_x00_h00', '4_2_x0h_h00', 'ID_000', 'd_oyz_03q3q', 'd_oyz_03qq', 'd_oyz_0q3q', 'd_oyz_0qq', 'inv_o3o3o', 'inv_o3oo', 'inv_oo3o', 'inv_ooo', 'm4_xhmq_3ohmq', 'miss_2_x00_0h0_miss', 'miss_4_x00_h0h_miss', 'miss_4_x00_hh0_miss', 'miss_m4_x00_3q3q3q_miss', 'miss_m4_x00_3qq3q_miss', 'miss_m4_x00_3qqq_miss', 't_00h', 't_0h0', 't_0hh']
+
+4_qymq inv_ooo
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_xoz_3q03q', 'd_xoz_3q0q', 'd_xoz_q03q', 'd_xoz_q0q', 'inv_3oo3o', 'inv_3ooo', 'inv_oo3o', 'inv_ooo', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq d_xoz_q0q
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_xoz_3q03q', 'd_xoz_3q0q', 'd_xoz_q03q', 'd_xoz_q0q', 'inv_3oo3o', 'inv_3ooo', 'inv_oo3o', 'inv_ooo', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq miss_m4_0y0_qqq_miss
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_xoz_3q03q', 'd_xoz_3q0q', 'd_xoz_q03q', 'd_xoz_q0q', 'inv_3oo3o', 'inv_3ooo', 'inv_oo3o', 'inv_ooo', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq inv_3ooo
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_xoz_3q03q', 'd_xoz_3q0q', 'd_xoz_q03q', 'd_xoz_q0q', 'inv_3oo3o', 'inv_3ooo', 'inv_oo3o', 'inv_ooo', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq d_xoz_3q0q
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_xoz_3q03q', 'd_xoz_3q0q', 'd_xoz_q03q', 'd_xoz_q0q', 'inv_3oo3o', 'inv_3ooo', 'inv_oo3o', 'inv_ooo', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq m4_qyh_qoh
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_xoz_3q03q', 'd_xoz_3q0q', 'd_xoz_q03q', 'd_xoz_q0q', 'inv_3oo3o', 'inv_3ooo', 'inv_oo3o', 'inv_ooo', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq inv_o3oo
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_x3oz_q0q', 'inv_3o3o3o', 'inv_3o3oo', 'inv_o3o3o', 'inv_o3oo', 'm4_mqyh_mq3oh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_q3qq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq d_x3oz_q0q
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_x3oz_q0q', 'inv_3o3o3o', 'inv_3o3oo', 'inv_o3o3o', 'inv_o3oo', 'm4_mqyh_mq3oh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_q3qq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq miss_m4_0y0_q3qq_miss
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_x3oz_q0q', 'inv_3o3o3o', 'inv_3o3oo', 'inv_o3o3o', 'inv_o3oo', 'm4_mqyh_mq3oh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_q3qq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq inv_oo3o
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_xoz_3q03q', 'd_xoz_3q0q', 'd_xoz_q03q', 'd_xoz_q0q', 'inv_3oo3o', 'inv_3ooo', 'inv_oo3o', 'inv_ooo', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq d_xoz_q03q
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_xoz_3q03q', 'd_xoz_3q0q', 'd_xoz_q03q', 'd_xoz_q0q', 'inv_3oo3o', 'inv_3ooo', 'inv_oo3o', 'inv_ooo', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq miss_m4_0y0_qq3q_miss
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_xoz_3q03q', 'd_xoz_3q0q', 'd_xoz_q03q', 'd_xoz_q0q', 'inv_3oo3o', 'inv_3ooo', 'inv_oo3o', 'inv_ooo', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq inv_o3o3o
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_x3oz_q0q', 'inv_3o3o3o', 'inv_3o3oo', 'inv_o3o3o', 'inv_o3oo', 'm4_mqyh_mq3oh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_q3qq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq d_x3oz_q03q
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_x3oz_q0q', 'inv_3o3o3o', 'inv_3o3oo', 'inv_o3o3o', 'inv_o3oo', 'm4_mqyh_mq3oh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_q3qq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq m4_mqyh_mq3oh
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_x3oz_q0q', 'inv_3o3o3o', 'inv_3o3oo', 'inv_o3o3o', 'inv_o3oo', 'm4_mqyh_mq3oh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_q3qq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq inv_3oo3o
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_xoz_3q03q', 'd_xoz_3q0q', 'd_xoz_q03q', 'd_xoz_q0q', 'inv_3oo3o', 'inv_3ooo', 'inv_oo3o', 'inv_ooo', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq d_xoz_3q03q
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_xoz_3q03q', 'd_xoz_3q0q', 'd_xoz_q03q', 'd_xoz_q0q', 'inv_3oo3o', 'inv_3ooo', 'inv_oo3o', 'inv_ooo', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq miss_m4_0y0_3qq3q_miss
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_xoz_3q03q', 'd_xoz_3q0q', 'd_xoz_q03q', 'd_xoz_q0q', 'inv_3oo3o', 'inv_3ooo', 'inv_oo3o', 'inv_ooo', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq inv_3o3oo
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_x3oz_q0q', 'inv_3o3o3o', 'inv_3o3oo', 'inv_o3o3o', 'inv_o3oo', 'm4_mqyh_mq3oh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_q3qq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq d_x3oz_3q0q
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_x3oz_q0q', 'inv_3o3o3o', 'inv_3o3oo', 'inv_o3o3o', 'inv_o3oo', 'm4_mqyh_mq3oh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_q3qq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq miss_m4_0y0_3q3qq_miss
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_x3oz_q0q', 'inv_3o3o3o', 'inv_3o3oo', 'inv_o3o3o', 'inv_o3oo', 'm4_mqyh_mq3oh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_q3qq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq inv_3o3o3o
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_x3oz_q0q', 'inv_3o3o3o', 'inv_3o3oo', 'inv_o3o3o', 'inv_o3oo', 'm4_mqyh_mq3oh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_q3qq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq d_x3oz_3q03q
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_x3oz_q0q', 'inv_3o3o3o', 'inv_3o3oo', 'inv_o3o3o', 'inv_o3oo', 'm4_mqyh_mq3oh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_q3qq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qymq miss_m4_0y0_3q3q3q_miss
+['2_0y0', '2_qy0', '2_qyq', '4_0y0', '4_1_3qy0_0q0', '4_qymq', '4_qyq', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_x3oz_q0q', 'inv_3o3o3o', 'inv_3o3oo', 'inv_o3o3o', 'inv_o3oo', 'm4_mqyh_mq3oh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_q3qq_miss', 't_00h', 't_h00', 't_h0h']
+
+4_qqz inv_ooo
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xyo_3q3q0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'd_xyo_qq0', 'inv_3o3oo', 'inv_3ooo', 'inv_o3oo', 'inv_ooo', 'm4_hqz_hqo', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3qq_miss', 'miss_m4_00z_3qqq_miss', 'miss_m4_00z_qqq_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz d_xyo_qq0
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xyo_3q3q0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'd_xyo_qq0', 'inv_3o3oo', 'inv_3ooo', 'inv_o3oo', 'inv_ooo', 'm4_hqz_hqo', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3qq_miss', 'miss_m4_00z_3qqq_miss', 'miss_m4_00z_qqq_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz miss_m4_00z_qqq_miss
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xyo_3q3q0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'd_xyo_qq0', 'inv_3o3oo', 'inv_3ooo', 'inv_o3oo', 'inv_ooo', 'm4_hqz_hqo', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3qq_miss', 'miss_m4_00z_3qqq_miss', 'miss_m4_00z_qqq_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz inv_3ooo
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xyo_3q3q0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'd_xyo_qq0', 'inv_3o3oo', 'inv_3ooo', 'inv_o3oo', 'inv_ooo', 'm4_hqz_hqo', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3qq_miss', 'miss_m4_00z_3qqq_miss', 'miss_m4_00z_qqq_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz d_xyo_3qq0
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xyo_3q3q0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'd_xyo_qq0', 'inv_3o3oo', 'inv_3ooo', 'inv_o3oo', 'inv_ooo', 'm4_hqz_hqo', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3qq_miss', 'miss_m4_00z_3qqq_miss', 'miss_m4_00z_qqq_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz miss_m4_00z_3qqq_miss
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xyo_3q3q0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'd_xyo_qq0', 'inv_3o3oo', 'inv_3ooo', 'inv_o3oo', 'inv_ooo', 'm4_hqz_hqo', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3qq_miss', 'miss_m4_00z_3qqq_miss', 'miss_m4_00z_qqq_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz inv_o3oo
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xyo_3q3q0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'd_xyo_qq0', 'inv_3o3oo', 'inv_3ooo', 'inv_o3oo', 'inv_ooo', 'm4_hqz_hqo', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3qq_miss', 'miss_m4_00z_3qqq_miss', 'miss_m4_00z_qqq_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz d_xyo_q3q0
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xyo_3q3q0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'd_xyo_qq0', 'inv_3o3oo', 'inv_3ooo', 'inv_o3oo', 'inv_ooo', 'm4_hqz_hqo', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3qq_miss', 'miss_m4_00z_3qqq_miss', 'miss_m4_00z_qqq_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz m4_hqz_hqo
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xyo_3q3q0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'd_xyo_qq0', 'inv_3o3oo', 'inv_3ooo', 'inv_o3oo', 'inv_ooo', 'm4_hqz_hqo', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3qq_miss', 'miss_m4_00z_3qqq_miss', 'miss_m4_00z_qqq_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz inv_oo3o
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_q3q0', 'd_xy3o_qq0', 'dxy3o_3qq0', 'inv_3o3o3o', 'inv_3oo3o', 'inv_o3o3o', 'inv_oo3o', 'm4_hmqz_hmq3o', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3q3q_miss', 'miss_m4_00z_q3q3q_miss', 'miss_m4_00z_qq3q_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz d_xy3o_qq0
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_q3q0', 'd_xy3o_qq0', 'dxy3o_3qq0', 'inv_3o3o3o', 'inv_3oo3o', 'inv_o3o3o', 'inv_oo3o', 'm4_hmqz_hmq3o', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3q3q_miss', 'miss_m4_00z_q3q3q_miss', 'miss_m4_00z_qq3q_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz miss_m4_00z_qq3q_miss
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_q3q0', 'd_xy3o_qq0', 'dxy3o_3qq0', 'inv_3o3o3o', 'inv_3oo3o', 'inv_o3o3o', 'inv_oo3o', 'm4_hmqz_hmq3o', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3q3q_miss', 'miss_m4_00z_q3q3q_miss', 'miss_m4_00z_qq3q_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz inv_o3o3o
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_q3q0', 'd_xy3o_qq0', 'dxy3o_3qq0', 'inv_3o3o3o', 'inv_3oo3o', 'inv_o3o3o', 'inv_oo3o', 'm4_hmqz_hmq3o', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3q3q_miss', 'miss_m4_00z_q3q3q_miss', 'miss_m4_00z_qq3q_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz d_xy3o_q3q0
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_q3q0', 'd_xy3o_qq0', 'dxy3o_3qq0', 'inv_3o3o3o', 'inv_3oo3o', 'inv_o3o3o', 'inv_oo3o', 'm4_hmqz_hmq3o', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3q3q_miss', 'miss_m4_00z_q3q3q_miss', 'miss_m4_00z_qq3q_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz miss_m4_00z_q3q3q_miss
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_q3q0', 'd_xy3o_qq0', 'dxy3o_3qq0', 'inv_3o3o3o', 'inv_3oo3o', 'inv_o3o3o', 'inv_oo3o', 'm4_hmqz_hmq3o', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3q3q_miss', 'miss_m4_00z_q3q3q_miss', 'miss_m4_00z_qq3q_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz inv_3oo3o
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_q3q0', 'd_xy3o_qq0', 'dxy3o_3qq0', 'inv_3o3o3o', 'inv_3oo3o', 'inv_o3o3o', 'inv_oo3o', 'm4_hmqz_hmq3o', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3q3q_miss', 'miss_m4_00z_q3q3q_miss', 'miss_m4_00z_qq3q_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz dxy3o_3qq0
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_q3q0', 'd_xy3o_qq0', 'dxy3o_3qq0', 'inv_3o3o3o', 'inv_3oo3o', 'inv_o3o3o', 'inv_oo3o', 'm4_hmqz_hmq3o', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3q3q_miss', 'miss_m4_00z_q3q3q_miss', 'miss_m4_00z_qq3q_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz m4_hmqz_hmq3o
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_q3q0', 'd_xy3o_qq0', 'dxy3o_3qq0', 'inv_3o3o3o', 'inv_3oo3o', 'inv_o3o3o', 'inv_oo3o', 'm4_hmqz_hmq3o', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3q3q_miss', 'miss_m4_00z_q3q3q_miss', 'miss_m4_00z_qq3q_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz inv_3o3oo
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xyo_3q3q0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'd_xyo_qq0', 'inv_3o3oo', 'inv_3ooo', 'inv_o3oo', 'inv_ooo', 'm4_hqz_hqo', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3qq_miss', 'miss_m4_00z_3qqq_miss', 'miss_m4_00z_qqq_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz d_xyo_3q3q0
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xyo_3q3q0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'd_xyo_qq0', 'inv_3o3oo', 'inv_3ooo', 'inv_o3oo', 'inv_ooo', 'm4_hqz_hqo', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3qq_miss', 'miss_m4_00z_3qqq_miss', 'miss_m4_00z_qqq_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz miss_m4_00z_3q3qq_miss
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xyo_3q3q0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'd_xyo_qq0', 'inv_3o3oo', 'inv_3ooo', 'inv_o3oo', 'inv_ooo', 'm4_hqz_hqo', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3qq_miss', 'miss_m4_00z_3qqq_miss', 'miss_m4_00z_qqq_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz inv_3o3o3o
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_q3q0', 'd_xy3o_qq0', 'dxy3o_3qq0', 'inv_3o3o3o', 'inv_3oo3o', 'inv_o3o3o', 'inv_oo3o', 'm4_hmqz_hmq3o', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3q3q_miss', 'miss_m4_00z_q3q3q_miss', 'miss_m4_00z_qq3q_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz d_xy3o_3q3q0
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_q3q0', 'd_xy3o_qq0', 'dxy3o_3qq0', 'inv_3o3o3o', 'inv_3oo3o', 'inv_o3o3o', 'inv_oo3o', 'm4_hmqz_hmq3o', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3q3q_miss', 'miss_m4_00z_q3q3q_miss', 'miss_m4_00z_qq3q_miss', 't_0h0', 't_h00', 't_hh0']
+
+4_qqz miss_m4_00z_3q3q3q_miss
+['2_00z', '2_0qz', '2_qqz', '4_00z', '4_mqqz', '4_qqz', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_q3q0', 'd_xy3o_qq0', 'dxy3o_3qq0', 'inv_3o3o3o', 'inv_3oo3o', 'inv_o3o3o', 'inv_oo3o', 'm4_hmqz_hmq3o', 'miss_2_00z_h00_miss', 'miss_4_00z_hh0_miss', 'miss_m4_00z_3q3q3q_miss', 'miss_m4_00z_q3q3q_miss', 'miss_m4_00z_qq3q_miss', 't_0h0', 't_h00', 't_hh0']
+
+m4_x00_q00 inv_ooo
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_xmqh_q00', 'ID_000', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_oyz_03q3q', 'd_oyz_0qq', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 d_oyz_0qq
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_xmqh_q00', 'ID_000', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_oyz_03q3q', 'd_oyz_0qq', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 4_1_x0q_q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_0qq', 'd_oyz_03qq', 'd_oyz_0q3q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 inv_3ooo
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_0qq', 'd_oyz_03qq', 'd_oyz_0q3q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 d_3oyz_0qq
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_0qq', 'd_oyz_03qq', 'd_oyz_0q3q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 miss_4_x00_3qqq_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_xmqh_q00', 'ID_000', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_oyz_03q3q', 'd_oyz_0qq', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 inv_o3oo
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_0qq', 'd_oyz_03qq', 'd_oyz_0q3q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 d_oyz_03qq
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_0qq', 'd_oyz_03qq', 'd_oyz_0q3q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 miss_4_x00_q3qq_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_xmqh_q00', 'ID_000', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_oyz_03q3q', 'd_oyz_0qq', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 inv_oo3o
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_0qq', 'd_oyz_03qq', 'd_oyz_0q3q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 d_oyz_0q3q
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_0qq', 'd_oyz_03qq', 'd_oyz_0q3q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 4_1_xmqh_q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_xmqh_q00', 'ID_000', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_oyz_03q3q', 'd_oyz_0qq', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 inv_o3o3o
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_xmqh_q00', 'ID_000', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_oyz_03q3q', 'd_oyz_0qq', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 d_oyz_03q3q
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_xmqh_q00', 'ID_000', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_oyz_03q3q', 'd_oyz_0qq', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 4_1_x03q_q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_0qq', 'd_oyz_03qq', 'd_oyz_0q3q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 inv_3oo3o
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_xmqh_q00', 'ID_000', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_oyz_03q3q', 'd_oyz_0qq', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 d_3oyz_0q3q
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_xmqh_q00', 'ID_000', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_oyz_03q3q', 'd_oyz_0qq', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 4_3_xmqh_3q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_0qq', 'd_oyz_03qq', 'd_oyz_0q3q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 inv_3o3oo
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_xmqh_q00', 'ID_000', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_oyz_03q3q', 'd_oyz_0qq', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 d_3oyz_03qq
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_xmqh_q00', 'ID_000', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_oyz_03q3q', 'd_oyz_0qq', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 4_3_xqh_3q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_0qq', 'd_oyz_03qq', 'd_oyz_0q3q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 inv_3o3o3o
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_0qq', 'd_oyz_03qq', 'd_oyz_0q3q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 d_3oyz_03q3q
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'd_3oyz_03q3q', 'd_3oyz_0qq', 'd_oyz_03qq', 'd_oyz_0q3q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 't_0hh', 't_h0h', 't_hh0']
+
+m4_x00_q00 miss_4_x00_3q3q3q_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_x00', '2_xqq', '4_1_xmqh_q00', 'ID_000', 'd_3oyz_03qq', 'd_3oyz_0q3q', 'd_oyz_03q3q', 'd_oyz_0qq', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_x00_q00', 'm4_xh0_qh0', 'm4_xqmq_0qmq', 'm4_xqq_0qq', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q inv_ooo
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_hymq_0q0', 'ID_000', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_xoz_3q03q', 'd_xoz_q0q', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q d_xoz_q0q
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_hymq_0q0', 'ID_000', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_xoz_3q03q', 'd_xoz_q0q', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q 4_1_qy0_0q0
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_q0q', 'd_xoz_3q0q', 'd_xoz_q03q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q inv_3ooo
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_q0q', 'd_xoz_3q0q', 'd_xoz_q03q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q d_xoz_3q0q
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_q0q', 'd_xoz_3q0q', 'd_xoz_q03q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q 4_1_hymq_0q0
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_hymq_0q0', 'ID_000', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_xoz_3q03q', 'd_xoz_q0q', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q inv_o3oo
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_q0q', 'd_xoz_3q0q', 'd_xoz_q03q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q d_x3oz_q0q
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_q0q', 'd_xoz_3q0q', 'd_xoz_q03q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q miss_4_0y0_q3qq_miss
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_hymq_0q0', 'ID_000', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_xoz_3q03q', 'd_xoz_q0q', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q inv_oo3o
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_q0q', 'd_xoz_3q0q', 'd_xoz_q03q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q d_xoz_q03q
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_q0q', 'd_xoz_3q0q', 'd_xoz_q03q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q miss_4_0y0_qq3q_miss
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_hymq_0q0', 'ID_000', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_xoz_3q03q', 'd_xoz_q0q', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q inv_o3o3o
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_hymq_0q0', 'ID_000', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_xoz_3q03q', 'd_xoz_q0q', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q d_x3oz_q03q
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_hymq_0q0', 'ID_000', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_xoz_3q03q', 'd_xoz_q0q', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q 4_3_hyq_03q0
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_q0q', 'd_xoz_3q0q', 'd_xoz_q03q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q inv_3oo3o
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_hymq_0q0', 'ID_000', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_xoz_3q03q', 'd_xoz_q0q', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q d_xoz_3q03q
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_hymq_0q0', 'ID_000', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_xoz_3q03q', 'd_xoz_q0q', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q miss_4_0y0_3qq3q_miss
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_q0q', 'd_xoz_3q0q', 'd_xoz_q03q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q inv_3o3oo
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_hymq_0q0', 'ID_000', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_xoz_3q03q', 'd_xoz_q0q', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q d_x3oz_3q0q
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_hymq_0q0', 'ID_000', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_xoz_3q03q', 'd_xoz_q0q', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q 4_3_hymq_03q0
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_q0q', 'd_xoz_3q0q', 'd_xoz_q03q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q inv_3o3o3o
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_q0q', 'd_xoz_3q0q', 'd_xoz_q03q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q d_x3oz_3q03q
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'd_x3oz_3q03q', 'd_x3oz_q0q', 'd_xoz_3q0q', 'd_xoz_q03q', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qyq_q0q miss_4_0y0_3q3q3q_miss
+['2_0y0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_qyq', '4_1_hymq_0q0', 'ID_000', 'd_x3oz_3q0q', 'd_x3oz_q03q', 'd_xoz_3q03q', 'd_xoz_q0q', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_0y0_0q0', 'm4_0yh_0qh', 'm4_mqyq_mq0q', 'm4_qyq_q0q', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 inv_ooo
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_mqhz_00q', 'ID_000', 'd_xy3o_q3q0', 'd_xyo_3q3q0', 'd_xyo_qq0', 'dxy3o_3qq0', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 d_xyo_qq0
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_mqhz_00q', 'ID_000', 'd_xy3o_q3q0', 'd_xyo_3q3q0', 'd_xyo_qq0', 'dxy3o_3qq0', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 4_1_0qz_00q
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_qq0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 inv_3ooo
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_qq0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 d_xyo_3qq0
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_qq0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 miss_4_00z_3qqq_miss
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_mqhz_00q', 'ID_000', 'd_xy3o_q3q0', 'd_xyo_3q3q0', 'd_xyo_qq0', 'dxy3o_3qq0', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 inv_o3oo
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_qq0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 d_xyo_q3q0
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_qq0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 4_1_mqhz_00q
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_mqhz_00q', 'ID_000', 'd_xy3o_q3q0', 'd_xyo_3q3q0', 'd_xyo_qq0', 'dxy3o_3qq0', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 inv_oo3o
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_qq0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 d_xy3o_qq0
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_qq0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 miss_4_00z_qq3q_miss
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_mqhz_00q', 'ID_000', 'd_xy3o_q3q0', 'd_xyo_3q3q0', 'd_xyo_qq0', 'dxy3o_3qq0', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 inv_o3o3o
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_mqhz_00q', 'ID_000', 'd_xy3o_q3q0', 'd_xyo_3q3q0', 'd_xyo_qq0', 'dxy3o_3qq0', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 d_xy3o_q3q0
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_mqhz_00q', 'ID_000', 'd_xy3o_q3q0', 'd_xyo_3q3q0', 'd_xyo_qq0', 'dxy3o_3qq0', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 4_3_mqhz_003q
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_qq0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 inv_3oo3o
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_mqhz_00q', 'ID_000', 'd_xy3o_q3q0', 'd_xyo_3q3q0', 'd_xyo_qq0', 'dxy3o_3qq0', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 dxy3o_3qq0
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_mqhz_00q', 'ID_000', 'd_xy3o_q3q0', 'd_xyo_3q3q0', 'd_xyo_qq0', 'dxy3o_3qq0', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 4_3_qhz_003q
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_qq0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 inv_3o3oo
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_mqhz_00q', 'ID_000', 'd_xy3o_q3q0', 'd_xyo_3q3q0', 'd_xyo_qq0', 'dxy3o_3qq0', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 d_xyo_3q3q0
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_mqhz_00q', 'ID_000', 'd_xy3o_q3q0', 'd_xyo_3q3q0', 'd_xyo_qq0', 'dxy3o_3qq0', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 4_1_03qz_00q
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_qq0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 inv_3o3o3o
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_qq0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 d_xy3o_3q3q0
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'd_xy3o_3q3q0', 'd_xy3o_qq0', 'd_xyo_3qq0', 'd_xyo_q3q0', 'inv_3o3o3o', 'inv_3ooo', 'inv_o3oo', 'inv_oo3o', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 't_0hh', 't_h0h', 't_hh0']
+
+m4_qmqz_qmq0 miss_4_00z_3q3q3q_miss
+['2_00z', '2_1_0qz_00h', '2_1_q0z_00h', '2_qqz', '4_1_mqhz_00q', 'ID_000', 'd_xy3o_q3q0', 'd_xyo_3q3q0', 'd_xyo_qq0', 'dxy3o_3qq0', 'inv_3o3oo', 'inv_3oo3o', 'inv_o3o3o', 'inv_ooo', 'm4_00z_00q', 'm4_h0z_h0q', 'm4_qmqz_qmq0', 'm4_qqz_qq0', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_0hh', 't_h0h', 't_hh0']
+
+miss_2_x00_0h0_miss 4_1_x0q_q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_0h0_miss miss_4_x00_3qqq_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_0h0_miss miss_4_x00_q3qq_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_0h0_miss 4_1_xmqh_q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_0h0_miss 4_1_x03q_q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_0h0_miss 4_3_xmqh_3q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_0h0_miss 4_3_xqh_3q00
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+miss_2_x00_0h0_miss miss_4_x00_3q3q3q_miss
+['2_1_x0q_h00', '2_1_xq0_h00', '2_1_xqq_h00', '2_x00', '2_x0q', '2_xqq', '4_1_x03q_q00', '4_1_x0q_q00', '4_1_xmqh_q00', '4_3_xmqh_3q00', '4_3_xqh_3q00', 'ID_000', 'miss_2_x00_0h0_miss', 'miss_2_x00_h00_miss', 'miss_4_x00_3q3q3q_miss', 'miss_4_x00_3qqq_miss', 'miss_4_x00_q3qq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 4_1_qy0_0q0
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 miss_m4_0y0_qqq_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', 'ID_000', 'm4_mqyh_mq3oh', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_q3qq_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 4_1_hymq_0q0
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 m4_qyh_qoh
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', 'ID_000', 'm4_mqyh_mq3oh', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_q3qq_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 miss_4_0y0_q3qq_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 miss_m4_0y0_q3qq_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', 'ID_000', 'm4_mqyh_mq3oh', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_q3qq_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 miss_4_0y0_qq3q_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 miss_m4_0y0_qq3q_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', 'ID_000', 'm4_mqyh_mq3oh', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_q3qq_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 4_3_hyq_03q0
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 m4_mqyh_mq3oh
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', 'ID_000', 'm4_mqyh_mq3oh', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_q3qq_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 miss_4_0y0_3qq3q_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 miss_m4_0y0_3qq3q_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', 'ID_000', 'm4_mqyh_mq3oh', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_q3qq_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 4_3_hymq_03q0
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 miss_m4_0y0_3q3qq_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', 'ID_000', 'm4_mqyh_mq3oh', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_q3qq_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 miss_4_0y0_3q3q3q_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', '4_1_hymq_0q0', '4_1_qy0_0q0', '4_3_hymq_03q0', '4_3_hyq_03q0', 'ID_000', 'miss_2_0y0_00h_miss', 'miss_4_0y0_3q3q3q_miss', 'miss_4_0y0_3qq3q_miss', 'miss_4_0y0_q3qq_miss', 'miss_4_0y0_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_1_0y0_0h0 miss_m4_0y0_3q3q3q_miss
+['2_0y0', '2_1_0y0_0h0', '2_1_0yq_0h0', '2_1_qy0_0h0', '2_1_qyq_0h0', '2_qy0', '2_qyq', 'ID_000', 'm4_mqyh_mq3oh', 'm4_qyh_qoh', 'miss_2_0y0_00h_miss', 'miss_m4_0y0_3q3q3q_miss', 'miss_m4_0y0_3q3qq_miss', 'miss_m4_0y0_3qq3q_miss', 'miss_m4_0y0_q3qq_miss', 'miss_m4_0y0_qq3q_miss', 'miss_m4_0y0_qqq_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_0qz 4_1_0qz_00q
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_0qz miss_4_00z_3qqq_miss
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_0qz 4_1_mqhz_00q
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_0qz miss_4_00z_qq3q_miss
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_0qz 4_3_mqhz_003q
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_0qz 4_3_qhz_003q
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_0qz 4_1_03qz_00q
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+
+2_0qz miss_4_00z_3q3q3q_miss
+['2_00z', '2_0qz', '2_1_0qz_00h', '2_1_q0z_00h', '2_1_qqz_00h', '2_qqz', '4_1_03qz_00q', '4_1_0qz_00q', '4_1_mqhz_00q', '4_3_mqhz_003q', '4_3_qhz_003q', 'ID_000', 'miss_2_00z_00h_miss', 'miss_2_00z_h00_miss', 'miss_4_00z_3q3q3q_miss', 'miss_4_00z_3qqq_miss', 'miss_4_00z_qq3q_miss', 't_00h', 't_0h0', 't_0hh', 't_h00', 't_h0h', 't_hh0', 't_hhh']
+

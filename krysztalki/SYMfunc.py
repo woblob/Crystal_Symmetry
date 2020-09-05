@@ -3,6 +3,10 @@ from bisect import bisect_right as BSR, bisect_left as BSL
 from itertools import combinations as itrtls_combinations
 
 def generateSymetryBase():
+    """
+    All posible transforamtion in crystollographic cell
+    Currently hexagonal axis and trigonal axis  in dir [001] are not implemented
+    """
     s3d2 = np.sqrt(3)/2
     return {
         "c":{
@@ -75,12 +79,18 @@ def generateSymetryBase():
 #         punkt = np.around(punkt,6) 
         
 def listadous(macierz, punktprzes):
+    """
+    Make all points given by transformation
+    """
     punkt = np.matmul(macierz,punktprzes)  
     while not porownajPunkty(punkt, punktprzes):
         yield punkt
         punkt = np.matmul(macierz,punkt)        
         
 def makelist():
+    """
+    List all names of Symmetries
+    """
     Matrixes = generateSymetryBase()
     mylist = []
     for Mainkey in Matrixes.keys():
@@ -89,12 +99,22 @@ def makelist():
     return mylist[::-1]
 
 def porownajPunkty(p1,p2):
+    """
+    Compare two points
+    Faster than numpy.all for small arrays
+    """
     for a, b in zip(p1,p2):
         if a!=b:
             return False
     return True
 
 def findindex(searched, points):         
+    """
+    Binary search for points in a cell
+    
+    returns index of found point
+    if not found then returns -1
+    """
     indexL, indexR = 0, len(points[0])        
     for xyz in range(len(points)): 
         numR = BSR(points[xyz][indexL: indexR], searched[xyz])
@@ -111,21 +131,36 @@ def findindex(searched, points):
             return -1        
     return indexL 
 
-def findPoints(listofps, allpoints2, Anti = False):
+def findPoints(listofps, allpoints, Anti = False):
+    """
+    Check if point is in the list
+    
+    Depends on 'Anti' arg
+    for False value: looks for vacancies
+    True value: looks for atoms
+    
+    allpoints list is transposed in this function
+    """
     for ps in listofps:
-        indx = findindex(ps,allpoints2)    
-        if (indx + 1 and porownajPunkty(allpoints2[:,indx],ps)) == Anti:
+        indx = findindex(ps,allpoints)    
+        if (indx + 1 and porownajPunkty(allpoints[:,indx],ps)) == Anti:
             return False
     return True 
 
 def findAntiSym_InnerLoop(Matrix, allpoints, vacancies):
+    """
+    Check if any of the points is in the list
+    diffrence between findSym_innerLoop is 'Anti' value 
+    """
     for vac in vacancies:
-        listofvacsym = listadous(Matrix,vac)
-        if not findPoints(listofvacsym, allpoints.T, Anti=True):
+        if not findPoints(listadous(Matrix,vac), allpoints.T, Anti=True):
             return False
     return True
 
-def findAntiSym_MOD(matrixes, allpoints, vacancies):
+def findAntiSym(matrixes, allpoints, vacancies):
+    """
+    check what symmetries cannot exist for vacancies in cell 
+    """
     allsymmerties = makelist()
     if vacancies.shape == (3,):
         vacancies = np.array([vacancies])
@@ -135,22 +170,30 @@ def findAntiSym_MOD(matrixes, allpoints, vacancies):
             possymmerties.append((el0, el1))           
     return possymmerties 
 
-def findSym_Base_mod2_innerLoop(Matrix, allpoints):
-    for p in allpoints:
-        listofps = listadous(Matrix,p)          
-        if not findPoints(listofps,allpoints.T):
+def findSym_innerLoop(Matrix, allpoints):
+    """
+    Check if all of the points are in the list
+    """
+    for point in allpoints:
+        if not findPoints(listadous(Matrix,point), allpoints.T):
             return False
     return True
 
-def findSym_Base_mod2(matrixes, allpoints, vacancies):
+def findSym(matrixes, allpoints, vacancies):
+    """
+    check what symmetries are in cell
+    """
     symmerties = []
-    possym = findAntiSym_MOD(matrixes, allpoints, vacancies)
+    possym = findAntiSym(matrixes, allpoints, vacancies)
     for el0, el1 in possym:                
-        if findSym_Base_mod2_innerLoop(matrixes[el0][el1], allpoints):
+        if findSym_innerLoop(matrixes[el0][el1], allpoints):
             symmerties.append((el0, el1))
     return symmerties
 
 def makeCellWithVacancies(cell,indexes):
+    """
+    make 2 lists: Cell with vacancies and vacancies
+    """
     indexes = set(indexes)
     cellVac = []
     Vac = []
@@ -162,18 +205,25 @@ def makeCellWithVacancies(cell,indexes):
     return np.array(cellVac), np.array(Vac)
 
 
-def abcde(scell,sumVac):
+def checkAllCells(scell,base,sumVac):
+    """
+    main fuction
+    make all possible combinations of cell and find its symmetries
+    TODO: save with vacancies / problem with writing file
+    """
     Matrixes = generateSymetryBase()
     mylist = []
     for indexes in itrtls_combinations(range(len(scell)),sumVac): 
         scellvac, vacancies = makeCellWithVacancies(scell,indexes)
-        SYM = findSym_Base_mod2(Matrixes, scellvac, vacancies)
-        mylist.append(SYM)
+        SYM = findSym(Matrixes, scellvac, vacancies)
+        if SYM != []:
+            mylist.append(SYM)
     return mylist
 
-def saveOutput(OUTPUT):
-    txtfile = "output of symmetries.txt"
-    with open(txtfile, "w") as f:
+def saveOutput(OUTPUT, filename = "output of symmetries.txt"):
+    """
+    write txt file with all symmetries for all possible combinations of vacancies in cell
+    """
+    with open(filename, "w") as f:
         for el in sorted(OUTPUT, key=len, reverse=True):
-            if el != []:
-                f.write(str(el)+"\n")
+            f.write(str(el)+"\n")

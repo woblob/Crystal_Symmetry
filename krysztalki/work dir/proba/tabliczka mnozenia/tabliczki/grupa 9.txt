@@ -1,0 +1,18 @@
+miss_3_mxxmx_h00_miss ID_000
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss']
+
+3_2_tmxHmxx_HHmH ID_000
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss']
+
+miss_m3_xxx_h00_miss ID_000
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', 'ID_000', 'm3_xxx_qqq', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_m3_xmxmx_h00_miss ID_000
+['3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_mhxhmxmx_mqqmq', 'm3_xmxmx_q3qmq', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_3_xxx_0h0_miss ID_000
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss']
+
+3_2_HxHmxmx_mHHH ID_000
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss']
+

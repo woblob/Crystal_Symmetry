@@ -1,0 +1,120 @@
+miss_inv_000_h00_miss ID_000
+['ID_000', 'miss_inv_000_h00_miss']
+
+miss_m_0yz_h00_miss ID_000
+['ID_000', 'miss_m_0yz_h00_miss']
+
+a_x0z_h00 ID_000
+['ID_000', 'a_x0z_h00']
+
+miss_m_xy0_h00_miss ID_000
+['ID_000', 'miss_m_xy0_h00_miss']
+
+a_xymy_h00 ID_000
+['ID_000', 'a_xymy_h00']
+
+a_xyy_h00 ID_000
+['ID_000', 'a_xyy_h00']
+
+miss_2_x00_h00_miss ID_000
+['ID_000', 'miss_2_x00_h00_miss']
+
+2_qy0 ID_000
+['2_qy0', 'ID_000']
+
+miss_2_00z_h00_miss ID_000
+['ID_000', 'miss_2_00z_h00_miss']
+
+2_qyy ID_000
+['2_qyy', 'ID_000']
+
+2_qmyy ID_000
+['2_qmyy', 'ID_000']
+
+miss_3_xxx_h00_miss 3_1_Hxtxx_ttt
+['3_1_Hxtxx_ttt', 'miss_3_xxx_h00_miss']
+
+miss_3_xmxmx_h00_miss 3_hxmxmx
+['3_hxmxmx', 'miss_3_xmxmx_h00_miss']
+
+miss_3_mxxmx_h00_miss 3_hmxxmx
+['3_hmxxmx', 'miss_3_mxxmx_h00_miss']
+
+3_2_tmxHmxx_HHmH 3_2_Hmxtmxx_ttmt
+['3_2_Hmxtmxx_ttmt', '3_2_tmxHmxx_HHmH']
+
+miss_m3_xxx_h00_miss 3_1_Hxtxx_ttt
+['3_1_Hxtxx_ttt', 'miss_m3_xxx_h00_miss']
+
+miss_m3_xmxmx_h00_miss 3_hxmxmx
+['3_hxmxmx', 'miss_m3_xmxmx_h00_miss']
+
+miss_m3_mxxmx_h00_miss 3_hmxxmx
+['3_hmxxmx', 'miss_m3_mxxmx_h00_miss']
+
+m3_mxmhmxx_qmqmq 3_2_Hmxtmxx_ttmt
+['3_2_Hmxtmxx_ttmt', 'm3_mxmhmxx_qmqmq']
+
+4_2_x00_h00 2_x00
+['2_x00', '4_2_x00_h00']
+
+m4_x00_q00 2_x00
+['2_x00', 'm4_x00_q00']
+
+miss_inv_000_0h0_miss ID_000
+['ID_000', 'miss_inv_000_0h0_miss']
+
+miss_m_0yz_0h0_miss ID_000
+['ID_000', 'miss_m_0yz_0h0_miss']
+
+miss_m_x0z_0h0_miss ID_000
+['ID_000', 'miss_m_x0z_0h0_miss']
+
+b_xy0_0h0 ID_000
+['ID_000', 'b_xy0_0h0']
+
+b_xymx_0h0 ID_000
+['ID_000', 'b_xymx_0h0']
+
+b_xyx_0h0 ID_000
+['ID_000', 'b_xyx_0h0']
+
+miss_2_x00_0h0_miss ID_000
+['ID_000', 'miss_2_x00_0h0_miss']
+
+2_1_0y0_0h0 ID_000
+['2_1_0y0_0h0', 'ID_000']
+
+2_0qz ID_000
+['2_0qz', 'ID_000']
+
+2_xqx ID_000
+['2_xqx', 'ID_000']
+
+2_mxqx ID_000
+['2_mxqx', 'ID_000']
+
+miss_3_xxx_0h0_miss 3_1_mtmHxx_ttt
+['3_1_mtmHxx_ttt', 'miss_3_xxx_0h0_miss']
+
+3_2_HxHmxmx_mHHH 3_2_txmHmxmx_mttt
+['3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt']
+
+miss_3_mxxmx_0h0_miss 3_mxhxmx
+['3_mxhxmx', 'miss_3_mxxmx_0h0_miss']
+
+miss_3_mxmxx_0h0_miss 3_mxhmxx
+['3_mxhmxx', 'miss_3_mxmxx_0h0_miss']
+
+miss_m3_xxx_0h0_miss 3_1_mtmHxx_ttt
+['3_1_mtmHxx_ttt', 'miss_m3_xxx_0h0_miss']
+
+m3_mhxhmxmx_mqqmq 3_2_txmHmxmx_mttt
+['3_2_txmHmxmx_mttt', 'm3_mhxhmxmx_mqqmq']
+
+miss_m3_mxxmx_0h0_miss 3_mxhxmx
+['3_mxhxmx', 'miss_m3_mxxmx_0h0_miss']
+
+miss_m3_mxmxx_0h0_miss 3_mxhmxx
+['3_mxhmxx', 'miss_m3_mxmxx_0h0_miss']
+

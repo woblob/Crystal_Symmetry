@@ -1,0 +1,705 @@
+miss_inv_000_h00_miss miss_3_xxx_h00_miss
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_h00_miss miss_3_xmxmx_h00_miss
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_h00_miss miss_3_mxxmx_h00_miss
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_h00_miss 3_2_tmxHmxx_HHmH
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_h00_miss miss_3_xxx_0h0_miss
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_h00_miss 3_2_HxHmxmx_mHHH
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_h00_miss miss_3_mxxmx_0h0_miss
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_h00_miss miss_3_mxmxx_0h0_miss
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_h00_miss miss_3_xxx_00h_miss
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_h00_miss miss_3_xmxmx_00h_miss
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_h00_miss 3_2_mHmxtxmx_HmHH
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_h00_miss miss_3_mxmxx_00h_miss
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_h00_miss m3_xhxx_0h0
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_h00_miss m3_xhmxmx_0h0
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_h00_miss m3_m1mxhxmx_mh0h
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_h00_miss m3_1mxhmxx_h0h
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_h00_miss m3_mhxmhxx_00h
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_h00_miss m3_hxhmxmx_hh0
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_h00_miss m3_hmxhxmx_00h
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_h00_miss m3_hmxmhmxx_hmh0
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_h00_miss m3_mhxxx_h00
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_h00_miss m3_mhx1mxmx_0hmh
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_h00_miss m3_mhmx1xmx_0hh
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_h00_miss m3_hmxmxx_h00
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_h00_miss 3_xxx_hhh
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_h00_miss 3_2_2txmtmxmx_mHHH
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_h00_miss 3_2_tmxtxmx_HmHH
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_h00_miss 3_2_tmx2tmxx_HHmH
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_h00_miss m3_mxmxx
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_h00_miss m3_mxxmx
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_h00_miss m3_xmxmx
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_h00_miss m3_xxx
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_h00_miss miss_inv_000_0h0_miss
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_h00_miss miss_inv_000_00h_miss
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_00h_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_h00_miss inv_0qq
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_0qq', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_h00_miss inv_q0q
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_q0q', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_h00_miss inv_qq0
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_qq0', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_h00_miss inv_qqq
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_qqq', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_h00_miss inv_ooo
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_ooo', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_h00_miss inv_3ooo
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_3ooo', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_h00_miss inv_o3oo
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_o3oo', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_h00_miss inv_oo3o
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_oo3o', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_h00_miss inv_o3o3o
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_o3o3o', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_h00_miss inv_3oo3o
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_3oo3o', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_h00_miss inv_3o3oo
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_3o3oo', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_h00_miss inv_3o3o3o
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_3o3o3o', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_h00_miss inv_000
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xmxmx_h00_miss miss_inv_000_0h0_miss
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_3_xmxmx_h00_miss miss_inv_000_00h_miss
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_00h_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_3_xmxmx_h00_miss inv_0qq
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_0qq', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_3_xmxmx_h00_miss inv_q0q
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_q0q', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_3_xmxmx_h00_miss inv_qq0
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_qq0', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_3_xmxmx_h00_miss inv_qqq
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_qqq', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_3_xmxmx_h00_miss inv_ooo
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_ooo', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+miss_3_xmxmx_h00_miss inv_3ooo
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_3ooo', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+miss_3_xmxmx_h00_miss inv_o3oo
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_o3oo', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+miss_3_xmxmx_h00_miss inv_oo3o
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_oo3o', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+miss_3_xmxmx_h00_miss inv_o3o3o
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_o3o3o', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+miss_3_xmxmx_h00_miss inv_3oo3o
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_3oo3o', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+miss_3_xmxmx_h00_miss inv_3o3oo
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_3o3oo', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+miss_3_xmxmx_h00_miss inv_3o3o3o
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_3o3o3o', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+miss_3_xmxmx_h00_miss inv_000
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_3_mxxmx_h00_miss miss_inv_000_0h0_miss
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_3_mxxmx_h00_miss miss_inv_000_00h_miss
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_00h_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_3_mxxmx_h00_miss inv_0qq
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_0qq', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_3_mxxmx_h00_miss inv_q0q
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_q0q', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_3_mxxmx_h00_miss inv_qq0
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_qq0', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_3_mxxmx_h00_miss inv_qqq
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_qqq', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_3_mxxmx_h00_miss inv_ooo
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_ooo', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_h00_miss inv_3ooo
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_3ooo', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_h00_miss inv_o3oo
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_o3oo', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_h00_miss inv_oo3o
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_oo3o', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_h00_miss inv_o3o3o
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_o3o3o', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_h00_miss inv_3oo3o
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_3oo3o', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_h00_miss inv_3o3oo
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_3o3oo', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_h00_miss inv_3o3o3o
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_3o3o3o', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_h00_miss inv_000
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+3_2_tmxHmxx_HHmH miss_inv_000_0h0_miss
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+3_2_tmxHmxx_HHmH miss_inv_000_00h_miss
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_00h_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+3_2_tmxHmxx_HHmH inv_0qq
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_0qq', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+3_2_tmxHmxx_HHmH inv_q0q
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_q0q', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+3_2_tmxHmxx_HHmH inv_qq0
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_qq0', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+3_2_tmxHmxx_HHmH inv_qqq
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_qqq', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+3_2_tmxHmxx_HHmH inv_ooo
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_ooo', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+3_2_tmxHmxx_HHmH inv_3ooo
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_3ooo', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+3_2_tmxHmxx_HHmH inv_o3oo
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_o3oo', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+3_2_tmxHmxx_HHmH inv_oo3o
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_oo3o', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+3_2_tmxHmxx_HHmH inv_o3o3o
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_o3o3o', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+3_2_tmxHmxx_HHmH inv_3oo3o
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_3oo3o', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+3_2_tmxHmxx_HHmH inv_3o3oo
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_3o3oo', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+3_2_tmxHmxx_HHmH inv_3o3o3o
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_3o3o3o', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+3_2_tmxHmxx_HHmH inv_000
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_m3_xxx_h00_miss inv_0qq
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_0qq', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_m3_xxx_h00_miss inv_q0q
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_q0q', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_m3_xxx_h00_miss inv_qq0
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_qq0', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_m3_xxx_h00_miss inv_000
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_m3_xxx_h00_miss t_h00
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss', 't_h00']
+
+miss_m3_xxx_h00_miss t_0h0
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss', 't_0h0']
+
+miss_m3_xxx_h00_miss t_00h
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss', 't_00h']
+
+miss_m3_xxx_h00_miss t_hhh
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss', 't_hhh']
+
+miss_m3_xmxmx_h00_miss inv_0qq
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_0qq', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_m3_xmxmx_h00_miss inv_q0q
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_q0q', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_m3_xmxmx_h00_miss inv_qq0
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_qq0', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_m3_xmxmx_h00_miss inv_000
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_m3_xmxmx_h00_miss t_h00
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss', 't_h00']
+
+miss_m3_xmxmx_h00_miss t_0h0
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss', 't_0h0']
+
+miss_m3_xmxmx_h00_miss t_00h
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss', 't_00h']
+
+miss_m3_xmxmx_h00_miss t_hhh
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss', 't_hhh']
+
+miss_m3_mxxmx_h00_miss inv_0qq
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_0qq', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_m3_mxxmx_h00_miss inv_q0q
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_q0q', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_m3_mxxmx_h00_miss inv_qq0
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_qq0', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_m3_mxxmx_h00_miss inv_000
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_m3_mxxmx_h00_miss t_h00
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss', 't_h00']
+
+miss_m3_mxxmx_h00_miss t_0h0
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss', 't_0h0']
+
+miss_m3_mxxmx_h00_miss t_00h
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss', 't_00h']
+
+miss_m3_mxxmx_h00_miss t_hhh
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss', 't_hhh']
+
+m3_mxmhmxx_qmqmq inv_0qq
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_0qq', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+m3_mxmhmxx_qmqmq inv_q0q
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_q0q', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+m3_mxmhmxx_qmqmq inv_qq0
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_qq0', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+m3_mxmhmxx_qmqmq inv_000
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+m3_mxmhmxx_qmqmq t_h00
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss', 't_h00']
+
+m3_mxmhmxx_qmqmq t_0h0
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss', 't_0h0']
+
+m3_mxmhmxx_qmqmq t_00h
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss', 't_00h']
+
+m3_mxmhmxx_qmqmq t_hhh
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss', 't_hhh']
+
+miss_inv_000_0h0_miss miss_3_xxx_0h0_miss
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_0h0_miss 3_2_HxHmxmx_mHHH
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_0h0_miss miss_3_mxxmx_0h0_miss
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_0h0_miss miss_3_mxmxx_0h0_miss
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_0h0_miss miss_3_xxx_00h_miss
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_0h0_miss miss_3_xmxmx_00h_miss
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_0h0_miss 3_2_mHmxtxmx_HmHH
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_0h0_miss miss_3_mxmxx_00h_miss
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_0h0_miss m3_xhxx_0h0
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_0h0_miss m3_xhmxmx_0h0
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_0h0_miss m3_m1mxhxmx_mh0h
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_0h0_miss m3_1mxhmxx_h0h
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_0h0_miss m3_mhxmhxx_00h
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_0h0_miss m3_hxhmxmx_hh0
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_0h0_miss m3_hmxhxmx_00h
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_0h0_miss m3_hmxmhmxx_hmh0
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_0h0_miss m3_mhxxx_h00
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_0h0_miss m3_mhx1mxmx_0hmh
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_0h0_miss m3_mhmx1xmx_0hh
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_0h0_miss m3_hmxmxx_h00
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_0h0_miss 3_xxx_hhh
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_inv_000_0h0_miss 3_2_2txmtmxmx_mHHH
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_0h0_miss 3_2_tmxtxmx_HmHH
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_0h0_miss 3_2_tmx2tmxx_HHmH
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_0h0_miss m3_mxmxx
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_inv_000_0h0_miss m3_mxxmx
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_inv_000_0h0_miss m3_xmxmx
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_inv_000_0h0_miss m3_xxx
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_0h0_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_0h0_miss miss_inv_000_00h_miss
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_inv_000_00h_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_0h0_miss inv_0qq
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_0qq', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_0h0_miss inv_q0q
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_q0q', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_0h0_miss inv_qq0
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_qq0', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_0h0_miss inv_qqq
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_qqq', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_3_xxx_0h0_miss inv_ooo
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_ooo', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_0h0_miss inv_3ooo
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_3ooo', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_0h0_miss inv_o3oo
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_o3oo', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_0h0_miss inv_oo3o
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_oo3o', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_0h0_miss inv_o3o3o
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_o3o3o', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_0h0_miss inv_3oo3o
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_3oo3o', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_0h0_miss inv_3o3oo
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_3o3oo', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_0h0_miss inv_3o3o3o
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_3o3o3o', 'm3_hxhxx_3o3omo', 'm3_mhxxx_mo3o3o', 'm3_xmhxx_3omo3o', 'm3_xxx_3o3o3o', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_3q3qq_miss', 'miss_m3_xxx_3qq3q_miss', 'miss_m3_xxx_q3q3q_miss', 'miss_m3_xxx_qqq_miss']
+
+miss_3_xxx_0h0_miss inv_000
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+3_2_HxHmxmx_mHHH miss_inv_000_00h_miss
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_inv_000_00h_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+3_2_HxHmxmx_mHHH inv_0qq
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_0qq', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+3_2_HxHmxmx_mHHH inv_q0q
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_q0q', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+3_2_HxHmxmx_mHHH inv_qq0
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_qq0', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+3_2_HxHmxmx_mHHH inv_qqq
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_qqq', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+3_2_HxHmxmx_mHHH inv_ooo
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_ooo', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+3_2_HxHmxmx_mHHH inv_3ooo
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_3ooo', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+3_2_HxHmxmx_mHHH inv_o3oo
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_o3oo', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+3_2_HxHmxmx_mHHH inv_oo3o
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_oo3o', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+3_2_HxHmxmx_mHHH inv_o3o3o
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_o3o3o', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+3_2_HxHmxmx_mHHH inv_3oo3o
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_3oo3o', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+3_2_HxHmxmx_mHHH inv_3o3oo
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_3o3oo', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+3_2_HxHmxmx_mHHH inv_3o3o3o
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_3o3o3o', 'm3_hxhmxmx_3o5oo', 'm3_mhx1mxmx_mo5om3o', 'm3_x1mxmx_3o5om3o', 'm3_xhmxmx_3oom3o', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_3q3qq_miss', 'miss_m3_xmxmx_3qq3q_miss', 'miss_m3_xmxmx_q3q3q_miss', 'miss_m3_xmxmx_qqq_miss']
+
+3_2_HxHmxmx_mHHH inv_000
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+miss_3_mxxmx_0h0_miss miss_inv_000_00h_miss
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_inv_000_00h_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_3_mxxmx_0h0_miss inv_0qq
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_0qq', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_3_mxxmx_0h0_miss inv_q0q
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_q0q', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_3_mxxmx_0h0_miss inv_qq0
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_qq0', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_3_mxxmx_0h0_miss inv_qqq
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_qqq', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_3_mxxmx_0h0_miss inv_ooo
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_ooo', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_0h0_miss inv_3ooo
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_3ooo', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_0h0_miss inv_o3oo
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_o3oo', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_0h0_miss inv_oo3o
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_oo3o', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_0h0_miss inv_o3o3o
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_o3o3o', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_0h0_miss inv_3oo3o
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_3oo3o', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_0h0_miss inv_3o3oo
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_3o3oo', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_0h0_miss inv_3o3o3o
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_3o3o3o', 'm3_m1mx1xmx_m3o3o5o', 'm3_m1mxhxmx_m3omo5o', 'm3_mhmx1xmx_o3o5o', 'm3_mhmxhxmx_m3o3oo', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_3q3qq_miss', 'miss_m3_mxxmx_3qq3q_miss', 'miss_m3_mxxmx_q3q3q_miss', 'miss_m3_mxxmx_qqq_miss']
+
+miss_3_mxxmx_0h0_miss inv_000
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_3_mxmxx_0h0_miss miss_inv_000_00h_miss
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_inv_000_00h_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_3_mxmxx_0h0_miss inv_0qq
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_0qq', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_3_mxmxx_0h0_miss inv_q0q
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_q0q', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_3_mxmxx_0h0_miss inv_qq0
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_qq0', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_3_mxmxx_0h0_miss inv_qqq
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_qqq', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_3_mxmxx_0h0_miss inv_ooo
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_ooo', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+miss_3_mxmxx_0h0_miss inv_3ooo
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_3ooo', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+miss_3_mxmxx_0h0_miss inv_o3oo
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_o3oo', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+miss_3_mxmxx_0h0_miss inv_oo3o
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_oo3o', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+miss_3_mxmxx_0h0_miss inv_o3o3o
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_o3o3o', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+miss_3_mxmxx_0h0_miss inv_3oo3o
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_3oo3o', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+miss_3_mxmxx_0h0_miss inv_3o3oo
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_3o3oo', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+miss_3_mxmxx_0h0_miss inv_3o3o3o
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_3o3o3o', 'm3_1mxhmxx_5oo3o', 'm3_1mxmxx_5om3o3o', 'm3_hmxmhmxx_5om3omo', 'm3_hmxmxx_om3o3o', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_3q3qq_miss', 'miss_m3_mxmxx_3qq3q_miss', 'miss_m3_mxmxx_q3q3q_miss', 'miss_m3_mxmxx_qqq_miss']
+
+miss_3_mxmxx_0h0_miss inv_000
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_000', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_m3_xxx_0h0_miss inv_0qq
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_0qq', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_m3_xxx_0h0_miss inv_q0q
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_q0q', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_m3_xxx_0h0_miss inv_qq0
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_qq0', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_m3_xxx_0h0_miss inv_000
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'inv_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss']
+
+miss_m3_xxx_0h0_miss t_h00
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss', 't_h00']
+
+miss_m3_xxx_0h0_miss t_0h0
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss', 't_0h0']
+
+miss_m3_xxx_0h0_miss t_00h
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss', 't_00h']
+
+miss_m3_xxx_0h0_miss t_hhh
+['3_1_HxmHxx_ttt', '3_1_Hxtxx_ttt', '3_1_mtmHxx_ttt', '3_xxx', '3_xxx_hhh', 'ID_000', 'm3_mhxmhxx_00h', 'm3_mhxxx_h00', 'm3_xhxx_0h0', 'm3_xxx', 'm3_xxx_qqq', 'miss_3_xxx_00h_miss', 'miss_3_xxx_0h0_miss', 'miss_3_xxx_h00_miss', 'miss_m3_xxx_00h_miss', 'miss_m3_xxx_0h0_miss', 'miss_m3_xxx_h00_miss', 't_hhh']
+
+m3_mhxhmxmx_mqqmq inv_0qq
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_0qq', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+m3_mhxhmxmx_mqqmq inv_q0q
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_q0q', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+m3_mhxhmxmx_mqqmq inv_qq0
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_qq0', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+m3_mhxhmxmx_mqqmq inv_000
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'inv_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss']
+
+m3_mhxhmxmx_mqqmq t_h00
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss', 't_h00']
+
+m3_mhxhmxmx_mqqmq t_0h0
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss', 't_0h0']
+
+m3_mhxhmxmx_mqqmq t_00h
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss', 't_00h']
+
+m3_mhxhmxmx_mqqmq t_hhh
+['3_2_2txmtmxmx_mHHH', '3_2_HxHmxmx_mHHH', '3_2_txmHmxmx_mttt', '3_hxmhmxmx', '3_hxmxmx', '3_xmxmx', 'ID_000', 'm3_hxhmxmx_hh0', 'm3_mhx1mxmx_0hmh', 'm3_mhxhmxmx_mqqmq', 'm3_xhmxmx_0h0', 'm3_xmxmx', 'm3_xmxmx_q3qmq', 'miss_3_xmxmx_00h_miss', 'miss_3_xmxmx_h00_miss', 'miss_m3_xmxmx_00h_miss', 'miss_m3_xmxmx_h00_miss', 't_hhh']
+
+miss_m3_mxxmx_0h0_miss inv_0qq
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_0qq', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_m3_mxxmx_0h0_miss inv_q0q
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_q0q', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_m3_mxxmx_0h0_miss inv_qq0
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_qq0', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_m3_mxxmx_0h0_miss inv_000
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'inv_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss']
+
+miss_m3_mxxmx_0h0_miss t_h00
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss', 't_h00']
+
+miss_m3_mxxmx_0h0_miss t_0h0
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss', 't_0h0']
+
+miss_m3_mxxmx_0h0_miss t_00h
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss', 't_00h']
+
+miss_m3_mxxmx_0h0_miss t_hhh
+['3_2_HmxHxmx_tmtt', '3_2_mHmxtxmx_HmHH', '3_2_tmxtxmx_HmHH', '3_hmxxmx', '3_mxhxmx', '3_mxxmx', 'ID_000', 'm3_hmxhxmx_00h', 'm3_m1mxhxmx_mh0h', 'm3_mhmx1xmx_0hh', 'm3_mhmxxmx_mqmqq', 'm3_mxxmx', 'm3_mxxmx_mqq3q', 'miss_3_mxxmx_0h0_miss', 'miss_3_mxxmx_h00_miss', 'miss_m3_mxxmx_0h0_miss', 'miss_m3_mxxmx_h00_miss', 't_hhh']
+
+miss_m3_mxmxx_0h0_miss inv_0qq
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_0qq', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_m3_mxmxx_0h0_miss inv_q0q
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_q0q', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
+miss_m3_mxmxx_0h0_miss inv_qq0
+['3_2_Hmxtmxx_ttmt', '3_2_tmx2tmxx_HHmH', '3_2_tmxHmxx_HHmH', '3_hmxhmxx', '3_mxhmxx', '3_mxmxx', 'ID_000', 'inv_qq0', 'm3_1mxhmxx_h0h', 'm3_hmxmhmxx_hmh0', 'm3_hmxmxx_h00', 'm3_mxmhmxx_qmqmq', 'm3_mxmxx', 'm3_mxmxx_3qmqq', 'miss_3_mxmxx_00h_miss', 'miss_3_mxmxx_0h0_miss', 'miss_m3_mxmxx_00h_miss', 'miss_m3_mxmxx_0h0_miss']
+
