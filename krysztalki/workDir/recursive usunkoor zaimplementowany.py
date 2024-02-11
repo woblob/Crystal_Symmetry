@@ -1,10 +1,7 @@
 import numpy as np
+
 import cifParsing as cPrs
 import matrices_new as mat
-from anytree import NodeMixin
-
-# from itertools import combinations as combinations
-# from bisect import bisect_right
 
 
 def check_symmetries_in_cell(cell, matrices=mat.all_matrices):

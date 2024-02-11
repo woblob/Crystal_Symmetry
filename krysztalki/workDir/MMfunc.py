@@ -1,11 +1,7 @@
-import numpy as np
-
-# from itertools import combinations as itertools_combinations
 from Matrixes import *
 from collections import defaultdict
 import matrices_new as mat
 import matrices_with_translation_new as mat_t
-import numpy as np
 
 
 def translate_point_to_index(cell, mapper):
@@ -75,7 +71,7 @@ def full_transform(cell, lattice_vectors):
     # all_possible_values_in_cell = np.unique(matrices_with_translations)
     # show_unevenness(all_possible_values_in_cell)
 
-    # real_cell = cell @ lattice_vectors
+    real_cell = cell @ lattice_vectors
     real_cell = np.around(real_cell, 6)
     point_to_index = {p.tostring(): index for index, p in enumerate(real_cell, 1)}
     translator_from_point_to_index = defaultdict(lambda: -1, point_to_index)
