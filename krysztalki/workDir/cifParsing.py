@@ -14,14 +14,19 @@ def get_super_cell(file_name, size):
     lattice_vectors = np.around(file.lattice_vectors, 10)
 
     full_cell, output_atomic_numbers = all_eq_points(file, size)
-    compact_cell = full_cell / (size/2) - 1
+    compact_cell = full_cell / (size / 2) - 1
     output_cell = np.around(compact_cell, 10)
     _handle_negative_zeroes(output_cell)
 
     output_cell_indexes = np.arange(len(output_cell))
 
-    return output_cell, output_atomic_numbers, output_cell_indexes, \
-        lattice_vectors, base_type
+    return (
+        output_cell,
+        output_atomic_numbers,
+        output_cell_indexes,
+        lattice_vectors,
+        base_type,
+    )
 
 
 def getfile(file_name):
@@ -53,9 +58,9 @@ def miller_or_weber(cell_info):
     # (3D for Parallelepiped or '4'D for hexagonal).
     # All numbers between [143-194] are for hexagonal groups.
     # """
-    international_number = cell_info.symmetry()['international_number']
+    international_number = cell_info.symmetry()["international_number"]
     if 194 >= international_number >= 143:
-        return "w"    # "hP, hR"
+        return "w"  # "hP, hR"
     return "m"  # "rest"
 
 
@@ -66,8 +71,10 @@ def all_eq_points(file, size):
     # """
     reduced_cell = file.supercell(size, size, size).itersorted()
     whole_cell = np.array(
-        [np.append(point.coords_fractional, point.atomic_number)
-         for point in reduced_cell]
+        [
+            np.append(point.coords_fractional, point.atomic_number)
+            for point in reduced_cell
+        ]
     )
 
     for i in range(3):
@@ -87,5 +94,5 @@ def _handle_negative_zeroes(cell):
 
 
 if __name__ == "__main__":
-    args = get_super_cell('cif files/ZnS-Sfaleryt.cif', size=2)
+    args = get_super_cell("cif files/ZnS-Sfaleryt.cif", size=2)
     print(args)
