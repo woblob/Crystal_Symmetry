@@ -1,22 +1,25 @@
-import numpy as np
-import matrices_new as mat
-import cifParsing as cPrs
-from MMfunc import full_transform, reduce_cell
-from itertools import combinations, chain
+from itertools import combinations
 from time import time
-from collections import defaultdict
-import matrices_with_translation_new as mat_t
 
-SIZE, VACANCIES = 2, 2 # (s=4,v=2) => 9 sec !
+import numpy as np
+
+import cifParsing as cPrs
+import Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_new as mat
+import \
+    Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_with_translation_new as mat_t
+from MMfunc import full_transform
+
+SIZE, VACANCIES = 2, 2  # (s=4,v=2) => 9 sec !
 
 # filename = 'cif files/1001686.cif'
 # filename = 'cif files/1000003.cif'
 # filename = 'cif files/ZnS-Sfaleryt.cif'
-filename = 'cif files/1007035.cif'
+filename = "cif files/1007035.cif"
 
 start = time()
-supercell, supercell_labels, supercell_indexes, lattice_vectors, _ = \
+supercell, supercell_labels, supercell_indexes, lattice_vectors, _ = (
     cPrs.get_super_cell(filename, size=SIZE)
+)
 
 rotcell, rotcell2, slidecell = full_transform(supercell, lattice_vectors)
 
@@ -30,6 +33,7 @@ all_existing_symmetries = trans_id_mask[np.all(slidecell != -1, axis=1)]
 
 
 slidecell_transposed = slidecell.T
+all_transformed_points_to_indexes_transposed = all_transformed_points_to_indexes.T
 
 count, count_empty = 0, 0
 output = []
@@ -38,9 +42,10 @@ for points_to_remove in combinations(supercell_indexes, VACANCIES):
     vacancies_projection = tuple(set() for _ in range(len(all_existing_symmetries)))
     for vacancies in points_to_remove:
         for i, p in enumerate(
-                all_transformed_points_to_indexes_transposed[
-                    vacancies, all_existing_symmetries
-                ]):
+            all_transformed_points_to_indexes_transposed[
+                vacancies, all_existing_symmetries
+            ]
+        ):
             vacancies_projection[i].add(p)
 
     arr = all_transformed_points_to_indexes
@@ -52,7 +57,9 @@ for points_to_remove in combinations(supercell_indexes, VACANCIES):
                 allowed_sym_per_cell[i] = False
                 break
 
-    allowed_syms_as_labels = mat.labels[all_existing_symmetries[allowed_sym_per_cell]].tolist()
+    allowed_syms_as_labels = mat.labels[
+        all_existing_symmetries[allowed_sym_per_cell]
+    ].tolist()
     z = (points_to_remove, allowed_syms_as_labels)
     if z[1]:
         output.append(z)
@@ -61,7 +68,7 @@ for points_to_remove in combinations(supercell_indexes, VACANCIES):
         count_empty += 1
 
 print(time() - start)
-import pickle
+
 # with open("output_dzis.txt", "wb") as f:
 #     pickle.dump(output, f)
 with open("output_dzis.txt", "w") as f:

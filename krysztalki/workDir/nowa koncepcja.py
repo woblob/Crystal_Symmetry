@@ -1,20 +1,23 @@
-import numpy as np
-import matrices_new as mat
-import cifParsing as cPrs
-from MMfunc import full_transform, reduce_cell
-from itertools import combinations, chain
+import datetime
+from itertools import combinations
 from time import time
 
-size_num, vacs_num = 3, 2  # (s=4,v=2) => 9 sec!
+import numpy as np
+
+import cifParsing as cPrs
+import Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_new as mat
+from MMfunc import full_transform, reduce_cell
+
+size_num, vacs_num = 1, 2  # (s=4,v=2) => 9 sec!
 
 start = time()
-SUPERCELL, SUPERCELL_labels, SUPERCELL_indexes, _, _ = cPrs.get_super_cell(
-    "cif files/1001686.cif", size=size_num
+SUPERCELL, SUPERCELL_labels, SUPERCELL_indexes, lattice_vectors, _ = (
+    cPrs.get_super_cell("cif files/1001686.cif", size=size_num)
 )
 # cPrs.get_super_cell('cif files/ZnS-Sfaleryt.cif', size=size_num)
 
 all_transformed_points_to_indexes, all_transformed_points_to_indexes_backwards = (
-    full_transform(SUPERCELL)
+    full_transform(SUPERCELL, lattice_vectors)
 )
 
 trans_id_mask = np.arange(len(mat.matrices))
@@ -67,11 +70,10 @@ for points_to_remove in combinations(SUPERCELL_indexes, vacs_num):
         count += 1
 
 print(time() - start)
-import pickle
 
 # with open("output_dzis.txt", "wb") as f:
 #     pickle.dump(output, f)
-with open("output_dzis.txt", "w") as f:
+with open(f"output_{datetime.datetime.now()}.txt", "w") as f:
     f.write(str(count) + "\n")
     for el in output:
         f.write(str(el) + "\n")
@@ -81,27 +83,3 @@ print("lol")
 # # np.ix_(list_of_lists)
 # # dodac inversy 3 i 4 albo do zestawu macierzy albo na bierząco
 #
-# from anytree import NodeMixin
-#
-#
-# class Cell(NodeMixin):
-#     def __init__(self, vacancies, last_index, parent=None, children=None):
-#         super().__init__()
-#         self.vacancies = vacancies
-#         self.last_index = last_index
-#         self.parent = parent
-#         vacancies_projection = \
-#             tuple(set() for _ in range(len(mask_all_syms_normal))) # self?
-#         if parent:
-#             self.all_prev_indices = parent.all_prev_indices + [self.last_index]
-#         else:
-#             self.all_prev_indices = [self.last_index]
-#         if children:
-#             self.children = children
-#
-#     def make_tree(self, depth):
-#         for i in range(self.last_index + 1, len(SUPERCELL)):
-#             pass
-#
-#
-# # np.isin

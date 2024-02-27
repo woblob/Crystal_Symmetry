@@ -1,8 +1,14 @@
-from crystals import Crystal
+import pathlib
+
 import numpy as np
+from crystals import Crystal
 
 
-def get_super_cell(file_name, size):
+def get_super_cell(
+    file_name: str, size: int
+) -> tuple[
+    np.ndarray, np.ndarray, np.ndarray, tuple[np.ndarray, np.ndarray, np.ndarray], str
+]:
     # """
     # Get cell from cod/cif/else.
     # Expand it to super_cell size.
@@ -18,7 +24,7 @@ def get_super_cell(file_name, size):
     output_cell = np.around(compact_cell, 10)
     _handle_negative_zeroes(output_cell)
 
-    output_cell_indexes = np.arange(len(output_cell))
+    output_cell_indexes = np.arange(output_cell.size)
 
     return (
         output_cell,
@@ -29,7 +35,7 @@ def get_super_cell(file_name, size):
     )
 
 
-def getfile(file_name):
+def getfile(file_name: str) -> Crystal:
     """
     open cif file from local repository
     or
@@ -43,19 +49,19 @@ def getfile(file_name):
         file_name = 1000041 # NaCl Fm-3m
         file_name = 'path/to/file.cif'
     """
-    if isinstance(file_name, int):
-        func = Crystal.from_cod
-    elif isinstance(file_name, str):
-        func = Crystal.from_cif
-    else:
-        raise TypeError("Wrong file type")
-    return func(file_name)
+    try:
+        value = int(file_name)
+        return Crystal.from_cod(value)
+    except ValueError:
+        pass
+    full_path = pathlib.Path(file_name).absolute()
+    return Crystal.from_cif(full_path)
 
 
 def miller_or_weber(cell_info):
     # """
     # Determine which coordinates to choose:
-    # (3D for Parallelepiped or '4'D for hexagonal).
+    # 3D for Parallelepiped or '4'D for hexagonal.
     # All numbers between [143-194] are for hexagonal groups.
     # """
     international_number = cell_info.symmetry()["international_number"]
@@ -64,7 +70,7 @@ def miller_or_weber(cell_info):
     return "m"  # "rest"
 
 
-def all_eq_points(file, size):
+def all_eq_points(file: Crystal, size: int) -> tuple[np.ndarray, np.ndarray]:
     # """
     # building missing outer walls of a cell
     # with labels
@@ -87,7 +93,7 @@ def all_eq_points(file, size):
     return sorted_cell[:, :-1], sorted_cell[:, -1]
 
 
-def _handle_negative_zeroes(cell):
+def _handle_negative_zeroes(cell: np.ndarray):
     mask = np.where(cell == 0)
     cell[mask] += 1
     cell[mask] -= 1

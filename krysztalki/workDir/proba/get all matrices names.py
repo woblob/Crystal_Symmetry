@@ -1,6 +1,7 @@
 import re
+
 lst = []
-with open("../matrices_new_extended.py") as file:
+with open("../Matrix/matrices_new_extended.py") as file:
     for line in file:
         found = re.findall("_matrix_.+\s=", line)
         if found:

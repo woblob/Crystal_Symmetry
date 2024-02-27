@@ -1,7 +1,8 @@
 import numpy as np
+from anytree import NodeMixin
 
 import cifParsing as cPrs
-import matrices_new as mat
+from Crystal_Symmetry.krysztalki.workDir.Matrix import matrices_new as mat
 
 
 def check_symmetries_in_cell(cell, matrices=mat.all_matrices):
@@ -10,7 +11,7 @@ def check_symmetries_in_cell(cell, matrices=mat.all_matrices):
     """
     making all transformations of a cell
     bringing back the order inside each transformed cell
-    checking if their are the same cells as original cell
+    checking if there are the same cells as original cell
     """
     transformed_points = cell @ matrices
     transformed_points_sorted = np.array(
@@ -47,7 +48,6 @@ class ReducedCell(NodeMixin):
         self.reduced_cell, self.reduced_cell_indexes = Tree.reduce_cell_by_symmetry2(
             self.cell, self.cell_indexes, self.symmetry_mask_cell
         )
-        self.mock = 0
 
 
 class Tree:
@@ -56,12 +56,11 @@ class Tree:
     # atoms_labels = []
     how_many_times_matrices_have_to_be_applied = []
 
-    def __init__(self, file, size, vacancy_amount=None, vacancy_index=None):
+    def __init__(self, file: str, size: int, vacancy_amount: int = 0):
         self.file = file
         self.size = size
         self.vacancy_amount = vacancy_amount
-        self.vacancies_indexes = vacancy_index
-        self.cell, self.atoms_labels, self.base_type = cPrs.get_super_cell3(
+        self.cell, self.atoms_labels, _, _, self.base_type = cPrs.get_super_cell(
             self.file, self.size
         )
         self.cell_indexes = np.arange(self.cell.shape[0])
@@ -69,11 +68,11 @@ class Tree:
             self.cell, self.cell_indexes, self.atoms_labels, None
         )
 
-    def run(self, depth):
+    def run(self, depth: int):
         return Tree.make_tree(self.unchanged_cell_aka_root, depth)
 
     @staticmethod
-    def make_tree(parent, depth):
+    def make_tree(parent: ReducedCell, depth: int):
         if depth:
             for vacancy in parent.reduced_cell:
                 cell = Tree.make_cell_with_vacancies(parent, vacancy)
@@ -138,21 +137,23 @@ class Tree:
         reduced_cell, reduced_cell_indexes = zip(
             *((point, index) for point, index in cell_dict.items() if index)
         )
-        reduced_cell, reduced_cell_indexes = np.array(reduced_cell), np.array(
-            reduced_cell_indexes
-        )
+        reduced_cell = np.array(reduced_cell)
+        reduced_cell_indexes = np.array(reduced_cell_indexes)
         reduced_cell_indexes -= 1
+
         return reduced_cell, reduced_cell_indexes
 
     @staticmethod
-    def _compare_points(p1, p2):
+    def _compare_points(p1: np.ndarray, p2: np.ndarray) -> bool:
         for a, b in zip(p1, p2):
             if a != b:
                 return False
         return True
 
     @staticmethod
-    def _get_all_transformed_points(matrix, base_point):
+    def _get_all_transformed_points(
+        matrix: np.ndarray, base_point: np.ndarray
+    ) -> np.ndarray:
         transformed_point = matrix @ base_point
         while not Tree._compare_points(transformed_point, base_point):
             yield transformed_point

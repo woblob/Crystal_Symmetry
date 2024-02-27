@@ -1,5 +1,4 @@
 import numpy as np
-import matrices_new as mat
 
 # h1 = 1 / 2
 # q1 = 1 / 4
@@ -272,7 +271,7 @@ _ab_110, _ac_101, _bc_011,
 if __name__ == "__main__":
     import cifParsing as cPrs
 
-    filename = "cif files/9002506.cif"
+    filename = "../cif files/9002506.cif"
     cell, _, _, _, _ = cPrs.get_super_cell(filename, size=1)
     cell = np.column_stack((cell, np.ones(len(cell))))
     mat = np.array([[1, 1, 0, 0], [-1, 0, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]])
