@@ -71,7 +71,9 @@ def _put_points_back_to_cell(open_transformations):
     open_transformations[mask_lower] += 2
 
 
-def get_translations(cells_after_transformation, real_translations=all_translations):
+def get_translations(
+    cells_after_transformation, real_translations=all_translations
+) -> np.ndarray[float]:
     _b_100 = cells_after_transformation[1] + real_translations[1]
     _c_100 = cells_after_transformation[1] + real_translations[2]
     _n_100 = cells_after_transformation[1] + real_translations[4]

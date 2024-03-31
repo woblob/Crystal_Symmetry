@@ -24,7 +24,7 @@ def get_super_cell(
     output_cell = np.around(compact_cell, 10)
     _handle_negative_zeroes(output_cell)
 
-    output_cell_indexes = np.arange(output_cell.size)
+    output_cell_indexes = np.arange(len(output_cell))
 
     return (
         output_cell,

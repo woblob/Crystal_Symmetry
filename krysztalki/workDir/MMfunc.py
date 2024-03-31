@@ -11,7 +11,7 @@ def translate_point_to_index(cell, mapper):
     all_trans, all_points = cell_reduced.shape
     for t in range(all_trans):
         for p in range(all_points):
-            cell_reduced[t, p] = mapper[cell[t, p].tostring()]  # - 1
+            cell_reduced[t, p] = mapper[cell[t, p].tostring()] - 1
     return cell_reduced
 
 
@@ -36,11 +36,18 @@ def make_replacer(vals):
     return unique_replace
 
 
-def full_transform(cell, lattice_vectors):
+def full_transform(cell: np.ndarray[float], lattice_vectors: np.ndarray[float]):
     rotation_cell = cell @ mat.matrices
     backwards_rotation_cell = cell @ mat.matrices_inverse
     matrices_with_translations = mat_t.get_translations(rotation_cell)
 
+    # all_cells = np.concatenate(
+    #     (rotation_cell, backwards_rotation_cell, matrices_with_translations), axis=0
+    # )
+    #
+    # all_real_cells = all_real_cells @ lattice_vectors
+    # all_real_cells = np.around(all_real_cells, 6)
+    #
     rotation_cell = rotation_cell @ lattice_vectors
     backwards_rotation_cell = backwards_rotation_cell @ lattice_vectors
     matrices_with_translations = matrices_with_translations @ lattice_vectors
@@ -49,9 +56,7 @@ def full_transform(cell, lattice_vectors):
     backwards_rotation_cell = np.around(backwards_rotation_cell, 6)
     matrices_with_translations = np.around(matrices_with_translations, 6)
 
-    all_cells = np.array(
-        [rotation_cell, backwards_rotation_cell, matrices_with_translations]
-    )
+    all_cells = [rotation_cell, backwards_rotation_cell, matrices_with_translations]
 
     # all_possible_values_in_cell = np.unique(matrices_with_translations)
     # unique_replace = make_replacer(all_possible_values_in_cell)
