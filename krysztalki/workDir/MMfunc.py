@@ -37,9 +37,26 @@ def make_replacer(vals):
 
 
 def full_transform(cell: np.ndarray[float], lattice_vectors: np.ndarray[float]):
+    """
+    Generate the full transformation of a given cell by applying rotation and translation matrices.
+
+    Args:
+        cell (np.ndarray[float]): The input cell array.
+        lattice_vectors (np.ndarray[float]): The lattice vectors array.
+
+    Returns:
+        list: A list containing the transformed cell arrays after applying rotation, inverse rotation, and translations.
+    """
+
     rotation_cell = cell @ mat.matrices
     backwards_rotation_cell = cell @ mat.matrices_inverse
     matrices_with_translations = mat_t.get_translations(rotation_cell)
+
+    # all_real_cells = np.vstack(
+    #     (rotation_cell, backwards_rotation_cell, matrices_with_translations)
+    # )
+    # all_real_cells = all_real_cells @ lattice_vectors
+    # all_real_cells = np.around(all_real_cells, 6)
 
     # all_cells = np.concatenate(
     #     (rotation_cell, backwards_rotation_cell, matrices_with_translations), axis=0

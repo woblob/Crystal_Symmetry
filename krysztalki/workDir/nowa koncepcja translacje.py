@@ -11,10 +11,10 @@ from MMfunc import full_transform
 
 SIZE, VACANCIES = 2, 2  # (s=4,v=2) => 9 sec !
 
-# filename = 'cif files/1001686.cif'
+filename = "cif files/1001686.cif"
 # filename = 'cif files/1000003.cif'
 # filename = 'cif files/ZnS-Sfaleryt.cif'
-filename = "cif files/1007035.cif"
+# filename = "cif files/1007035.cif"
 
 start = time()
 supercell, supercell_labels, supercell_indexes, lattice_vectors, _ = (
@@ -31,6 +31,7 @@ all_existing_symmetries = trans_id_mask[np.all(slidecell != -1, axis=1)]
 #                                all_transformed_points_to_indexes_backwards,
 #                                all_existing_symmetries)
 
+all_transformed_points_to_indexes = rotcell
 
 slidecell_transposed = slidecell.T
 all_transformed_points_to_indexes_transposed = all_transformed_points_to_indexes.T
