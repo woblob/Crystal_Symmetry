@@ -10,10 +10,9 @@ class Point:
     def __init__(self, arr: list[np.ndarray[(1, 4), np.dtype[float]]]):
         self.array = np.array(arr)
 
-    @classmethod
-    def calculate(cls, matrix: np.ndarray[(4, 4), np.dtype[float]]):
-        calculated_point = (matrix @ cls.base_point.T).T
-        return cls(calculated_point)
+    def is_got_by(self, matrix: np.ndarray[(4, 4), np.dtype[float]]):
+        calculated = Point((matrix @ Point.base_point.T).T)
+        return calculated == self
 
     def __eq__(self, other: Point):
         equality = sp.simplify(other.array - self.array)
