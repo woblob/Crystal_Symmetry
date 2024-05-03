@@ -29,8 +29,7 @@ syms_hex = [
 ]
 
 
-text = \
-'''import matrices_new_extended as mne
+text = """import matrices_new_extended as mne
 import numpy as np
 import sympy as sp
 from equality_check import Point
@@ -39,24 +38,18 @@ x, y, z = sp.symbols("x y z")
 Point.unchanged = np.array([ x, y, z, 1])
 
 
-class Test_Axis_'''
+class Test_Axis_"""
 
-inner = '''
+inner = """
     def test_matrix_{0}(self):
-        expected = Point([ x, y, z, 1])
-        calculated = Point.calculate(mne._matrix_{0})
-        assert calculated == expected
-'''
+        assert Point([ x, y, z, 1]).is_got_by(mne._matrix_{0})
+"""
 
 
-inner_test = \
-    '''
+inner_test = """
     def test{0}(self):
-        expected = Point([ x, y, z, 1])
-        calculated = Point.calculate(mne.{0})
-        assert calculated == expected
-        #{1}'''
-
+        assert Point([ x, y, z, 1]).is_got_by(mne.{0})
+        #{1}"""
 
 
 for sym in syms_hex:
@@ -64,7 +57,7 @@ for sym in syms_hex:
     new_file = f"test_matrices_like_{name}.py"
     # proba = f"test.py"
     with open(new_file, "w") as write_file:
-        write_file.write(text+name+":\n")
+        write_file.write(text + name + ":\n")
         write_file.write(inner.format(name))
         with open("../matrices_new_extended_hexx.py") as read_file:
             for line in read_file:
