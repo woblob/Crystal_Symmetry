@@ -1,7 +1,6 @@
 import numpy as np
 
-from Crystal_Symmetry.krysztalki.workDir.Matrix.eigen.eigenvectors import \
-    resize_vectors
+from Crystal_Symmetry.krysztalki.workDir.Matrix.eigen.eigenvectors import resize_vectors
 
 
 class TestResizeVectors:
