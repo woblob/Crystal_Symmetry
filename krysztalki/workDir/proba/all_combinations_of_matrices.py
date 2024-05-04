@@ -1,6 +1,12 @@
-from matrices_new_extended import all_matrices, _matrix_ID_000
 from itertools import combinations
+
 import numpy as np
+
+from Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_new_extended import (
+    _matrix_ID_000,
+    all_matrices,
+)
+
 # from names_of_matrices import names
 names = [
     "ID_000",
@@ -391,6 +397,7 @@ class Matrix:
 #     matrix[mask_zero] -= 1
 #
 
+
 def M(M1, M2):
     M = M1 @ M2
     mask = M[:-1, -1] < 0
@@ -402,12 +409,14 @@ def M(M1, M2):
     M[mask] += 1
     return M
 
+
 def transpose(mat):
     new_mat = mat.copy()
     rot = new_mat[:-1, :-1]
     rot = rot.T
     new_mat[:-1, :-1] = rot
     return new_mat
+
 
 from time import time
 
@@ -417,13 +426,13 @@ lol = []
 
 for M1, M2 in combinations(range(1, len(all_matrices)), 2):
     start = time()
-    group_str = {all_hashed_M[_matrix_ID_000.tostring()],
-                 all_hashed_M[all_matrices[M1].tostring()],
-                 all_hashed_M[all_matrices[M2].tostring()]}
+    group_str = {
+        all_hashed_M[_matrix_ID_000.tostring()],
+        all_hashed_M[all_matrices[M1].tostring()],
+        all_hashed_M[all_matrices[M2].tostring()],
+    }
     group_str_noname = set()
-    group_lst = [_matrix_ID_000,
-                 all_matrices[M1],
-                 all_matrices[M2]]
+    group_lst = [_matrix_ID_000, all_matrices[M1], all_matrices[M2]]
     calculated = set()
     i = 1
     while i < len(group_str):
@@ -485,14 +494,21 @@ for M1, M2 in combinations(range(1, len(all_matrices)), 2):
     val2 = all_hashed_M.get(str_temp2)
     with open(f"output_of_group_combinator/{val}, {val2}.txt", "w") as f:
         elapsed = time() - start
-        string = "; ".join((str((M1, M2)), str((val, val2)), str(group_str), f"time elapsed = {elapsed}"))
+        string = "; ".join(
+            (
+                str((M1, M2)),
+                str((val, val2)),
+                str(group_str),
+                f"time elapsed = {elapsed}",
+            )
+        )
         f.write(string)
         print(f"{val}, {val2} : time {elapsed}")
 
 
 print()
 pass
-print(( group_lst, group_str))
+print((group_lst, group_str))
 #
 #
 # M6 = np.array([[ 1, 0, 0, 1],

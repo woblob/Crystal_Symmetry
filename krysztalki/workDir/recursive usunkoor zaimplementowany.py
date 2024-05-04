@@ -1,11 +1,14 @@
 import numpy as np
-from anytree import NodeMixin
+from anytree import Node, NodeMixin
 
 import cifParsing as cPrs
-from Crystal_Symmetry.krysztalki.workDir.Matrix import matrices_new as mat
+from Crystal_Symmetry.krysztalki.workDir.Matrix import \
+    matrices_new_extended as mat
 
 
-def check_symmetries_in_cell(cell, matrices=mat.all_matrices):
+def check_symmetries_in_cell(
+    cell: np.ndarray[float], matrices: np.ndarray[float] = mat.all_matrices
+) -> np.ndarray[bool]:
     # def func(cell: numpy2d_array(float),
     # matrices: numpy3d_array(int)) -> mask numpy1d_array(bool):
     """
@@ -50,6 +53,56 @@ class ReducedCell(NodeMixin):
         )
 
 
+class ReducedCell2(Node):
+    file = None
+    full_cell = np.array([])
+    base_type = ""
+    size = 0
+    vacancy_amount = 0
+    vacancies = np.array([])
+
+    symmetry_mask_full_cell = []
+    symmetry_labels_full_cell = []
+    atoms_labels = []
+    matrixes_full_cell = []
+
+    @classmethod
+    def set_parameters(cls, file, /, size, vacs):
+        cls.file = file
+        cls.size = size
+        cls.vacancy_amount = vacs
+
+    @classmethod
+    def initialize_parameters(cls):
+        cls.full_cell, cls.base_type = CPRS.getSCell2(cls.file, cls.size)
+        cls.full_cell_indexes = list(range(len(cls.full_cell)))
+        cls.symmetry_mask_full_cell = check_syms_in_cell(cls.full_cell)
+        cls.symmetry_labels_full_cell = output_symmetries(cls.symmetry_mask_full_cell)
+
+    def __init__(self, parent, vacancy_index):
+        super().__init__(parent)
+        self.cell, vacs = makeCellWithVacancies(vacancy_index)
+        self.vacancies = np.append(parent.vacancies, vacs, axis=0)
+        self.parent_symmetries = parent.instance_symmetries
+        self.instance_symmetries = []
+        self.matrixes = []
+
+    def __repr__(self):
+        return f"""{self.cell=}\n{self.parent=}\n{self.children=}\n{ReducedCell.full_cell=}\n{ReducedCell.size=}\n"""
+
+    @classmethod
+    def __makeCellWithVacancies(cls, index):
+        indexes = set(index)
+        cellVac = []
+        Vac = []
+        for nr, p in enumerate(cls.full_cell):
+            if nr not in indexes:
+                cellVac.append(p)
+            else:
+                Vac.append(p)
+        return np.array(cellVac), np.array(Vac)
+
+
 class Tree:
     # symmetry_mask_full_cell = []
     # symmetry_labels_full_cell = []
@@ -65,7 +118,7 @@ class Tree:
         )
         self.cell_indexes = np.arange(self.cell.shape[0])
         self.unchanged_cell_aka_root = ReducedCell(
-            self.cell, self.cell_indexes, self.atoms_labels, None
+            self.cell, self.cell_indexes, self.atoms_labels
         )
 
     def run(self, depth: int):
@@ -88,7 +141,6 @@ class Tree:
         mask_for_matrices = np.array(
             [np.full((3, 3), val) for val in mask_present_symmetries]
         )
-
         present_matrices = (
             np.ma.masked_where(mask_for_matrices, mat.all_matrices)
             .compressed()
@@ -143,12 +195,12 @@ class Tree:
 
         return reduced_cell, reduced_cell_indexes
 
-    @staticmethod
-    def _compare_points(p1: np.ndarray, p2: np.ndarray) -> bool:
-        for a, b in zip(p1, p2):
-            if a != b:
-                return False
-        return True
+    # @staticmethod
+    # def _compare_points(p1: np.ndarray, p2: np.ndarray) -> bool:
+    #     for a, b in zip(p1, p2):
+    #         if a != b:
+    #             return False
+    #     return True
 
     @staticmethod
     def _get_all_transformed_points(
@@ -191,7 +243,8 @@ def output_symmetries(symmetries):
 # get_matrices
 # check_all_cells
 
-my_tree = Tree("cif files/ZnS-Sfaleryt.cif", size=2, vacancy_amount=2)
+if __name__ == "__main__":
+    my_tree = Tree("cif files/ZnS-Sfaleryt.cif", size=2, vacancy_amount=2)
 
 
 # root = ReducedCell("root")
