@@ -1,8 +1,7 @@
 from itertools import combinations
 
 import numpy as np
-
-from Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_new_extended import (
+from Matrix.matrices_new_extended import (
     _matrix_ID_000,
     all_matrices,
 )

@@ -1,9 +1,8 @@
 from collections import defaultdict
 
-import Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_new as mat
-import \
-    Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_with_translation_new as mat_t
-from Crystal_Symmetry.krysztalki.workDir.Matrix.Matrixes import *
+import workDir.Matrix.matrices_new as mat
+import workDir.Matrix.matrices_with_translation_new as mat_t
+from workDir.Matrix.Matrixes import *
 
 
 def translate_point_to_index(cell, mapper):

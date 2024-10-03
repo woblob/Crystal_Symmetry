@@ -1,5 +1,5 @@
 # missing matrices
-from Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_new_extended import (
+from Matrix.matrices_new_extended import (
     _translation_00h,
     _translation_0h0,
     _translation_0hh,

@@ -2,6 +2,7 @@ import pathlib
 
 import numpy as np
 from crystals import Crystal
+from types import UnionType
 
 
 def get_super_cell(
@@ -9,12 +10,12 @@ def get_super_cell(
 ) -> tuple[
     np.ndarray, np.ndarray, np.ndarray, tuple[np.ndarray, np.ndarray, np.ndarray], str
 ]:
-    # """
-    # Get cell from cod/cif/else.
-    # Expand it to super_cell size.
-    # Place points between -1 and less than 1
-    # Add missing walls of a cell.
-    # """
+    """
+    Get cell from cod/cif/else.
+    Expand it to super_cell size.
+    Place points between -1 and less than 1
+    Add missing walls of a cell.
+    """
     file = getfile(file_name)
     base_type = miller_or_weber(file)
     lattice_vectors = np.around(file.lattice_vectors, 10)
@@ -35,7 +36,7 @@ def get_super_cell(
     )
 
 
-def getfile(file_name: str) -> Crystal:
+def getfile(file_name: str | int) -> Crystal:
     """
     open cif file from local repository
     or
@@ -71,10 +72,9 @@ def miller_or_weber(cell_info):
 
 
 def all_eq_points(file: Crystal, size: int) -> tuple[np.ndarray, np.ndarray]:
-    # """
-    # building missing outer walls of a cell
-    # with labels
-    # """
+    """
+    building missing outer walls of a cell with labels
+    """
     reduced_cell = file.supercell(size, size, size).itersorted()
     whole_cell = np.array(
         [

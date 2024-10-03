@@ -4,15 +4,16 @@ from time import time
 
 import numpy as np
 
+import Matrix.matrices_new as mat
 import cifParsing as cPrs
-import Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_new as mat
 from MMfunc import full_transform, reduce_cell
 
-size_num, vacs_num = 3, 2  # (s=4,v=2) => 9 sec!
+size_num, vacs_num = 3, 2  # (s=4,v=2) => 9 sec! # 3,2 => 18 na starym lapku
 
 start = time()
 SUPERCELL, SUPERCELL_labels, SUPERCELL_indexes, lattice_vectors, _ = (
-    cPrs.get_super_cell("cif files/1001686.cif", size=size_num)
+    # cPrs.get_super_cell("cif files/1001686.cif", size=size_num)
+    cPrs.get_super_cell(1001686, size=size_num)
 )
 # cPrs.get_super_cell('cif files/ZnS-Sfaleryt.cif', size=size_num)
 
@@ -74,15 +75,10 @@ for points_to_remove in combinations(SUPERCELL_indexes, vacs_num):
 
 print(time() - start)
 
-# with open("output_dzis.txt", "wb") as f:
-#     pickle.dump(output, f)
-with open(f"outputs/output_{datetime.datetime.now()}.txt", "w") as f:
-    f.write(str(count) + "\n")
+with open(f"outputs/output_{datetime.datetime.now().strftime("%y_%m_%d_%H_%M_%S")}.txt", "w") as f:
+    f.write(f"amount of empty structures: {count}\n")
     for el in output:
         f.write(str(el) + "\n")
 
 
-print("lol")
-# # np.ix_(list_of_lists)
-# # dodac inversy 3 i 4 albo do zestawu macierzy albo na bierząco
-#
+print("zrobione")

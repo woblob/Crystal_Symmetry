@@ -3,10 +3,9 @@ from time import time
 
 import numpy as np
 
+import Matrix.matrices_new as mat
+import Matrix.matrices_with_translation_new as mat_t
 import cifParsing as cPrs
-import Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_new as mat
-import \
-    Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_with_translation_new as mat_t
 from MMfunc import full_transform
 
 SIZE, VACANCIES = 2, 2  # (s=4,v=2) => 9 sec !

@@ -3,7 +3,7 @@ from itertools import combinations as combinations
 import numpy as np
 
 import cifParsing as CPRS
-import Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_new as MAT
+import Matrix.matrices_new as MAT
 
 # CPRS = reload(CPRS)
 

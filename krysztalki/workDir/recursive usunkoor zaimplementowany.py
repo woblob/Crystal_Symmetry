@@ -2,8 +2,7 @@ import numpy as np
 from anytree import Node, NodeMixin
 
 import cifParsing as cPrs
-from Crystal_Symmetry.krysztalki.workDir.Matrix import \
-    matrices_new_extended as mat
+from Matrix import matrices_new_extended as mat
 
 
 def check_symmetries_in_cell(

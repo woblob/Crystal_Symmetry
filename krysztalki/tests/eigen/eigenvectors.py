@@ -1,6 +1,6 @@
 import numpy as np
 
-from Crystal_Symmetry.krysztalki.workDir.Matrix.eigen.eigenvectors import resize_vectors
+from Matrix.eigen.eigenvectors import resize_vectors
 
 
 class TestResizeVectors:
@@ -8,7 +8,6 @@ class TestResizeVectors:
         vectors = np.array([[1, 2, 3], [4, 5, 6]])
         result = resize_vectors(vectors)
 
-        print("hello")
         assert result.shape == vectors.shape
 
     def test_empty_array(self):
