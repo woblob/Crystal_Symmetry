@@ -3,8 +3,8 @@
 import numpy as np
 import sympy as sp
 
-import Crystal_Symmetry.krysztalki.workDir.Matrix.matrices_new_extended as mne
-from Crystal_Symmetry.krysztalki.workDir.equality_check import Point
+import Matrix.matrices_new_extended as mne
+from equality_check import Point
 
 x, y, z = sp.symbols("x y z")
 Point.base_point = np.array([x, y, z, 1])

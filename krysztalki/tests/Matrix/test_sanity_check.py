@@ -1,7 +1,7 @@
 import numpy as np
 import sympy as sp
 
-from Crystal_Symmetry.krysztalki.workDir.equality_check import Point
+from equality_check import Point
 
 x, y, z = sp.symbols("x y z")
 Point.base_point = np.array([x, y, z, 1])
