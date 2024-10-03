@@ -1,6 +1,7 @@
 import numpy as np
 from bisect import bisect_right as BSR, bisect_left as BSL
 from itertools import combinations as itrtls_combinations
+import datetime
 
 
 def generateSymetryBase():
@@ -227,10 +228,20 @@ def checkAllCells(scell, base, sumVac):
     return mylist
 
 
-def saveOutput(OUTPUT, filename="output of symmetries.txt"):
+def saveOutput(OUTPUT, filename="", count=0):
     """
     write txt file with all symmetries for all possible combinations of vacancies in cell
     """
-    with open(filename, "w") as f:
-        for el in sorted(OUTPUT, key=len, reverse=True):
-            f.write(str(el) + "\n")
+    newFilename = ""
+    if(filename == ""):
+        newFilename = f'outputs/output_{datetime.datetime.now().strftime("%y_%m_%d_%H_%M_%S")}.csv'
+    else:
+        newFilename = filename
+
+    with open(newFilename, "w") as f:
+        # f.write(f"amount of empty structures;{count}\n")
+        f.write("vacancies indexes;symmetries\n")
+        for record in sorted(OUTPUT, key=lambda x: len(x[1]), reverse=True):
+            f.write(";".join(str(el) for el in record) + "\n")
+
+    print("Saved")
