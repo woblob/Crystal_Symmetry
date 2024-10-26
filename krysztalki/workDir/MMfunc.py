@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+from krysztalki.workDir.cifParsing import MyCell
 import workDir.Matrix.matrices_new as mat
 import workDir.Matrix.matrices_with_translation_new as mat_t
 from workDir.Matrix.Matrixes import *
@@ -35,7 +36,7 @@ def make_replacer(vals):
     return unique_replace
 
 
-def full_transform(cell: np.ndarray[float], lattice_vectors: np.ndarray[float]):
+def full_transform(cell: MyCell):
     """
     Generate the full transformation of a given cell by applying rotation and translation matrices.
 
@@ -47,9 +48,9 @@ def full_transform(cell: np.ndarray[float], lattice_vectors: np.ndarray[float]):
         list: A list containing the transformed cell arrays after applying rotation, inverse rotation, and translations.
     """
 
-    rotation_cell = cell @ mat.matrices
-    backwards_rotation_cell = cell @ mat.matrices_inverse
-    matrices_with_translations = mat_t.get_translations(rotation_cell)
+    rotation_cell = cell.super_cell @ mat.matrices
+    backwards_rotation_cell = cell.super_cell @ mat.matrices_inverse
+    # matrices_with_translations = mat_t.get_translations(rotation_cell)
 
     # all_real_cells = np.vstack(
     #     (rotation_cell, backwards_rotation_cell, matrices_with_translations)
@@ -64,15 +65,15 @@ def full_transform(cell: np.ndarray[float], lattice_vectors: np.ndarray[float]):
     # all_real_cells = all_real_cells @ lattice_vectors
     # all_real_cells = np.around(all_real_cells, 6)
     #
-    rotation_cell = rotation_cell @ lattice_vectors
-    backwards_rotation_cell = backwards_rotation_cell @ lattice_vectors
-    matrices_with_translations = matrices_with_translations @ lattice_vectors
+    rotation_cell = rotation_cell @ cell.lattice_vectors
+    backwards_rotation_cell = backwards_rotation_cell @ cell.lattice_vectors
+    # matrices_with_translations = matrices_with_translations @ cell.lattice_vectors
 
     rotation_cell = np.around(rotation_cell, 6)
     backwards_rotation_cell = np.around(backwards_rotation_cell, 6)
-    matrices_with_translations = np.around(matrices_with_translations, 6)
+    # matrices_with_translations = np.around(matrices_with_translations, 6)
 
-    all_cells = [rotation_cell, backwards_rotation_cell, matrices_with_translations]
+    all_cells = [rotation_cell, backwards_rotation_cell] #, matrices_with_translations]
 
     # all_possible_values_in_cell = np.unique(matrices_with_translations)
     # unique_replace = make_replacer(all_possible_values_in_cell)
@@ -94,7 +95,7 @@ def full_transform(cell: np.ndarray[float], lattice_vectors: np.ndarray[float]):
     # all_possible_values_in_cell = np.unique(matrices_with_translations)
     # show_unevenness(all_possible_values_in_cell)
 
-    real_cell = cell @ lattice_vectors
+    real_cell = cell.super_cell @ cell.lattice_vectors
     real_cell = np.around(real_cell, 6)
     point_to_index = {p.tostring(): index for index, p in enumerate(real_cell, 1)}
     translator_from_point_to_index = defaultdict(lambda: -1, point_to_index)
@@ -107,16 +108,16 @@ def full_transform(cell: np.ndarray[float], lattice_vectors: np.ndarray[float]):
     return lst
 
 
-def reduce_cell(a, b, c):
-    mask = c > 18  # invertible matrices
-    mask2 = c[mask]
-    mask3 = c[~mask]
+def reduce_cell(transformed_points_to_indexes, transformed_points_to_indexes_inverse, mask_syms_normal):
+    mask = mask_syms_normal > 18  # invertible matrices
+    mask2 = mask_syms_normal[mask]
+    mask3 = mask_syms_normal[~mask]
     mask_all_syms_backwards = mask2 - 19
-    trans_above_threshhold = a[mask2]
-    trans_below_threshhold = a[mask3]
-    inv_trans_of_interest = b[mask_all_syms_backwards]
+    trans_above_threshold = transformed_points_to_indexes[mask2]
+    trans_below_threshold = transformed_points_to_indexes[mask3]
+    inv_trans_of_interest = transformed_points_to_indexes_inverse[mask_all_syms_backwards]
 
-    reduced_cell = set(range(len(a[0])))
+    reduced_cell = set(range(len(transformed_points_to_indexes[0])))
 
     # jezeli chcemy usunac wszystkie rownowazne punkty dla np osi 6 to
     # odejmujemy nastepny punkt po transformacji oraz wczesniejszy dla osi
@@ -124,14 +125,14 @@ def reduce_cell(a, b, c):
     # zajmuja sie swoimi rownowaznosciami
 
     # TODO: sprawdzic czy dla osi minus 4,6 ta zaleznosc jest pokryta
-    for trans1, trans2 in zip(trans_above_threshhold, inv_trans_of_interest):
+    for trans1, trans2 in zip(trans_above_threshold, inv_trans_of_interest):
         for i, points in enumerate(zip(trans1, trans2)):
             p1, p2 = points
             if i in reduced_cell and p1 != p2:
                 reduced_cell.discard(p1)
                 reduced_cell.discard(p2)
 
-    for trans in trans_below_threshhold:
+    for trans in trans_below_threshold:
         for i, p in enumerate(trans):
             if i in reduced_cell and i != p:
                 reduced_cell.discard(p)

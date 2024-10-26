@@ -5,27 +5,33 @@ from time import time
 import numpy as np
 
 import workDir.Matrix.matrices_new as mat
-import workDir.cifParsing as cPrs
+from workDir.cifParsing import MyCell
 from workDir.MMfunc import full_transform, reduce_cell
 from SYMfunc import saveOutput
 
-# filename = '1100043.cif'
-filename = 1100043
-supercell_size, vacancies_amount = 2, 2 # Processing time (3, 2): ~5 sec
+filename = "krysztalki/1100043.cif"
+# filename = 1509138
+supercell_size, vacancies_amount = 1, 1  # Processing time (3, 2): ~5 sec
 
 start = time()
-SUPERCELL, SUPERCELL_labels, SUPERCELL_indexes, lattice_vectors, _ = (
-    cPrs.get_super_cell(filename, size=supercell_size)
-)
+
+
+#    myCell.super_cell,
+# myCell.super_cell_atomic_numbers,
+# myCell.super_cell_indexes,
+
+# super_cell, super_cell_atomic_numbers, super_cell_indexes
+# SUPERCELL,   SUPERCELL_labels,      SUPERCELL_indexes,   , _
+myCell = MyCell(filename, size=supercell_size)
 
 (
     all_transformed_points_to_indexes,
     all_transformed_points_to_indexes_inverse,
     all_transformed_points_to_indexes_translations,
-) = full_transform(SUPERCELL, lattice_vectors)
+) = full_transform(myCell)
 
-trans_id_mask = np.arange(len(mat.matrices))
-trans_id_mask_inverted = np.arange(len(mat.matrices_inverse))
+trans_id_mask = np.arange(len(myCell.symmetry_operations))
+trans_id_mask_inverted = np.arange(len(myCell.symmetry_operations_inverse))
 
 mask_all_syms_normal = trans_id_mask[
     np.all(all_transformed_points_to_indexes != -1, axis=1)
@@ -43,7 +49,7 @@ all_transformed_points_to_indexes_transposed = all_transformed_points_to_indexes
 
 count = 0
 output = []
-for points_to_remove in combinations(SUPERCELL_indexes, vacancies_amount):
+for points_to_remove in combinations(myCell.super_cell_indexes, vacancies_amount):
     allowed_sym_per_cell = np.full_like(mask_all_syms_normal, True, dtype=bool)
     vacancies_projection = tuple(set() for _ in range(len(mask_all_syms_normal)))
     for p2r in points_to_remove:
@@ -64,6 +70,7 @@ for points_to_remove in combinations(SUPERCELL_indexes, vacancies_amount):
 
     z = (
         points_to_remove,
+        # [SUPERCELL[index].tolist() for index in points_to_remove],
         mat.labels[mask_all_syms_normal[allowed_sym_per_cell]].tolist(),
     )
     if z[1]:
