@@ -41,7 +41,7 @@ def output_symmetries(Symmerties):
     return np.ma.masked_where(~Symmerties, MAT.all_labels).compressed().tolist()
 
 
-output_symmetries(np.array([False] * 33))
+# output_symmetries(np.array([False] * 33))
 
 
 def get_matrixes(allowed_matrixes):

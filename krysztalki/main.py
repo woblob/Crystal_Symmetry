@@ -1,4 +1,4 @@
-import datetime
+# import datetime
 from itertools import combinations
 from time import time
 
@@ -9,16 +9,11 @@ from workDir.cifParsing import MyCell
 from workDir.MMfunc import full_transform, reduce_cell
 from SYMfunc import saveOutput
 
-filename = "krysztalki/1100043.cif"
+filename = "krysztalki/workDir/cif files/1001686.cif"
 # filename = 1509138
 supercell_size, vacancies_amount = 1, 1  # Processing time (3, 2): ~5 sec
 
 start = time()
-
-
-#    myCell.super_cell,
-# myCell.super_cell_atomic_numbers,
-# myCell.super_cell_indexes,
 
 # super_cell, super_cell_atomic_numbers, super_cell_indexes
 # SUPERCELL,   SUPERCELL_labels,      SUPERCELL_indexes,   , _
@@ -27,11 +22,10 @@ myCell = MyCell(filename, size=supercell_size)
 (
     all_transformed_points_to_indexes,
     all_transformed_points_to_indexes_inverse,
-    all_transformed_points_to_indexes_translations,
 ) = full_transform(myCell)
 
 trans_id_mask = np.arange(len(myCell.symmetry_operations))
-trans_id_mask_inverted = np.arange(len(myCell.symmetry_operations_inverse))
+trans_id_mask_inverted = np.arange(len(myCell.symmetry_operations_inverses))
 
 mask_all_syms_normal = trans_id_mask[
     np.all(all_transformed_points_to_indexes != -1, axis=1)

@@ -53,7 +53,7 @@ SUPERCELL, _ = CPRS.getSCell(1100043, size=10) #'cif files/ZnS-Sfaleryt.cif'
 
 SYM = check_syms_in_cell(SUPERCELL, MAT.all_matrixes)
 matrixes_ZnS = get_matrixes_for_specific_point_group(SYM)
-%time new_cell, new_cell_indexes = reduce_cell_by_symmetry(SUPERCELL, matrixes_ZnS)
+# %time new_cell, new_cell_indexes = reduce_cell_by_symmetry(SUPERCELL, matrixes_ZnS)
 
 
 def sil(num):
