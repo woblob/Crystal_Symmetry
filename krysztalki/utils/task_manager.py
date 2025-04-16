@@ -1,7 +1,16 @@
+"""Task management utilities for crystal analysis.
+
+This module provides functionality for creating, tracking, and updating tasks
+during the crystal analysis process using the Task Master CLI tool.
+"""
+
 import json
 import subprocess
 from pathlib import Path
-from typing import List, Dict, Optional, Any, Union, cast
+from typing import Optional, cast
+
+# Import custom type definitions
+from krysztalki.utils.type_definitions import TaskID, TaskDict, TaskList, FilePath
 
 
 class CrystalTaskManager:
@@ -17,7 +26,7 @@ class CrystalTaskManager:
         title: str,
         description: str,
         priority: str = "medium"
-    ) -> Dict[str, Any]:
+    ) -> TaskDict:
         """Create a new task using Task Master.
 
         Args:
@@ -46,11 +55,11 @@ class CrystalTaskManager:
                 text=True,
                 check=True
             )
-            return cast(Dict[str, Any], json.loads(result.stdout))
+            return cast(TaskDict, json.loads(result.stdout))
         except subprocess.CalledProcessError as error:
             raise RuntimeError(f"Failed to create task: {error.stderr}") from error
 
-    def get_tasks(self, status: Optional[str] = None) -> List[Dict[str, Any]]:
+    def get_tasks(self, status: Optional[str] = None) -> TaskList:
         """Get all tasks, optionally filtered by status.
 
         Args:
@@ -74,11 +83,11 @@ class CrystalTaskManager:
                 text=True,
                 check=True
             )
-            return cast(List[Dict[str, Any]], json.loads(result.stdout))
+            return cast(TaskList, json.loads(result.stdout))
         except subprocess.CalledProcessError as error:
             raise RuntimeError(f"Failed to get tasks: {error.stderr}") from error
 
-    def mark_task_done(self, task_id: Union[str, int]) -> None:
+    def mark_task_done(self, task_id: TaskID) -> None:
         """Mark a task as completed.
 
         Args:
@@ -102,7 +111,7 @@ class CrystalTaskManager:
         except subprocess.CalledProcessError as error:
             raise RuntimeError(f"Failed to mark task as done: {error.stderr}") from error
 
-    def add_crystal_analysis_task(self, cif_file: Union[str, int]) -> Optional[Dict[str, Any]]:
+    def add_crystal_analysis_task(self, cif_file: FilePath) -> Optional[TaskDict]:
         """Create a task specifically for crystal analysis.
 
         Args:
@@ -144,4 +153,4 @@ if __name__ == "__main__":
         print(f"- {task['title']} (ID: {task['id']})")
 
     # Example: Mark a task as done
-    # task_manager.mark_task_done(task['id']) 
+    # task_manager.mark_task_done(task['id'])

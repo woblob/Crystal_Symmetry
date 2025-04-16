@@ -185,7 +185,7 @@
         {
           "id": 2,
           "title": "Add type hints to core function parameters and return values",
-          "status": "pending",
+          "status": "done",
           "dependencies": [
             1
           ],

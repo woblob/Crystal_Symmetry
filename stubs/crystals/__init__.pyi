@@ -7,6 +7,9 @@ from numpy.typing import NDArray
 class Crystal:
     """Type stub for the Crystal class from the crystals package."""
 
+    name: str
+    atoms: List['Atom']
+
     @classmethod
     def from_cif(cls, filename: str) -> 'Crystal':
         """Load a crystal structure from a CIF file."""
@@ -18,31 +21,32 @@ class Crystal:
     def symmetry(self) -> Dict[str, Any]:
         """Return symmetry information about the crystal structure."""
 
-    def symmetry_operations(self) -> List[Tuple[Any, ...]]:
+    def symmetry_operations(self) -> List[Tuple[NDArray[np.float64], NDArray[np.float64]]]:
         """Return the symmetry operations for this crystal structure."""
 
     @property
-    def lattice_vectors(self) -> List[List[float]]:
+    def lattice_vectors(self) -> NDArray[np.float64]:
         """Return the lattice vectors of the crystal structure."""
 
     def supercell(self, a: int, b: int, c: int) -> 'Crystal':
         """Create a supercell of the crystal structure."""
 
-    def itersorted(self) -> Iterator['AtomicStructure']:
+    def itersorted(self) -> Iterator['Atom']:
         """Iterate through the sorted atoms in the crystal structure."""
 
 
-class AtomicStructure:
-    """Type stub for AtomicStructure representing an atom in a crystal structure."""
+class Atom:
+    """Type stub for the Atom class from the crystals package."""
 
-    @property
-    def atomic_number(self) -> int:
-        """Return the atomic number of the atom."""
+    element: str
+    coords: Tuple[float, float, float]
+    coords_fractional: Tuple[float, float, float]
+    atomic_number: int
 
-    @property
-    def coords_fractional(self) -> Tuple[float, float, float]:
-        """Return the fractional coordinates of the atom."""
-
-    @property
-    def coords_cartesian(self) -> Tuple[float, float, float]:
-        """Return the cartesian coordinates of the atom."""
+    def __init__(
+        self,
+        element: str,
+        coords: Tuple[float, float, float],
+        displacement: Optional[float] = None,
+        occupancy: float = 1.0
+    ) -> None: ...

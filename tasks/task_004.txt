@@ -123,7 +123,7 @@ Run mypy or another type checker to confirm type correctness. Verify that all fu
   - Metaprogramming that may require `cast()` or `TypeGuard`
 - Document each dynamic typing pattern with example solutions
 
-## 2. Add type hints to core function parameters and return values [pending]
+## 2. Add type hints to core function parameters and return values [done]
 ### Dependencies: 4.1
 ### Description: Apply type hints to all core function parameters and return values in the codebase.
 ### Details:

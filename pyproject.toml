@@ -1,0 +1,37 @@
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+check_untyped_defs = true
+disallow_untyped_decorators = false
+no_implicit_optional = true
+strict_optional = true
+
+# Configure mypy to use our stub files
+mypy_path = "stubs"
+
+# Prevent duplicate module errors
+explicit_package_bases = true
+namespace_packages = true
+
+# Per-module options
+[[tool.mypy.overrides]]
+module = "krysztalki.core.*"
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[[tool.mypy.overrides]]
+module = "krysztalki.io.*"
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+# Ignore errors in third-party libraries
+[[tool.mypy.overrides]]
+module = "crystals.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "numpy.*"
+ignore_missing_imports = true

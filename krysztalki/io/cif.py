@@ -7,10 +7,17 @@ and manipulating crystal data for symmetry analysis.
 from crystals import Crystal
 import numpy as np
 import pathlib
-from typing import Union, Tuple, Callable, Any, cast
+from typing import Tuple, Callable, cast, Iterator, List
+from numpy.typing import NDArray
+
+# Import custom type definitions
+from krysztalki.core.crystal_types import (
+    Point3D, PointArray, FractionalCoordinate
+)
+from krysztalki.utils.type_definitions import FilePath
 
 
-def read_cif(file_path: Union[str, int]) -> Crystal:
+def read_cif(file_path: FilePath) -> Crystal:
     """
     Open a CIF file from local repository or download from Crystallography Open Database.
 
@@ -34,7 +41,7 @@ def read_cif(file_path: Union[str, int]) -> Crystal:
     return Crystal.from_cif(str(full_path))
 
 
-def eqPoints(POINT: np.ndarray) -> np.ndarray:
+def eqPoints(POINT: Point3D) -> PointArray:
     """
     Generate equivalent points by adding 1 to coordinates with zero values.
 
@@ -60,7 +67,7 @@ def eqPoints(POINT: np.ndarray) -> np.ndarray:
     return mylist
 
 
-def allEqPoints(CELL: np.ndarray) -> np.ndarray:
+def allEqPoints(CELL: PointArray) -> PointArray:
     """
     Find all points with zeros and add their equivalent to make whole cell.
 
@@ -93,9 +100,9 @@ def millerORweber(ITN: int) -> str:
     return "w"  # "hP, hR"
 
 
-def getSCell(func: Callable[[Union[str, int]], Crystal], 
-            filename: Union[str, int], 
-            size: int) -> Tuple[np.ndarray, str]:
+def getSCell(func: Callable[[FilePath], Crystal],
+            filename: FilePath,
+            size: int) -> Tuple[PointArray, str]:
     """
     Get cell from CIF file or database and process it into a supercell.
 

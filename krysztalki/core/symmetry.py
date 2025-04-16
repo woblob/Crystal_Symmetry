@@ -2,12 +2,14 @@ import numpy as np
 from bisect import bisect_right as BSR, bisect_left as BSL
 from itertools import combinations as itrtls_combinations
 import datetime
-from typing import Dict, List, Tuple, Any, Union, Generator, Set, Optional, Iterator
+from typing import Dict, List, Tuple, Any, Union, Generator, Set, Optional, Iterator, Callable
+from numpy.typing import NDArray
 
-
-# Define types for symmetry operations dictionary
-SymOpDict = Dict[str, np.ndarray]
-SymmetryBaseDict = Dict[str, Dict[str, np.ndarray]]
+# Import custom type definitions
+from krysztalki.core.crystal_types import (
+    SymOpDict, SymmetryBaseDict, SymmetryOperation, SymmetryMatrix,
+    Point3D, PointArray, PointArrayTransposed, AnalysisResult
+)
 
 
 def generateSymetryBase() -> SymmetryBaseDict:
@@ -86,7 +88,7 @@ def generateSymetryBase() -> SymmetryBaseDict:
 #         punkt = np.around(punkt,6)
 
 
-def listadous(macierz: np.ndarray, punktprzes: np.ndarray) -> Generator[np.ndarray, None, None]:
+def listadous(macierz: SymmetryMatrix, punktprzes: Point3D) -> Generator[Point3D, None, None]:
     """
     Generate all points produced by repeated application of a transformation matrix.
 
@@ -103,7 +105,7 @@ def listadous(macierz: np.ndarray, punktprzes: np.ndarray) -> Generator[np.ndarr
         punkt = np.matmul(macierz, punkt)
 
 
-def makelist() -> List[Tuple[str, str]]:
+def makelist() -> List[SymmetryOperation]:
     """
     List all names of symmetry operations.
 
@@ -118,7 +120,7 @@ def makelist() -> List[Tuple[str, str]]:
     return mylist[::-1]
 
 
-def porownajPunkty(p1: np.ndarray, p2: np.ndarray) -> bool:
+def porownajPunkty(p1: Point3D, p2: Point3D) -> bool:
     """
     Compare two points for equality.
 
@@ -137,7 +139,7 @@ def porownajPunkty(p1: np.ndarray, p2: np.ndarray) -> bool:
     return True
 
 
-def findindex(searched: np.ndarray, points: np.ndarray) -> int:
+def findindex(searched: Point3D, points: PointArrayTransposed) -> int:
     """
     Binary search for points in a cell.
 
@@ -165,7 +167,7 @@ def findindex(searched: np.ndarray, points: np.ndarray) -> int:
     return indexL
 
 
-def findPoints(listofps: Iterator[np.ndarray], allpoints: np.ndarray, Anti: bool = False) -> bool:
+def findPoints(listofps: Iterator[Point3D], allpoints: PointArrayTransposed, Anti: bool = False) -> bool:
     """
     Check if points are in the list.
 
@@ -184,7 +186,7 @@ def findPoints(listofps: Iterator[np.ndarray], allpoints: np.ndarray, Anti: bool
     return True
 
 
-def findAntiSym_InnerLoop(Matrix: np.ndarray, allpoints: np.ndarray, vacancies: np.ndarray) -> bool:
+def findAntiSym_InnerLoop(Matrix: SymmetryMatrix, allpoints: PointArray, vacancies: PointArray) -> bool:
     """
     Check if any of the vacancies transform into valid points.
 
@@ -202,7 +204,7 @@ def findAntiSym_InnerLoop(Matrix: np.ndarray, allpoints: np.ndarray, vacancies: 
     return True
 
 
-def findAntiSym(matrixes: SymmetryBaseDict, allpoints: np.ndarray, vacancies: np.ndarray) -> List[Tuple[str, str]]:
+def findAntiSym(matrixes: SymmetryBaseDict, allpoints: PointArray, vacancies: PointArray) -> List[SymmetryOperation]:
     """
     Find symmetries that cannot exist for vacancies in the cell.
 
@@ -224,7 +226,7 @@ def findAntiSym(matrixes: SymmetryBaseDict, allpoints: np.ndarray, vacancies: np
     return possymmerties
 
 
-def findSym_innerLoop(Matrix: np.ndarray, allpoints: np.ndarray) -> bool:
+def findSym_innerLoop(Matrix: SymmetryMatrix, allpoints: PointArray) -> bool:
     """
     Check if all points in the cell satisfy the symmetry.
 
@@ -241,7 +243,7 @@ def findSym_innerLoop(Matrix: np.ndarray, allpoints: np.ndarray) -> bool:
     return True
 
 
-def findSym(matrixes: SymmetryBaseDict, allpoints: np.ndarray, vacancies: np.ndarray) -> List[Tuple[str, str]]:
+def findSym(matrixes: SymmetryBaseDict, allpoints: PointArray, vacancies: PointArray) -> List[SymmetryOperation]:
     """
     Find symmetries that exist in the cell.
 
@@ -261,7 +263,7 @@ def findSym(matrixes: SymmetryBaseDict, allpoints: np.ndarray, vacancies: np.nda
     return symmerties
 
 
-def makeCellWithVacancies(cell: np.ndarray, indexes: Union[List[int], Tuple[int, ...], Set[int]]) -> Tuple[np.ndarray, np.ndarray]:
+def makeCellWithVacancies(cell: PointArray, indexes: Union[List[int], Tuple[int, ...], Set[int]]) -> Tuple[PointArray, PointArray]:
     """
     Create two separate arrays: one with vacancies removed and one with just the vacancies.
 
@@ -283,7 +285,7 @@ def makeCellWithVacancies(cell: np.ndarray, indexes: Union[List[int], Tuple[int,
     return np.array(cellVac), np.array(Vac)
 
 
-def checkAllCells(scell: np.ndarray, base: str, sumVac: int) -> List[List[Tuple[str, str]]]:
+def checkAllCells(scell: PointArray, base: str, sumVac: int) -> List[List[SymmetryOperation]]:
     """
     Find all possible vacancy configurations and their symmetries.
 
@@ -305,7 +307,7 @@ def checkAllCells(scell: np.ndarray, base: str, sumVac: int) -> List[List[Tuple[
     return mylist
 
 
-def saveOutput(OUTPUT: List[Any], filename: str = "", count: int = 0) -> None:
+def saveOutput(OUTPUT: List[Tuple[Any, List[SymmetryOperation]]], filename: str = "", count: int = 0) -> None:
     """
     Write results to a CSV file with all symmetries for all possible vacancy configurations.
 
@@ -329,7 +331,7 @@ def saveOutput(OUTPUT: List[Any], filename: str = "", count: int = 0) -> None:
     print("Saved")
 
 
-def analyze_symmetry(crystal: Any, vacancy_count: int = 1) -> Dict[str, Any]:
+def analyze_symmetry(crystal: Any, vacancy_count: int = 1) -> AnalysisResult:
     """
     Analyze the symmetry operations of a crystal with vacancies.
 
@@ -352,7 +354,7 @@ def analyze_symmetry(crystal: Any, vacancy_count: int = 1) -> Dict[str, Any]:
     # TODO: from krysztalki.workDir.MMfunc import full_transform, reduce_cell
     # TODO: from krysztalki.SYMfunc import saveOutput
 
-    from krysztalki.io.cif import getSCell 
+    from krysztalki.io.cif import getSCell
 
     # Pass a lambda that ignores the filename argument since we already have the crystal
     supercell, base_type = getSCell(lambda _: crystal, "", 1)  # Use empty string instead of None
