@@ -23,11 +23,8 @@ Run mypy or another type checker to confirm type correctness. Verify that all fu
 # Subtasks:
 ## 1. Analyze codebase and create type annotation plan [pending]
 ### Dependencies: None
-### Description: 
+### Description: Create a comprehensive plan for adding type annotations throughout the codebase.
 ### Details:
-
-
-<info added on 2025-04-16T18:49:49.775Z>
 # Type Annotation Implementation Plan
 
 ## Analysis Phase
@@ -59,11 +56,6 @@ Run mypy or another type checker to confirm type correctness. Verify that all fu
 - Generate initial stubs with stubgen
 - Manually enhance stubs for scientific/mathematical functions
 - Include detailed type information for public API functions
-</info added on 2025-04-16T18:49:49.775Z>
-
-<info added on 2025-04-16T18:51:04.730Z>
-<info added on 2025-04-17T10:15:22.103Z>
-# Implementation Details for Type Annotation Analysis
 
 ## Systematic Codebase Scanning
 - Use `find . -name "*.py" | xargs wc -l | sort -nr` to identify all Python files by size
@@ -130,17 +122,12 @@ Run mypy or another type checker to confirm type correctness. Verify that all fu
   - Dynamic attribute access that requires careful typing with `__getattr__`
   - Metaprogramming that may require `cast()` or `TypeGuard`
 - Document each dynamic typing pattern with example solutions
-</info added on 2025-04-17T10:15:22.103Z>
-</info added on 2025-04-16T18:51:04.730Z>
 
 ## 2. Add type hints to core function parameters and return values [pending]
 ### Dependencies: 4.1
-### Description: 
+### Description: Apply type hints to all core function parameters and return values in the codebase.
 ### Details:
-
-
-<info added on 2025-04-16T18:50:03.285Z>
-# Implementation Details
+# Implementation Details for Core Function Type Hints
 
 ## Analysis Phase
 - Identify all core functions in modules like `crystal_math.py`, `lattice_operations.py`, and `symmetry_transformations.py`
@@ -184,16 +171,12 @@ Run mypy or another type checker to confirm type correctness. Verify that all fu
 - Add typing decisions section to developer documentation
 - Document any challenging typing scenarios and their solutions
 - Include examples of properly typed function signatures for contributors
-</info added on 2025-04-16T18:50:03.285Z>
 
 ## 3. Add type hints to class attributes and methods [pending]
 ### Dependencies: 4.1
-### Description: 
+### Description: Apply type hints to all class attributes and methods throughout the codebase.
 ### Details:
-
-
-<info added on 2025-04-16T18:50:18.636Z>
-# Implementation Details for Type Hints
+# Implementation Details for Class Type Hints
 
 ## Crystallographic Data Structures
 - Define `UnitCell` type as a dataclass with lattice parameters (a, b, c, alpha, beta, gamma)
@@ -231,15 +214,11 @@ Run mypy or another type checker to confirm type correctness. Verify that all fu
 - Add `isinstance()` checks at critical boundaries
 - Implement custom validators using `@validate_argument` decorators
 - Add optional runtime type enforcement with `typeguard` integration
-</info added on 2025-04-16T18:50:18.636Z>
 
 ## 4. Create stub files for external dependencies [pending]
 ### Dependencies: 4.1
-### Description: 
+### Description: Generate and enhance stub files for external dependencies used in the project.
 ### Details:
-
-
-<info added on 2025-04-16T18:50:41.296Z>
 # Implementation Details for Creating Stub Files
 
 ## Dependency Identification
@@ -282,16 +261,12 @@ Run mypy or another type checker to confirm type correctness. Verify that all fu
 - Configure VSCode/PyCharm to recognize custom stub directory
 - Add mypy.ini configuration to include stub paths
 - Document stub usage in project README for new developers
-</info added on 2025-04-16T18:50:41.296Z>
 
 ## 5. Configure and run type checker to validate all type hints [pending]
 ### Dependencies: 4.2, 4.3, 4.4
-### Description: 
+### Description: Set up and execute type checking across the entire codebase to validate all type hints.
 ### Details:
-
-
-<info added on 2025-04-16T19:06:19.412Z>
-# Type Checking Implementation Plan
+# Type Checking Configuration and Validation Plan
 
 ## Configuration
 - Create a `mypy.ini` file with strict settings:
@@ -361,5 +336,4 @@ jobs:
 ## IDE Integration
 - Document VSCode and PyCharm configuration for real-time type checking
 - Create shared editor configurations for consistent experience
-</info added on 2025-04-16T19:06:19.412Z>
 

@@ -23,12 +23,9 @@ Run linters in CI/CD pipeline to ensure all code conforms to the established sty
 # Subtasks:
 ## 1. Set up linting configuration files [pending]
 ### Dependencies: None
-### Description: 
+### Description: Create and configure appropriate linting tools for the Python crystallography project.
 ### Details:
-
-
-<info added on 2025-04-16T19:06:35.741Z>
-# Implementation Details
+# Linting Configuration Implementation
 
 ## Linter Selection
 - Use `flake8` for general PEP8 compliance and error detection
@@ -111,70 +108,82 @@ Run linters in CI/CD pipeline to ensure all code conforms to the established sty
 - Add linting step to CI pipeline
 - Configure GitHub Actions workflow for automated checks
 - Set up VSCode integration for developer convenience
-</info added on 2025-04-16T19:06:35.741Z>
 
 ## 2. Run linters to identify all code style issues [pending]
 ### Dependencies: 5.1
-### Description: 
+### Description: Execute linting tools against the codebase to identify and catalog all style issues.
 ### Details:
+# Linting Analysis Implementation
 
+## Systematic Linting Process
+- Run linters on entire codebase using configured rules:
+  ```bash
+  flake8 crystal_symmetry/ > linting-errors.txt
+  pylint crystal_symmetry/ --output=pylint-report.txt
+  mypy crystal_symmetry/ > type-errors.txt
+  ```
+- Create summary reports categorizing issues by type and module
 
-<info added on 2025-04-16T19:06:52.506Z>
-# Implementation Approach
+## Error Categorization
+- Implement custom Python script to group issues by:
+  - Error severity (error/warning/info)
+  - Rule category (formatting/best-practices/documentation/typing)
+  - File location (by module/component)
+  ```python
+  # Example categorization script
+  def categorize_linting_errors(error_file):
+      categories = defaultdict(list)
+      for line in error_file:
+          # Parse error code, file, message
+          categories[error_type].append(error_details)
+      return categories
+  ```
 
-1. **Systematic Linting Process**:
-   - Configure ESLint, Prettier, and StyleLint with appropriate rule sets
-   - Create npm scripts for running linters: `lint:js`, `lint:css`, `lint:all`
-   - Set up directory-specific configurations for specialized code areas
+## Reporting Infrastructure
+- Generate HTML reports using `flake8-html` and `pylint-json2html` formatters
+- Create metrics for violation density by module
+- Implement trend analysis tools for tracking improvements over time
 
-2. **Error Categorization**:
-   - Implement custom reporter to group issues by:
-     - Error severity (error/warning/info)
-     - Rule category (formatting/best-practices/security/performance)
-     - File location (by module/component)
+## Prioritization Framework
+- Assign priority levels (P0-P3) based on:
+  - Bug potential (highest priority)
+  - Performance impact
+  - Maintainability concerns
+  - Cosmetic issues (lowest priority)
+- Create spreadsheet mapping each error type to its priority level
 
-3. **Reporting Infrastructure**:
-   - Generate HTML and JSON reports using `eslint-formatter-html` and custom formatters
-   - Include metrics like violation density and trend analysis
-   - Create dashboard visualizations for management overview
+## Progress Tracking
+- Set up SQLite database to track issue resolution over time:
+  ```python
+  # Schema for tracking
+  CREATE TABLE linting_errors (
+      id INTEGER PRIMARY KEY,
+      file TEXT,
+      line_number INTEGER,
+      error_code TEXT,
+      message TEXT,
+      severity TEXT,
+      fixed BOOLEAN,
+      fixed_date TEXT
+  )
+  ```
+- Implement weekly reporting on resolution progress
 
-4. **Prioritization Framework**:
-   - Assign priority levels (P0-P3) based on:
-     - Security implications (highest priority)
-     - Performance impact
-     - Maintainability concerns
-     - Cosmetic issues (lowest priority)
-
-5. **Progress Tracking**:
-   - Implement a SQLite database to track issue resolution over time
-   - Create CLI tool to query current status and generate progress charts
-   - Set up weekly automated email reports on resolution progress
-
-6. **Documentation**:
-   - Create wiki page documenting top 10 recurring violations with examples
-   - Provide fix templates for common issues
-   - Include before/after code samples for educational purposes
-
-7. **Automation**:
-   - Configure pre-commit hooks using husky
-   - Set up GitHub Actions workflow for CI linting
-   - Create VS Code workspace settings with recommended extensions
-   - Implement auto-fix capabilities for non-critical issues
-</info added on 2025-04-16T19:06:52.506Z>
+## Documentation
+- Create wiki page documenting top 10 recurring violations with examples
+- Provide fix templates for common issues
+- Include before/after code samples for educational purposes
 
 ## 3. Implement automated code formatting [pending]
 ### Dependencies: 5.1, 5.2
-### Description: 
+### Description: Set up and execute automatic code formatting tools to standardize code style.
 ### Details:
-
-
-<info added on 2025-04-16T19:07:08.952Z>
-# Implementation Details for Automated Code Formatting
+# Automated Code Formatting Implementation
 
 ## Formatter Selection
-- Recommend **Black** as primary formatter due to its deterministic output and popularity in scientific Python projects
-- Add **isort** for import sorting, configured to be compatible with Black
-- Consider **docformatter** for standardizing docstring formats
+- Implement Black as primary formatter due to its deterministic output and popularity in scientific Python projects
+- Add isort for import sorting, configured to be compatible with Black
+- Use docformatter for standardizing docstring formats
 
 ## Configuration
 - Create `pyproject.toml` with Black configuration:
@@ -263,52 +272,92 @@ Run linters in CI/CD pipeline to ensure all code conforms to the established sty
             black --check .
             isort --check .
   ```
-</info added on 2025-04-16T19:07:08.952Z>
+
+## Batch Processing
+- Run initial formatting across all files:
+  ```bash
+  black crystal_symmetry/ tests/
+  isort crystal_symmetry/ tests/ 
+  docformatter --in-place --recursive crystal_symmetry/ tests/
+  ```
+- Document before/after metrics of formatting changes
 
 ## 4. Manually fix remaining linter errors [pending]
 ### Dependencies: 5.2, 5.3
-### Description: 
+### Description: Address linting issues that require manual intervention and cannot be fixed automatically.
 ### Details:
+# Manual Linting Fixes Implementation
 
+## Systematic Process
+- Run comprehensive linting after automated formatting:
+  ```bash
+  flake8 crystal_symmetry/ --max-line-length=88 --format=json > linting-errors.json
+  ```
+- Create Python script to group and prioritize remaining errors:
+  ```python
+  # Example parsing script
+  import json
+  with open('linting-errors.json') as f:
+      errors = json.load(f)
+  
+  by_type = {}
+  for error in errors:
+      error_code = error['code']
+      if error_code not in by_type:
+          by_type[error_code] = []
+      by_type[error_code].append(error)
+  ```
+- Create tracking tickets for each major error category
 
-<info added on 2025-04-16T19:07:25.868Z>
-## Implementation Approach
+## Prioritization Strategy
+- Critical: Errors affecting correctness or security (e.g., undefined names, risky practices)
+- High: Code smells that affect maintainability (e.g., complexity, duplicate code)
+- Medium: Documentation issues (missing docstrings, incorrect formats)
+- Low: Stylistic issues not caught by automated formatting
 
-1. **Systematic Process**:
-   - Run `eslint --max-warnings=0 --format=json > linting-errors.json` to export all errors
-   - Group errors by type and file location using a script: `node scripts/group-lint-errors.js`
-   - Create JIRA tickets for each major error category
+## Common Error Patterns
+- For `E501` (line too long): Refactor long expressions into multiple variables
+- For `F841` (unused variables): Remove or prefix with underscore
+- For `C901` (too complex): Break function into smaller, focused functions
+- For `E711/E712` (comparison to None/boolean): Use `is None` or `is True` instead
 
-2. **Prioritization Strategy**:
-   - Critical: Security-related linting errors (e.g., no-eval, no-unsafe-innerhtml)
-   - High: Errors affecting runtime behavior (e.g., no-unused-vars, no-undef)
-   - Medium: Code quality issues (e.g., complexity, naming conventions)
-   - Low: Stylistic issues not caught by Prettier
+## Manual Fix Process
+- Create a script to generate fix templates for common issues:
+  ```python
+  def generate_fix_template(error_code, file_path, line_number):
+      """Generate a template for fixing specific error types."""
+      with open(file_path) as f:
+          lines = f.readlines()
+      
+      # Extract context (lines before and after)
+      context = lines[max(0, line_number-2):min(len(lines), line_number+2)]
+      
+      # Generate fix template based on error code
+      if error_code == 'E501':
+          return create_line_length_fix_template(context)
+      # etc.
+  ```
 
-3. **Common Error Patterns**:
-   - For `no-unused-vars`: Implement prefix convention with `_` for intentionally unused parameters
-   - For `import/no-cycle`: Refactor circular dependencies using service/mediator pattern
-   - For `complexity`: Extract complex conditionals into named functions with clear purposes
+## Verification Process
+- Create regression tests for any logic modified during lint fixing
+- Run test suite after each category of fixes
+- Verify that fixes don't introduce new issues:
+  ```bash
+  # After fixing each module
+  flake8 crystal_symmetry/module_name.py
+  pytest tests/test_module_name.py
+  ```
 
-4. **Disabling Rules Documentation**:
-   ```javascript
-   // eslint-disable-next-line no-console -- Needed for critical debugging in production
-   console.log('Critical system state:', systemState);
-   ```
+## Progress Tracking
+- Create script to measure linting error reduction
+- Track metrics like:
+  - Total error count
+  - Errors per file
+  - Errors by category
+  - Fix rate over time
 
-5. **Verification Process**:
-   - Create pre/post snapshots of application behavior for affected components
-   - Implement unit tests for any logic modified during lint fixing
-   - Run full test suite after each category of fixes
-
-6. **Progress Tracking**:
-   - Implement a dashboard using `eslint-stats` to visualize progress
-   - Track error count reduction in CI/CD pipeline reports
-   - Set up weekly lint error reduction goals
-
-7. **Knowledge Base Structure**:
-   - Create a wiki page with common error patterns and approved solutions
-   - Document edge cases requiring rule exceptions with examples
-   - Include before/after code samples for complex fixes
-</info added on 2025-04-16T19:07:25.868Z>
+## Knowledge Base
+- Document common error patterns and approved solutions
+- Create quick reference guide for the team
+- Include before/after examples for each error type
 

@@ -24,12 +24,9 @@ Test error scenarios to ensure appropriate exceptions are raised and logged. Ver
 # Subtasks:
 ## 1. Define custom exception hierarchy [pending]
 ### Dependencies: None
-### Description: 
+### Description: Design and implement a hierarchical exception system specific to crystallography operations.
 ### Details:
-
-
-<info added on 2025-04-16T19:07:40.550Z>
-# Custom Exception Hierarchy Implementation Details
+# Custom Exception Hierarchy Implementation
 
 ## Error Categories Analysis
 - **Input Validation Errors**: For invalid crystallographic parameters, malformed CIF files
@@ -66,16 +63,12 @@ class ResourceError(CrystalSymmetryError):
 - Create test cases that verify exceptions are raised in appropriate circumstances
 - Test exception inheritance relationships
 - Verify context information is correctly included in exception instances
-</info added on 2025-04-16T19:07:40.550Z>
 
 ## 2. Implement logging configuration system [pending]
 ### Dependencies: None
-### Description: 
+### Description: Create a flexible and configurable logging system for the crystallography library.
 ### Details:
-
-
-<info added on 2025-04-16T19:10:26.709Z>
-# Implementation Details for Logging Configuration System
+# Logging Configuration System Implementation
 
 ## Library Selection
 - Use Python's built-in `logging` module as the foundation
@@ -169,16 +162,12 @@ def setup_logging(config_path=None, verbosity="INFO"):
 - Implement context managers for operation logging with automatic exception capture
 - Add crystal-specific context to exception logs (lattice parameters, space group)
 - Create debug log dumps for unexpected failures
-</info added on 2025-04-16T19:10:26.709Z>
 
 ## 3. Refactor critical code sections with try-except blocks [pending]
 ### Dependencies: 6.1, 6.2
-### Description: 
+### Description: Add proper error handling to critical sections of code to improve robustness.
 ### Details:
-
-
-<info added on 2025-04-16T19:12:55.000Z>
-# Implementation Approach for Error Handling Refactoring
+# Error Handling Refactoring Implementation
 
 ## Critical Code Section Identification
 - File I/O operations for CIF parsing and data loading
@@ -257,16 +246,12 @@ def transform_crystal_structure(structure, operations):
 - Verify exception types, messages, and context information
 - Test recovery mechanisms and fallback strategies
 - Simulate resource constraints (memory limits, disk space issues)
-</info added on 2025-04-16T19:12:55.000Z>
 
 ## 4. Implement progress tracking for long-running operations [pending]
 ### Dependencies: 6.2
-### Description: 
+### Description: Create a system for tracking and reporting progress during lengthy computational operations.
 ### Details:
-
-
-<info added on 2025-04-16T19:15:36.000Z>
-# Progress Tracking Implementation Details
+# Progress Tracking Implementation
 
 ## Requirements Analysis
 - Long-running operations in crystallography code include:
@@ -391,16 +376,12 @@ try:
 - Include time estimates for better user experience
 - Support both determinate (known steps) and indeterminate progress
 - Make progress tracking optional with clean fallbacks
-</info added on 2025-04-16T19:15:36.000Z>
 
 ## 5. Add comprehensive error handling to API endpoints [pending]
 ### Dependencies: 6.1, 6.2, 6.3
-### Description: 
+### Description: Implement consistent error handling for all public API functions and endpoints.
 ### Details:
-
-
-<info added on 2025-04-16T19:17:38.000Z>
-# API Error Handling Implementation Details
+# API Error Handling Implementation
 
 ## API Endpoint Analysis
 - Key public API functions to focus on:
@@ -589,5 +570,4 @@ def handle_api_response(response):
 - Test rate limiting and throttling behavior
 - Verify error details provide actionable information
 - Test authentication and authorization error handling
-</info added on 2025-04-16T19:17:38.000Z>
 

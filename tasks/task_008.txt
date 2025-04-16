@@ -26,12 +26,9 @@ Run tests regularly during development. Aim for high test coverage and ensure al
 # Subtasks:
 ## 1. Set up testing framework and structure [pending]
 ### Dependencies: None
-### Description: 
+### Description: Configure pytest and establish directory structure for the testing framework.
 ### Details:
-
-
-<info added on 2025-04-16T19:47:20.762Z>
-# Testing Framework Implementation Details
+# Testing Framework Implementation Plan
 
 ## Framework Selection
 - Use pytest as the primary testing framework
@@ -72,35 +69,537 @@ tests/
 4. Implement basic fixtures
 5. Create sample test files
 6. Configure CI integration
-</info added on 2025-04-16T19:47:20.762Z>
 
 ## 2. Create test fixtures and utilities [pending]
 ### Dependencies: 8.1
-### Description: 
+### Description: Develop reusable test fixtures and utility functions to support test cases.
 ### Details:
+# Test Fixtures and Utilities Implementation Plan
 
+## Core Test Fixtures
+- Create fixtures for common crystallographic structures:
+  - Simple cubic structure
+  - Face-centered cubic structure
+  - Body-centered cubic structure
+  - Hexagonal close-packed structure
+- Implement fixtures for various space groups
+- Develop fixtures for different crystal systems
+
+## Utility Functions
+- Create helper functions for:
+  - Comparing matrices with numerical tolerance
+  - Validating symmetry operations
+  - Generating random crystal structures
+  - Creating temporary test files
+
+## Mock Objects
+- Implement mocks for:
+  - External crystallographic databases
+  - File system operations
+  - Network requests
+
+## Test Data Generation
+- Generate synthetic CIF files with known properties
+- Create reference outputs for validation
+- Implement parametrized test data generators
+
+## Fixture Scopes
+- Configure appropriate scopes for each fixture:
+  - Module-level fixtures for shared resources
+  - Function-level fixtures for isolated tests
+  - Session-level fixtures for expensive operations
+
+## Implementation Example
+```python
+import pytest
+import numpy as np
+from pathlib import Path
+
+@pytest.fixture
+def cubic_structure():
+    """Return a simple cubic crystal structure for testing."""
+    return {
+        "lattice_parameters": (5.0, 5.0, 5.0, 90.0, 90.0, 90.0),
+        "space_group": "Pm-3m",
+        "atoms": [{"element": "Cu", "position": [0.0, 0.0, 0.0]}]
+    }
+
+@pytest.fixture
+def temp_cif_file(tmp_path):
+    """Create a temporary CIF file for testing."""
+    cif_content = """
+    data_test
+    _cell_length_a 5.0
+    _cell_length_b 5.0
+    _cell_length_c 5.0
+    _cell_angle_alpha 90.0
+    _cell_angle_beta 90.0
+    _cell_angle_gamma 90.0
+    _symmetry_space_group_name_H-M 'Pm-3m'
+    loop_
+    _atom_site_label
+    _atom_site_fract_x
+    _atom_site_fract_y
+    _atom_site_fract_z
+    Cu 0.0 0.0 0.0
+    """
+    file_path = tmp_path / "test.cif"
+    file_path.write_text(cif_content)
+    return file_path
+
+def assert_matrices_equal(matrix1, matrix2, tolerance=1e-10):
+    """Compare two matrices with numerical tolerance."""
+    assert np.allclose(matrix1, matrix2, atol=tolerance)
+```
 
 ## 3. Implement core function tests [pending]
 ### Dependencies: 8.1, 8.2
-### Description: 
+### Description: Write tests for core functions focusing on essential crystallographic algorithms.
 ### Details:
+# Core Function Tests Implementation Plan
 
+## Test Categories
+- Mathematical utility functions
+- Crystallographic calculations
+- File parsing and handling
+- Symmetry operations
+
+## Test Structure
+- Each test file should match a source module
+- Group tests by function or logical component
+- Use clear naming indicating what is being tested
+
+## Testing Approach
+- Test normal operation with valid inputs
+- Verify results against known expected values
+- Use parametrized tests for multiple input scenarios
+- Check performance for computationally intensive functions
+
+## Example Test Implementation
+```python
+import pytest
+import numpy as np
+from crystal_symmetry.core import calculate_unit_cell_volume
+
+def test_calculate_unit_cell_volume_cubic():
+    """Test volume calculation for cubic unit cell."""
+    # For a cubic cell with a=b=c=5.0, α=β=γ=90°
+    a = b = c = 5.0
+    alpha = beta = gamma = 90.0
+    
+    expected_volume = 125.0  # 5³
+    volume = calculate_unit_cell_volume(a, b, c, alpha, beta, gamma)
+    
+    assert np.isclose(volume, expected_volume, rtol=1e-10)
+
+def test_calculate_unit_cell_volume_triclinic():
+    """Test volume calculation for triclinic unit cell."""
+    a, b, c = 5.0, 6.0, 7.0
+    alpha, beta, gamma = 80.0, 85.0, 100.0
+    
+    # Pre-calculated reference value
+    expected_volume = 204.74271921552555
+    volume = calculate_unit_cell_volume(a, b, c, alpha, beta, gamma)
+    
+    assert np.isclose(volume, expected_volume, rtol=1e-10)
+
+@pytest.mark.parametrize("unit_cell,expected_volume", [
+    # (a, b, c, α, β, γ), volume
+    ((1.0, 1.0, 1.0, 90.0, 90.0, 90.0), 1.0),
+    ((2.0, 2.0, 2.0, 90.0, 90.0, 90.0), 8.0),
+    ((3.0, 4.0, 5.0, 90.0, 90.0, 90.0), 60.0),
+])
+def test_calculate_unit_cell_volume_parametrized(unit_cell, expected_volume):
+    """Test volume calculation with multiple unit cells."""
+    a, b, c, alpha, beta, gamma = unit_cell
+    volume = calculate_unit_cell_volume(a, b, c, alpha, beta, gamma)
+    assert np.isclose(volume, expected_volume, rtol=1e-10)
+```
+
+## Documentation Integration
+- Add doctest examples in code that can also be run as tests
+- Verify that documentation examples are correct
+- Test edge cases mentioned in documentation
+
+## Performance Testing
+- Add benchmarks for performance-critical functions
+- Measure execution time for large inputs
+- Test memory usage for large structures
 
 ## 4. Implement class and integration tests [pending]
 ### Dependencies: 8.3
-### Description: 
+### Description: Write tests for classes and test interactions between multiple components.
 ### Details:
+# Class and Integration Tests Implementation Plan
 
+## Class Testing Strategy
+- Test class initialization with various parameters
+- Verify property getters and setters
+- Test public methods thoroughly
+- Ensure class behavior matches specifications
+- Test inheritance hierarchies correctly
+
+## Integration Test Focuses
+- Component interactions
+- Data flow between modules
+- End-to-end processing pipelines
+- API contract validation
+
+## Test Implementation Examples
+
+### Class Test Example
+```python
+import pytest
+from crystal_symmetry.structure import CrystalStructure
+
+class TestCrystalStructure:
+    """Tests for the CrystalStructure class."""
+    
+    def test_init_with_parameters(self):
+        """Test initialization with valid parameters."""
+        structure = CrystalStructure(
+            lattice_parameters=(5.0, 5.0, 5.0, 90.0, 90.0, 90.0),
+            space_group="Pm-3m",
+            atoms=[{"element": "Cu", "position": [0.0, 0.0, 0.0]}]
+        )
+        
+        assert structure.lattice_type == "cubic"
+        assert len(structure.atoms) == 1
+        assert structure.atoms[0]["element"] == "Cu"
+    
+    def test_add_atom(self):
+        """Test adding an atom to the structure."""
+        structure = CrystalStructure(
+            lattice_parameters=(5.0, 5.0, 5.0, 90.0, 90.0, 90.0),
+            space_group="Pm-3m"
+        )
+        
+        structure.add_atom("O", [0.5, 0.5, 0.5])
+        assert len(structure.atoms) == 1
+        assert structure.atoms[0]["element"] == "O"
+        assert structure.atoms[0]["position"] == [0.5, 0.5, 0.5]
+    
+    def test_calculate_properties(self):
+        """Test property calculations."""
+        structure = CrystalStructure(
+            lattice_parameters=(5.0, 5.0, 5.0, 90.0, 90.0, 90.0),
+            space_group="Pm-3m",
+            atoms=[{"element": "Cu", "position": [0.0, 0.0, 0.0]}]
+        )
+        
+        volume = structure.calculate_volume()
+        assert volume == 125.0
+```
+
+### Integration Test Example
+```python
+def test_cif_parser_to_symmetry_operations():
+    """Test integration between CIF parser and symmetry operation generation."""
+    # Create a test CIF file
+    cif_data = """
+    data_test
+    _cell_length_a 5.0
+    _cell_length_b 5.0
+    _cell_length_c 5.0
+    _cell_angle_alpha 90.0
+    _cell_angle_beta 90.0
+    _cell_angle_gamma 90.0
+    _symmetry_space_group_name_H-M 'Pm-3m'
+    loop_
+    _atom_site_label
+    _atom_site_fract_x
+    _atom_site_fract_y
+    _atom_site_fract_z
+    Cu 0.0 0.0 0.0
+    """
+    
+    # Integration test pipeline
+    from crystal_symmetry.io import CIFParser
+    from crystal_symmetry.symmetry import generate_symmetry_operations
+    
+    # Parse CIF data
+    parser = CIFParser()
+    structure = parser.parse_string(cif_data)
+    
+    # Generate symmetry operations
+    symops = generate_symmetry_operations(structure.space_group)
+    
+    # Validate the integration
+    assert len(symops) == 48  # Pm-3m has 48 symmetry operations
+    assert structure.lattice_parameters[0] == 5.0
+```
+
+## Mocking Strategy
+- Use pytest-mock for creating mocks
+- Mock external dependencies and services
+- Create fakes for database connections
+- Implement custom mock classes for complex behaviors
+
+## Testing Classes with Dependencies
+- Use dependency injection for easier testing
+- Create factory fixtures for dependent objects
+- Consider testing pyramid approach: more unit tests, fewer integration tests
 
 ## 5. Add edge case and error condition tests [pending]
 ### Dependencies: 8.3, 8.4
-### Description: 
+### Description: Create tests for boundary conditions, error handling, and exceptional cases.
 ### Details:
+# Edge Case and Error Condition Tests Implementation Plan
 
+## Error Categories to Test
+- Input validation failures
+- Boundary conditions
+- Numerical precision issues
+- Resource limitations
+- Error recovery mechanisms
+
+## Testing Techniques
+- Use pytest.raises to verify exceptions
+- Test with invalid or malformed inputs
+- Verify appropriate error messages
+- Test recovery from error conditions
+- Create stress tests with extreme inputs
+
+## Implementation Examples
+
+### Input Validation Tests
+```python
+import pytest
+from crystal_symmetry.core import calculate_unit_cell_volume
+from crystal_symmetry.exceptions import InputError
+
+def test_negative_lattice_parameters():
+    """Test that negative lattice parameters raise an exception."""
+    with pytest.raises(InputError, match="must be positive"):
+        calculate_unit_cell_volume(-1.0, 5.0, 5.0, 90.0, 90.0, 90.0)
+
+def test_invalid_angles():
+    """Test that invalid angles raise appropriate exceptions."""
+    # Angle too small
+    with pytest.raises(InputError, match="between 0 and 180"):
+        calculate_unit_cell_volume(5.0, 5.0, 5.0, -10.0, 90.0, 90.0)
+    
+    # Angle too large
+    with pytest.raises(InputError, match="between 0 and 180"):
+        calculate_unit_cell_volume(5.0, 5.0, 5.0, 90.0, 190.0, 90.0)
+
+def test_invalid_space_group():
+    """Test handling of invalid space group symbols."""
+    from crystal_symmetry.symmetry import generate_symmetry_operations
+    
+    with pytest.raises(ValueError, match="Invalid space group symbol"):
+        generate_symmetry_operations("not-a-real-space-group")
+```
+
+### Boundary Condition Tests
+```python
+def test_nearly_zero_cell_parameters():
+    """Test behavior with very small cell parameters."""
+    # Should still calculate but may have precision issues
+    volume = calculate_unit_cell_volume(1e-10, 1e-10, 1e-10, 90.0, 90.0, 90.0)
+    assert volume > 0  # Volume should be positive but very small
+
+def test_nearly_equal_angles():
+    """Test with angles that are nearly but not exactly the same."""
+    # Two calculations with very slightly different angles
+    vol1 = calculate_unit_cell_volume(5.0, 5.0, 5.0, 90.0, 90.0, 90.0)
+    vol2 = calculate_unit_cell_volume(5.0, 5.0, 5.0, 90.0, 90.0, 90.00001)
+    
+    # Should be nearly the same volume within numerical precision
+    assert abs(vol1 - vol2) < 1e-8
+```
+
+### Error Recovery Tests
+```python
+def test_parser_recovery_from_incomplete_cif():
+    """Test parser recovery from incomplete CIF file."""
+    from crystal_symmetry.io import CIFParser
+    
+    incomplete_cif = """
+    data_test
+    _cell_length_a 5.0
+    # Missing other required fields
+    """
+    
+    parser = CIFParser(strict_mode=False)
+    structure = parser.parse_string(incomplete_cif)
+    
+    # Check that parser recovered by using defaults
+    assert structure is not None
+    assert structure.lattice_parameters[0] == 5.0
+    # Other parameters should have default values
+    assert structure.lattice_parameters[1] == 1.0  # Default value
+```
+
+### Resource Limitation Tests
+```python
+@pytest.mark.slow
+def test_large_structure_handling():
+    """Test handling of very large structures that may cause memory issues."""
+    from crystal_symmetry.structure import CrystalStructure
+    
+    # Create a large structure with many atoms
+    large_structure = CrystalStructure(
+        lattice_parameters=(100.0, 100.0, 100.0, 90.0, 90.0, 90.0),
+        space_group="P1"
+    )
+    
+    # Add many atoms (generate a large structure)
+    for i in range(10000):
+        x, y, z = i % 10 / 10, (i // 10) % 10 / 10, (i // 100) % 10 / 10
+        large_structure.add_atom("H", [x, y, z])
+    
+    # Verify the structure can be processed without errors
+    assert large_structure.calculate_volume() == 1000000.0
+    assert len(large_structure.atoms) == 10000
+```
+
+## Testing Strategies for Edge Cases
+- Create focused test groups for specific edge case categories
+- Include tests for numerical edge cases (zero, NaN, infinity)
+- Test threading and concurrency edge cases if applicable
+- Test interaction with file system limits and permissions
 
 ## 6. Measure and improve test coverage [pending]
 ### Dependencies: 8.5
-### Description: 
+### Description: Measure code coverage, identify gaps, and implement targeted tests to improve coverage.
 ### Details:
+# Test Coverage Implementation Plan
 
+## Coverage Measurement Tools
+- Configure pytest-cov to measure code coverage
+- Set up coverage reports in HTML and XML formats
+- Integrate with CI pipeline for automated coverage tracking
+- Use coverage.py to generate detailed reports
+
+## Coverage Goals
+- Aim for minimum 90% overall code coverage
+- Require 100% coverage for critical components:
+  - Core crystallographic algorithms
+  - File parsers
+  - Public API functions
+- Establish coverage thresholds for CI pipeline
+
+## Implementation Process
+
+### Configuration Setup
+```ini
+# .coveragerc
+[run]
+source = crystal_symmetry
+omit = 
+    */tests/*
+    */__init__.py
+    */setup.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    pass
+    raise ImportError
+```
+
+### Integration with pytest
+```bash
+# Running tests with coverage
+pytest --cov=crystal_symmetry --cov-report=html:coverage_html --cov-report=xml:coverage.xml
+```
+
+### CI Pipeline Integration
+```yaml
+# GitHub Actions example
+- name: Run tests with coverage
+  run: pytest --cov=crystal_symmetry --cov-report=xml:coverage.xml
+  
+- name: Upload coverage to Codecov
+  uses: codecov/codecov-action@v3
+  with:
+    files: ./coverage.xml
+    flags: unittests
+    fail_ci_if_error: true
+```
+
+## Coverage Analysis Process
+1. Run baseline coverage measurement
+2. Identify modules with low coverage
+3. Analyze uncovered lines and branches
+4. Prioritize critical components
+5. Implement targeted tests for gaps
+6. Verify coverage improvements
+
+## Targeted Testing Strategy
+- Focus on complex conditional logic
+- Ensure all branches are tested
+- Add tests for exception handlers
+- Create tests for rarely used options
+- Test defensive programming checks
+
+## Example Coverage Analysis Script
+```python
+"""Script to analyze coverage data and identify testing gaps."""
+import json
+import os
+from pathlib import Path
+import sys
+
+def parse_coverage_data(coverage_file):
+    """Parse coverage data and return uncovered lines by file."""
+    with open(coverage_file, 'r') as f:
+        coverage_data = json.load(f)
+    
+    results = {}
+    for file_path, file_data in coverage_data['files'].items():
+        # Skip test files
+        if '/tests/' in file_path:
+            continue
+            
+        uncovered_lines = sorted(file_data['missing_lines'])
+        if uncovered_lines:
+            results[file_path] = {
+                'uncovered_lines': uncovered_lines,
+                'coverage_percent': file_data['summary']['percent_covered'],
+                'num_statements': file_data['summary']['num_statements'],
+                'missing_branches': file_data.get('missing_branches', [])
+            }
+    
+    return results
+
+def main():
+    """Generate a report of files with coverage below threshold."""
+    if len(sys.argv) < 2:
+        print("Usage: python analyze_coverage.py <coverage.json>")
+        return 1
+        
+    coverage_file = sys.argv[1]
+    coverage_data = parse_coverage_data(coverage_file)
+    
+    # Sort by coverage percentage
+    sorted_files = sorted(
+        coverage_data.items(), 
+        key=lambda x: x[1]['coverage_percent']
+    )
+    
+    print("Files with lowest coverage:")
+    for file_path, data in sorted_files[:10]:
+        print(f"{file_path}: {data['coverage_percent']:.1f}% covered")
+        print(f"  Missing lines: {data['uncovered_lines']}")
+        if data['missing_branches']:
+            print(f"  Missing branches: {data['missing_branches']}")
+        print()
+    
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main())
+```
+
+## Reporting and Documentation
+- Generate visual coverage reports for review
+- Document areas with intentionally low coverage
+- Include coverage badges in README
+- Track coverage trends over time
+- Set up alerts for coverage regressions
 
