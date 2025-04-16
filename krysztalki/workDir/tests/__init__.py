@@ -1,1 +1,3 @@
 # -*- coding: utf-8 -*-
+
+"""Test suite for workDir module."""
