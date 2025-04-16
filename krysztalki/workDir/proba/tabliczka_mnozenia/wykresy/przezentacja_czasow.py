@@ -36,8 +36,6 @@ for r in rekordy:
 #     plt.savefig(pp, format='pdf')
 #
 
-
-
 # X = [el[0] for el in rekordy]
 # y = [el[3] for el in rekordy]
 #

@@ -28,7 +28,7 @@ def make_plot(CELL,title=None):
 if __name__ == '__main__':
     from cifParsing import *
     NUM = 1000004
-    
+
 #     cell, _ = getSCell('ZnS-Sfaleryt.cif', size = 3)
     cell, _ = getSCell2(NUM, size = 1)
 
@@ -40,7 +40,7 @@ if __name__ == '__main__':
     mat = crcell.lattice_vectors
 # #     mat[0,2] *= -1
     cell = cell @ mat
-    
+
     make_plot(cell, NUM)
 #   make_plot(TESTCELL2,'vesta')
 

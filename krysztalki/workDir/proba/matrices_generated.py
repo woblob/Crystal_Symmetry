@@ -1,5 +1,4 @@
-# missing matrices
-from Matrix.matrices_new_extended import (
+from ..Matrix.matrices_new_extended import (
     _translation_00h,
     _translation_0h0,
     _translation_0hh,
@@ -8,7 +7,7 @@ from Matrix.matrices_new_extended import (
     _translation_hh0,
     _translation_hhh,
     _translation_qqq,
-    matrices_dict,
+    matrices_dict
 )
 
 _matrix_inv_000_h00_miss = matrices_dict["inv_000"] + _translation_h00  # 0

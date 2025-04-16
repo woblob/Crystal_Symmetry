@@ -10,8 +10,6 @@ _matrix_inv_000 = np.array([[-1, 0, 0, 0],
                             [ 0, 0,-1, 0],
                             [ 0, 0, 0, 1]])
 
-
-
 _matrix_m_0yz = np.array([[-1, 0, 0, 0],
                           [ 0, 1, 0, 0],
                           [ 0, 0, 1, 0],
@@ -69,8 +67,6 @@ _matrix_2_xmx0 = _matrix_m_xxz @ _matrix_inv_000
 _matrix_2_0yy = _matrix_m_xymy @ _matrix_inv_000
 _matrix_2_x0x = _matrix_m_xymx @ _matrix_inv_000
 _matrix_2_xx0 = _matrix_m_xmxz @ _matrix_inv_000
-
-
 
 _matrix_3_xxx = np.array([[ 0, 0, 1, 0],
                           [ 1, 0, 0, 0],
@@ -715,8 +711,6 @@ _matrix_hex_3_00z = np.array([[0, -1, 0, 0],
                               [ 0, 0, 1, 0],
                               [ 0, 0, 0, 1]])
 
-
-
 _matrix_hex_m3_00z = _matrix_hex_3_00z @ _matrix_inv_000
 
 _matrix_hex_6_00z  = np.array([[1, -1, 0, 0],
@@ -836,9 +830,6 @@ _matrix_translation_3q3qq = _matrix_ID_000 + _translation_hh0 + _translation_qqq
 _matrix_translation_3q3q3q = _matrix_ID_000 + _translation_hhh + _translation_qqq  #
 # _matrix_translation_ = _matrix_ID_000 + _translation_  #
 # _matrix_translation_ = _matrix_ID_000 + _translation_  #
-
-
-
 
 # _matrix_ = matrices_dict_hex[] + _translation_  #
 

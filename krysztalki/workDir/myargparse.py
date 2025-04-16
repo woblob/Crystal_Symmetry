@@ -11,7 +11,7 @@
   
 def getfile(file_name):
     from crystals import Crystal
-    
+
     """
     open cif file from local repository or download from Crystallography Open Database
 
@@ -44,8 +44,6 @@ print(args)
 print(f"\n{args.size=}\n{args.filename=}\n{args.number_of_vacancies=}\n")
 
 # https://click.palletsprojects.com/en/7.x/
-
-
 
 # def perfect_square(string):
 #     value = int(string)

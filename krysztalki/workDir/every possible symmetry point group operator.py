@@ -132,9 +132,6 @@ def full_transform(cell, lattice_vectors):
 
     return lst
 
-
-
-
 #
 SIZE, VACANCIES = 1, 2
 

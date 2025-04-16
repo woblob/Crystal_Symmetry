@@ -5,10 +5,6 @@
 # from Matrix import matrices_new_extended as mat
 # from krysztalki.workDir.MMfunc import put_points_in_cell
 
-
-
-
-
 # class ReducedCell(NodeMixin):
 #     def __init__(
 #         self,

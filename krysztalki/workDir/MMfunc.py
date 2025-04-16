@@ -80,7 +80,6 @@ def full_transform(cell: MyCell):
     # rotated_cells = np.concatenate([points_in_place1, points_in_place2])
     rotated_cells = (points_in_place1, points_in_place2)
 
-  
     # all_real_cells = all_real_cells @ lattice_vectors
     # all_real_cells = np.around(all_real_cells, 6)
 

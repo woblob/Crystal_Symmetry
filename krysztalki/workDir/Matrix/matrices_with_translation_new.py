@@ -261,12 +261,6 @@ closed_translations = """
 _a_100, _b_010, _c_001,
 _ab_110, _ac_101, _bc_011,
 
-
-
-
-
-
-
 """
 
 
@@ -315,7 +309,7 @@ if __name__ == "__main__":
    -x,   -y, 1/2+z
  -x+y,   -x,     z
     y, -x+y, 1/2+z
-    
+
     y, -x+y,    -z
   x-y,    x,    -z
     x,    y, 1/2-z

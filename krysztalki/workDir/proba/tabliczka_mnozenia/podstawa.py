@@ -10,8 +10,6 @@ _matrix_inv_000 = np.array([[-1, 0, 0, 0],
                             [ 0, 0,-1, 0],
                             [ 0, 0, 0, 1]])
 
-
-
 _matrix_m_0yz = np.array([[-1, 0, 0, 0],
                           [ 0, 1, 0, 0],
                           [ 0, 0, 1, 0],
@@ -69,8 +67,6 @@ _matrix_2_xmx0 = _matrix_m_xxz @ _matrix_inv_000
 _matrix_2_0yy = _matrix_m_xymy @ _matrix_inv_000
 _matrix_2_x0x = _matrix_m_xymx @ _matrix_inv_000
 _matrix_2_xx0 = _matrix_m_xmxz @ _matrix_inv_000
-
-
 
 _matrix_3_xxx = np.array([[ 0, 0, 1, 0],
                           [ 1, 0, 0, 0],

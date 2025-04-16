@@ -6,7 +6,7 @@ from numpy.typing import NDArray
 
 class Crystal:
     """Type stub for the Crystal class from the crystals package."""
-    
+
     @classmethod
     def from_cif(cls, filename: str) -> 'Crystal':
         """Load a crystal structure from a CIF file."""
@@ -34,7 +34,7 @@ class Crystal:
 
 class AtomicStructure:
     """Type stub for AtomicStructure representing an atom in a crystal structure."""
-    
+
     @property
     def atomic_number(self) -> int:
         """Return the atomic number of the atom."""

@@ -127,8 +127,6 @@ if __name__ == "__main__":
     with open("wyniki zespolow/zespoly_wszystkie.pickle", "rb") as f:
         zespoly = pickle.load(f)
 
-
-
     name1, name2 = data.columns[505], data.columns[524]
     tabliczka = mycontainer(data, name1, name2)
 

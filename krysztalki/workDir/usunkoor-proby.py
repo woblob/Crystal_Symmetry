@@ -33,7 +33,7 @@ def reduce_cell_by_symmetry(cell, matrixes):
             if cell_dict[tuple(base_point)]:
                 for point in get_all_transformed_points(matrix, base_point):
                     cell_dict[tuple(point)] = 0
-            
+
     reduced_cell, reduced_cell_indexes = [el for el in zip(*((point, index) for point, index in cell_dict.items() if index))]
     reduced_cell, reduced_cell_indexes = np.array(reduced_cell), np.array(reduced_cell_indexes)
     reduced_cell_indexes -= 1

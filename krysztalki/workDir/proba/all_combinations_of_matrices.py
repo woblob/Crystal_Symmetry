@@ -1,10 +1,7 @@
 from itertools import combinations
 
 import numpy as np
-from Matrix.matrices_new_extended import (
-    _matrix_ID_000,
-    all_matrices,
-)
+from krysztalki.workDir.Matrix.matrices_new_extended import _matrix_ID_000, all_matrices
 
 # from names_of_matrices import names
 names = [
@@ -360,8 +357,8 @@ class Matrix:
         result = Matrix._compose_matrix(rot_cell, trans)
         self.result = result
 
-    def __hash__(self):
-        return self.result.tostring()
+    def __hash__(self) -> int:
+        return hash(self.result.tostring())
 
     @staticmethod
     def _calculate_matrix(mat1, mat2):
@@ -491,7 +488,7 @@ for M1, M2 in combinations(range(1, len(all_matrices)), 2):
     str_temp2 = all_matrices[M2].tostring()
     val = all_hashed_M.get(str_temp)
     val2 = all_hashed_M.get(str_temp2)
-    with open(f"output_of_group_combinator/{val}, {val2}.txt", "w") as f:
+    with open(f"output_of_group_combinator/{val}, {val2}.txt", "w", encoding="utf-8") as f:
         elapsed = time() - start
         string = "; ".join(
             (

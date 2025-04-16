@@ -34,8 +34,6 @@ _matrix_hex_3_00z = np.array([[0, -1, 0, 0],
                               [ 0, 0, 1, 0],
                               [ 0, 0, 0, 1]])
 
-
-
 _matrix_hex_m3_00z = _matrix_hex_3_00z @ pod._matrix_inv_000
 
 _matrix_hex_6_00z  = np.array([[1, -1, 0, 0],
@@ -184,7 +182,5 @@ _matrix_hex_2_x2xH = matrices_dict_hex["hex_2_x2x0"] + _translation_002H  #
 #3_1_21
 _matrix_hex_2_x0t = matrices_dict_hex["hex_2_x00"] + _translation_004H  #
 _matrix_hex_2_0yH = matrices_dict_hex["hex_2_0y0"] + _translation_002H  #
-
-
 
 # _matrix_translation_ = _matrix_ID_000 + _translation_  #
