@@ -13,13 +13,13 @@ from typing import Union, Tuple, Callable, Any, cast
 def read_cif(file_path: Union[str, int]) -> Crystal:
     """
     Open a CIF file from local repository or download from Crystallography Open Database.
-    
+
     Args:
         file_path: Can be either an integer (COD number) or a string (path to CIF file)
-        
+
     Returns:
         Crystal: A Crystal object from the crystals library
-        
+
     Examples:
         >>> crystal = read_cif(1000041)  # NaCl Fm-3m
         >>> crystal = read_cif('path/to/file.cif')
@@ -29,7 +29,7 @@ def read_cif(file_path: Union[str, int]) -> Crystal:
         return Crystal.from_cod(value)
     except ValueError:
         pass
-    
+
     full_path = pathlib.Path(str(file_path)).absolute()
     return Crystal.from_cif(str(full_path))
 
@@ -37,10 +37,10 @@ def read_cif(file_path: Union[str, int]) -> Crystal:
 def eqPoints(POINT: np.ndarray) -> np.ndarray:
     """
     Generate equivalent points by adding 1 to coordinates with zero values.
-    
+
     Args:
         POINT: A 3D point array [x, y, z] with some zero values
-        
+
     Returns:
         Array of equivalent points with zeros replaced by ones in various combinations
     """
@@ -63,10 +63,10 @@ def eqPoints(POINT: np.ndarray) -> np.ndarray:
 def allEqPoints(CELL: np.ndarray) -> np.ndarray:
     """
     Find all points with zeros and add their equivalent to make whole cell.
-    
+
     Args:
         CELL: Array of points in fractional coordinates
-        
+
     Returns:
         Array with additional equivalent points added
     """
@@ -81,10 +81,10 @@ def allEqPoints(CELL: np.ndarray) -> np.ndarray:
 def millerORweber(ITN: int) -> str:
     """
     Determine which coordinate system to use based on international table number.
-    
+
     Args:
         ITN: International table number of the space group
-        
+
     Returns:
         "w" for Weber indices (hexagonal) or "m" for Miller indices (others)
     """
@@ -98,19 +98,19 @@ def getSCell(func: Callable[[Union[str, int]], Crystal],
             size: int) -> Tuple[np.ndarray, str]:
     """
     Get cell from CIF file or database and process it into a supercell.
-    
+
     Args:
         func: Function to read the crystal structure (e.g., read_cif)
         filename: Path to CIF file or COD identifier
         size: Size of the supercell
-        
+
     Returns:
         Tuple of (points array, coordinate system type)
     """
     file = func(filename)
     basetype = millerORweber(file.symmetry()["international_number"])
     points = file.supercell(size, size, size).itersorted()
-    
+
     # Initialize cell with first point or default values
     if size % 2:
         cell = np.array([1.0, 1.0, 1.0])
@@ -123,7 +123,7 @@ def getSCell(func: Callable[[Union[str, int]], Crystal],
             coords[1] / scale_factor - 1.0,
             coords[2] / scale_factor - 1.0
         ])
-    
+
     # Add all remaining points to the cell
     for el in points:
         coords = np.array(el.coords_fractional)
@@ -134,5 +134,5 @@ def getSCell(func: Callable[[Union[str, int]], Crystal],
             coords[2] / scale_factor - 1.0
         ])
         cell = np.vstack((cell, new_point))
-    
+
     return allEqPoints(cell), basetype

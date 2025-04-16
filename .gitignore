@@ -111,3 +111,37 @@ README.md
 
 krysztalki/outputs
 .qodo
+
+# Added by Claude Task Master
+# Logs
+logs
+*.log*
+
+# Dependency directories
+node_modules/
+# Environment variables
+# Editor directories and files
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# OS specific
+.DS_Store
+# Task files
+tasks.json
+tasks/
+
+.cursor
+.windsurf*
+
+# Task Master files
+tasks/
+tasks.json
+scripts/task-complexity-report.json
+scripts/modules/
+.task-master/
+.task-master-cache/
+.taskmaster-history/
+.tm/

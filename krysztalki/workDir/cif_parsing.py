@@ -7,22 +7,8 @@ from krysztalki.utils.task_manager import CrystalTaskManager
 
 
 class MyCell:
-    """
-    Class representing a crystallographic cell with symmetry operations.
-
-    This class manages crystal data, extracts symmetry operations,
-    and handles transformations of points within the crystal.
-    """
-
     def __init__(self, file_name: Union[str, int], size: int):
-        """
-        Initialize a crystal cell from a CIF file or COD identifier.
-
-        Args:
-            file_name: Path to CIF file or COD database number
-            size: Size multiplier for the supercell
-        """
-        # Initialize instance variables to ensure they're always defined
+        # Initialize instance variables
         self.symmetry_operations = np.array([])
         self.symmetry_operations_inverses = np.array([])
         self.lattice_vectors = np.array([])
@@ -33,7 +19,7 @@ class MyCell:
 
         # Create task for analyzing this crystal
         self.task_manager = CrystalTaskManager()
-        task: Optional[Dict[str, Any]] = self.task_manager.add_crystal_analysis_task(file_name)
+        task: Optional[Dict[str, Any]] = self.task_manager.add_crystal_analysis_task(str(file_name))
 
         try:
             file = self.getfile(file_name)
@@ -70,15 +56,6 @@ class MyCell:
             raise
 
     def prepare_lattice_vectors(self, lattice_vectors: np.ndarray) -> np.ndarray:
-        """
-        Prepare lattice vectors for transformation calculations.
-
-        Args:
-            lattice_vectors: 3×3 array of lattice vectors
-
-        Returns:
-            4×4 transformation matrix with augmented dimension
-        """
         expanded_lattice_vectors = \
             np.column_stack((lattice_vectors, np.zeros(3)))
 
@@ -87,15 +64,9 @@ class MyCell:
 
         expanded_lattice_vectors[-1, -1] = 1
 
-        return np.around(expanded_lattice_vectors, 14)
+        return cast(np.ndarray, np.around(expanded_lattice_vectors, 14))
 
     def get_symmetry_operations_inverses(self) -> np.ndarray:
-        """
-        Calculate the inverses of symmetry operations, excluding redundant ones.
-
-        Returns:
-            Array of inverse symmetry operations that don't overlap with existing operations
-        """
         symmetries = self.symmetry_operations
         all_inverses = np.linalg.inv(symmetries)
 
@@ -112,16 +83,16 @@ class MyCell:
 
     def getfile(self, file_name: Union[str, int]) -> Crystal:
         """
-        Open CIF file from local repository or download from Crystallography Open Database.
+        open cif file from local repository
+        or
+        download file from Crystallography Open Database
 
-        Args:
-            file_name: Integer COD number or string path to CIF file
+        file_name can be either:
+            integer: COD number
+            string:  CIF file
 
-        Returns:
-            Crystal object with loaded structure data
-
-        Examples:
-            file_name = 1000041  # NaCl Fm-3m
+        examples:
+            file_name = 1000041 # NaCl Fm-3m
             file_name = 'path/to/file.cif'
         """
         try:
@@ -133,76 +104,52 @@ class MyCell:
         return Crystal.from_cif(str(full_path))
 
     def miller_or_weber(self, cell_info: Crystal) -> str:
-        """
-        Determine which coordinate system to use based on crystal system.
-
-        For hexagonal or rhombohedral crystal systems, use Weber (4D) indices.
-        For all others, use Miller (3D) indices.
-
-        Args:
-            cell_info: Crystal object containing symmetry information
-
-        Returns:
-            "w" for Weber (hexagonal) or "m" for Miller (all others)
-        """
+        # """
+        # Determine which coordinates to choose:
+        # 3D for Parallelepiped or '4'D for hexagonal.
+        # All numbers between [143-194] are for hexagonal groups.
+        # """
         international_number = cell_info.symmetry()["international_number"]
         if 194 >= international_number >= 143:
-            return "w"  # "hP, hR" (hexagonal or rhombohedral)
-        return "m"  # "rest" (all other crystal systems)
+            return "w"  # "hP, hR"
+        return "m"  # "rest"
 
     def extract_info(self, file: Crystal, size: int) -> None:
-        """
-        Extract crystal information and prepare supercell data.
-
-        Args:
-            file: Crystal object containing structural data
-            size: Size multiplier for the supercell
-        """
         full_info_cell = list(file.supercell(size, size, size).itersorted())
 
-        # Convert Crystal's lattice_vectors to numpy array before processing
-        lattice_array = np.array(file.lattice_vectors)
-        self.lattice_vectors = self.prepare_lattice_vectors(lattice_array)
-
-        self.super_cell_atomic_numbers = np.array(
-            [atom_point.atomic_number for atom_point in full_info_cell]
+        self.lattice_vectors = self.prepare_lattice_vectors(
+            np.array(file.lattice_vectors)
         )
 
-        # Extract fractional coordinates from the supercell
-        cell = np.array([atom_point.coords_fractional for atom_point in full_info_cell])
+        self.super_cell_atomic_numbers = np.array(
+            [p.atomic_number for p in full_info_cell]
+        )
 
-        # Sort and make unique
+        cell = np.array([point.coords_fractional for point in full_info_cell])
+
+        # for i in range(3):
+        #     mask = np.where(whole_cell[:, i] == 0)
+        #     points_with_zeroes = whole_cell[mask]
+        #     points_with_zeroes[:, i] += size
+        #     whole_cell = np.append(whole_cell, points_with_zeroes, axis=0)
+
         sorted_cell = np.unique(cell, axis=0)
 
-        # Scale back to unit cell
         compact_cell = sorted_cell / size
 
-        # Prepare for transformation to cartesian
         augmented_cell = np.column_stack(
             [compact_cell, np.ones(len(compact_cell))]
         )
 
-        # Transform to cartesian coordinates
         self.super_cell = (self.lattice_vectors @ augmented_cell.T).T
 
     def _handle_negative_zeroes(self) -> None:
-        """Fix negative zero values in the supercell coordinates."""
         mask = np.where(self.super_cell == 0)
         self.super_cell[mask] += 1
         self.super_cell[mask] -= 1
 
     def put_points_in_cell(self, points: np.ndarray) -> np.ndarray:
-        """
-        Adjust points to lie within the unit cell.
-
-        Args:
-            points: Array of points in cartesian coordinates
-
-        Returns:
-            Adjusted points that lie within the unit cell
-        """
         inverse = np.linalg.inv(self.lattice_vectors)
-
         # Transform points to fractional coordinates
         scaled_points = np.einsum("ij,klj->kli", inverse, points)
         scaled_points = np.around(scaled_points, 14)
@@ -228,26 +175,16 @@ class MyCell:
         return cast(np.ndarray, adjusted_points)
 
     def __mul__(self, matrices: np.ndarray) -> np.ndarray:
-        """
-        Apply symmetry matrices to the supercell points.
-
-        Args:
-            matrices: Array of transformation matrices
-
-        Returns:
-            Transformed points adjusted to lie within the unit cell
-        """
         result = matrices @ self.super_cell.T
         result_adjusted = self.put_points_in_cell(result)
+
         return result_adjusted
 
     @property
     def volume(self) -> float:
-        """Calculate the volume of the unit cell."""
         return float(np.linalg.det(self.lattice_vectors))
 
     def __str__(self) -> str:
-        """Generate a string representation for debugging."""
         fields: List[Tuple[str, Any]] = [
             # ("super_cell", self.super_cell),
             # ("super_cell_atomic_numbers", self.super_cell_atomic_numbers),

@@ -7,14 +7,13 @@ from typing import Set, Tuple, List, Dict, Any
 
 import numpy as np
 
-# Using the new proper imports
 from krysztalki.core.symmetry import analyze_symmetry
 from krysztalki.io.cif import read_cif, getSCell
 
 def main() -> None:
     """
     Main entry point for the crystal symmetry CLI.
-    
+
     This function parses command line arguments and runs the crystal symmetry analysis.
     """
     parser = argparse.ArgumentParser(description="Crystal symmetry analysis tool")
@@ -31,25 +30,25 @@ def main() -> None:
         "--output", "-o", type=str, default="OUTPUT.txt",
         help="Output file path (default: OUTPUT.txt)"
     )
-    
+
     args = parser.parse_args()
-    
+
     print(f"Loading crystal from: {args.file}")
     print(f"Using supercell size: {args.supercell}")
     print(f"Analyzing with {args.vacancies} vacancies")
-    
+
     start = time()
-    
+
     # Run analysis using the proper module function
     result = analyze_symmetry(
         read_cif(args.file), 
         vacancy_count=args.vacancies
     )
-    
+
     print(f"Analysis completed in {(time() - start):.2f} seconds")
     print(f"Found {len(result['symmetry_operations'])} symmetry operations")
     print(f"Writing results to {args.output}")
-    
+
     # Write results to output file
     with open(args.output, "w") as f:
         f.write(f"Crystal file: {args.file}\n")
