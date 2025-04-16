@@ -130,18 +130,23 @@ node_modules/
 # OS specific
 .DS_Store
 # Task files
-tasks.json
-tasks/
+
+
 
 .cursor
 .windsurf*
 
 # Task Master files
-tasks/
-tasks.json
+
 scripts/task-complexity-report.json
 scripts/modules/
 .task-master/
 .task-master-cache/
 .taskmaster-history/
 .tm/
+
+# Added by Claude Task Master
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dev-debug.log

@@ -1,0 +1,593 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Reorganize Project Structure",
+      "description": "Restructure the codebase into a proper Python package with organized modules and clean imports.",
+      "status": "done",
+      "priority": "high",
+      "dependencies": [],
+      "details": "Implement a complete reorganization of the project structure to follow Python package best practices. Create a proper package structure with __init__.py files, organized modules, and clean import statements. Ensure the package can be properly installed and imported.",
+      "testStrategy": "Validate the package structure by installing it in a clean environment and verifying imports work correctly.",
+      "subtasks": [
+        {
+          "id": 1,
+          "title": "Create basic package structure and setup files",
+          "status": "done",
+          "dependencies": [],
+          "parentTaskId": 1
+        },
+        {
+          "id": 2,
+          "title": "Analyze current codebase and plan module organization",
+          "status": "done",
+          "dependencies": [
+            1
+          ],
+          "parentTaskId": 1
+        },
+        {
+          "id": 3,
+          "title": "Create package directory with module structure",
+          "status": "done",
+          "dependencies": [
+            2
+          ],
+          "parentTaskId": 1
+        },
+        {
+          "id": 4,
+          "title": "Update import statements throughout codebase",
+          "status": "done",
+          "dependencies": [
+            3
+          ],
+          "parentTaskId": 1
+        },
+        {
+          "id": 5,
+          "title": "Test package installation and imports",
+          "status": "done",
+          "dependencies": [
+            4
+          ],
+          "parentTaskId": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Create Setup Files and Installation Process",
+      "description": "Create all necessary files for package distribution and installation.",
+      "status": "done",
+      "priority": "high",
+      "dependencies": [
+        1
+      ],
+      "details": "Create all necessary files for packaging and distributing the library. This includes version information, requirements, setup configuration, documentation, and license information. Ensure the package can be installed via pip and includes all necessary dependencies.",
+      "testStrategy": "Verify installation via pip in a clean virtual environment and confirm all functionality is accessible.",
+      "subtasks": [
+        {
+          "id": 1,
+          "title": "Create __version__.py and requirements.txt files",
+          "status": "done",
+          "dependencies": [],
+          "parentTaskId": 2
+        },
+        {
+          "id": 2,
+          "title": "Create README.md and LICENSE files",
+          "status": "done",
+          "dependencies": [],
+          "parentTaskId": 2
+        },
+        {
+          "id": 3,
+          "title": "Create setup.py with package metadata and configuration",
+          "status": "done",
+          "dependencies": [
+            1,
+            2
+          ],
+          "parentTaskId": 2
+        },
+        {
+          "id": 4,
+          "title": "Create MANIFEST.in and test installation process",
+          "status": "done",
+          "dependencies": [
+            3
+          ],
+          "parentTaskId": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Fix Undefined Variables in cifParsing.py",
+      "description": "Identify and fix all undefined variables in the CIF parsing module.",
+      "status": "in-progress",
+      "priority": "high",
+      "dependencies": [
+        1
+      ],
+      "details": "The cifParsing.py module contains undefined variables that need to be properly initialized and typed. This task involves analyzing the file, identifying all undefined variables, determining appropriate types and initial values, implementing fixes, and refactoring for improved clarity and maintainability.\n\nSpecific approach:\n1. Perform a thorough static analysis of the code to identify all undefined variables\n2. Review the context where each variable is used to determine appropriate types\n3. Consult domain knowledge about crystallography to determine appropriate initial values\n4. Implement fixes by properly initializing all variables with appropriate default values\n5. Document the purpose of each variable with clear comments\n6. Refactor code sections to improve readability and maintainability where needed\n7. Verify that all variables are properly defined across all execution paths",
+      "testStrategy": "Create unit tests to verify that the module works correctly after fixes. Ensure all previously undefined variables are properly initialized and accessed.",
+      "subtasks": [
+        {
+          "id": 1,
+          "title": "Analyze cifParsing.py to identify all undefined variables",
+          "status": "in-progress",
+          "dependencies": [],
+          "parentTaskId": 3,
+          "details": "\n\n<info added on 2025-04-16T18:49:35.663Z>\nTo enhance the subtask, I'll add implementation details for analyzing undefined variables in cifParsing.py:\n\n## Implementation Approach\n\n### Static Analysis Tools\n- Use `pyflakes` to perform initial scan: `pyflakes cifParsing.py > undefined_vars.txt`\n- Apply `pylint` with focus on undefined variables: `pylint --disable=all --enable=undefined-variable cifParsing.py`\n- Consider using AST module to build custom analyzer:\n```python\nimport ast\n\nclass UndefinedVarVisitor(ast.NodeVisitor):\n    def __init__(self):\n        self.defined_names = set()\n        self.used_names = set()\n        self.undefined = []\n        \n    def visit_Name(self, node):\n        if isinstance(node.ctx, ast.Store):\n            self.defined_names.add(node.id)\n        elif isinstance(node.ctx, ast.Load):\n            self.used_names.add(node.id)\n        self.generic_visit(node)\n```\n\n### Runtime Analysis\n- Instrument code with custom variable tracker:\n```python\ndef track_variables(frame, event, arg):\n    if event == 'line':\n        local_vars = frame.f_locals\n        # Log variables accessed\n    return track_variables\n```\n- Create test suite with edge cases focusing on:\n  - Conditional code paths\n  - Exception handlers\n  - List comprehensions and generator expressions\n\n### Variable Inventory Format\nCreate structured JSON output:\n```json\n{\n  \"variable_name\": {\n    \"type\": \"detected_type\",\n    \"defined_at\": [\"line_numbers\"],\n    \"used_at\": [\"line_numbers\"],\n    \"scope\": \"local/instance/global\",\n    \"dependencies\": [\"other_variables\"],\n    \"undefined_contexts\": [\"context_descriptions\"]\n  }\n}\n```\n\n### Recommended Refactoring Patterns\n- Document common patterns requiring fixes:\n  - Move implicit globals to explicit parameters\n  - Convert module-level variables to class attributes\n  - Replace dynamic attribute access with defined properties\n</info added on 2025-04-16T18:49:35.663Z>"
+        },
+        {
+          "id": 2,
+          "title": "Define appropriate types and initial values for each variable",
+          "status": "pending",
+          "dependencies": [
+            1
+          ],
+          "parentTaskId": 3
+        },
+        {
+          "id": 3,
+          "title": "Implement fixes for undefined variables",
+          "status": "pending",
+          "dependencies": [
+            2
+          ],
+          "parentTaskId": 3
+        },
+        {
+          "id": 4,
+          "title": "Refactor code for improved clarity and maintainability",
+          "status": "pending",
+          "dependencies": [
+            3
+          ],
+          "parentTaskId": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Add Type Hints and Create Stubs",
+      "description": "Add Python type hints throughout the codebase and create stub files for type checking.",
+      "status": "pending",
+      "priority": "medium",
+      "dependencies": [
+        1,
+        3
+      ],
+      "details": "Add Python type annotations throughout the codebase to improve code quality, documentation, and IDE support. Create stub files for external dependencies to enable comprehensive type checking. Configure and run a type checker to validate all type hints.\n\nImplementation approach:\n1. Use Python's typing module for standard type annotations\n2. Create custom type definitions for domain-specific data structures\n3. Annotate function parameters, return types, and variable declarations\n4. Focus on annotating public API functions first, then internal implementations\n5. Create stub files (.pyi) for external dependencies that don't have type hints\n6. Configure mypy with appropriate settings for the project's needs\n7. Document complex type annotations with explanatory comments\n8. Ensure type annotations are consistent across related functions and classes",
+      "testStrategy": "Run mypy or another type checker to confirm type correctness. Verify that all functions have appropriate type hints.",
+      "subtasks": [
+        {
+          "id": 1,
+          "title": "Analyze codebase and create type annotation plan",
+          "status": "pending",
+          "dependencies": [],
+          "parentTaskId": 4,
+          "details": "\n\n<info added on 2025-04-16T18:49:49.775Z>\n# Type Annotation Implementation Plan\n\n## Analysis Phase\n- Scan codebase using tools like `mypy --find-occurrences` to identify frequently used functions/classes\n- Map data flow between components to understand type propagation\n- Identify crystallographic-specific data structures (unit cells, symmetry operations, atomic coordinates)\n- Document common function signatures and return types\n\n## Type Hint Strategy\n- For crystallographic data: Use `numpy.ndarray` with shape specifications (e.g., `ndarray[Shape[\"3, 3\"], Float]`)\n- For symmetry operations: Create custom type aliases (e.g., `SymmetryOperation = Tuple[ndarray, ndarray]`)\n- For atomic structures: Consider dataclasses with typed fields\n- Use `TypeVar` for generic crystallographic operations\n\n## Implementation Approach\n1. Start with core utility functions that handle basic crystallographic math\n2. Create type stubs for numpy-heavy modules first\n3. Implement `Protocol` classes for duck-typed interfaces\n4. Use `@overload` for functions with multiple valid signatures\n5. Add `Optional[]` and `Union[]` types where functions accept variable inputs\n\n## Documentation Integration\n- Add typing examples in module-level docstrings\n- Create a typing guide document for contributors\n- Include type checking in CI pipeline with mypy\n- Document any `# type: ignore` comments with explanations\n\n## Stub File Creation\n- Generate initial stubs with stubgen\n- Manually enhance stubs for scientific/mathematical functions\n- Include detailed type information for public API functions\n</info added on 2025-04-16T18:49:49.775Z>\n\n<info added on 2025-04-16T18:51:04.730Z>\n<info added on 2025-04-17T10:15:22.103Z>\n# Implementation Details for Type Annotation Analysis\n\n## Systematic Codebase Scanning\n- Use `find . -name \"*.py\" | xargs wc -l | sort -nr` to identify all Python files by size\n- Create a dependency graph with `pydeps` to visualize module relationships\n- Employ `radon cc` to measure cyclomatic complexity of modules for prioritization\n- Use `vulture` to identify dead code that can be excluded from typing efforts\n\n## Prioritization Framework\n- **Tier 1**: Core crystallographic calculation modules with high import frequency\n- **Tier 2**: Public API and interface modules used by external consumers\n- **Tier 3**: Internal utilities and helpers\n- **Tier 4**: Test modules and examples\n- Score modules by: usage frequency × complexity × external dependency count\n\n## Type Complexity Categorization\n1. **Simple**: Basic Python types, minimal generics (1-2 hours per file)\n2. **Moderate**: Container types, simple generics, NumPy arrays (2-4 hours per file)\n3. **Complex**: Higher-order functions, callbacks, complex generics (4-8 hours per file)\n4. **Very Complex**: Dynamic code, metaprogramming, runtime type creation (8+ hours per file)\n\n## API Inconsistency Documentation\n- Create a structured YAML template for documenting inconsistencies:\n  ```yaml\n  module: path.to.module\n  function: function_name\n  inconsistency_type: return_type_varies | parameter_type_varies | etc\n  description: \"Detailed explanation\"\n  affected_modules: [list of modules impacted]\n  proposed_solution: \"Suggested approach\"\n  ```\n- Maintain a central registry of inconsistencies in `typing_issues.yaml`\n- Link inconsistencies to GitHub issues for tracking resolution\n\n## Custom Type Definition Strategy\n- Create a `types.py` module in each package for package-specific types\n- Implement a central `crystallography_types.py` for cross-cutting type definitions\n- For each identified data structure:\n  1. Document its shape, constraints, and valid values\n  2. Create appropriate type aliases, TypedDict, or Protocol classes\n  3. Add validation functions with runtime type checking when appropriate\n\n## External Dependency Inventory\n- Use `pipdeptree` to generate complete dependency tree\n- For each dependency:\n  1. Check for existing type stubs in typeshed or the package itself\n  2. Record typing status (fully typed, partially typed, untyped)\n  3. Prioritize stub creation for untyped scientific libraries\n- Create custom stub files for critical dependencies in a `stubs/` directory\n\n## Typing Coverage Metrics\n- Implement a custom mypy plugin to generate coverage reports\n- Track metrics:\n  - Percentage of functions with complete type annotations\n  - Percentage of variables with explicit types\n  - Number of `Any` types used (goal: minimize)\n  - Number of `# type: ignore` comments (goal: minimize with justification)\n- Generate weekly coverage trend reports during implementation\n\n## Dynamic Typing Analysis\n- Use static analysis tools like `monkeytype` to trace runtime types\n- Identify patterns of:\n  - Duck typing that should use Protocol classes\n  - Runtime type checking with `isinstance()` that needs Union types\n  - Dynamic attribute access that requires careful typing with `__getattr__`\n  - Metaprogramming that may require `cast()` or `TypeGuard`\n- Document each dynamic typing pattern with example solutions\n</info added on 2025-04-17T10:15:22.103Z>\n</info added on 2025-04-16T18:51:04.730Z>"
+        },
+        {
+          "id": 2,
+          "title": "Add type hints to core function parameters and return values",
+          "status": "pending",
+          "dependencies": [
+            1
+          ],
+          "parentTaskId": 4,
+          "details": "\n\n<info added on 2025-04-16T18:50:03.285Z>\n# Implementation Details\n\n## Analysis Phase\n- Identify all core functions in modules like `crystal_math.py`, `lattice_operations.py`, and `symmetry_transformations.py`\n- Document existing parameter and return types through code inspection and existing documentation\n- Categorize functions by complexity: simple scalar operations, vector/matrix operations, and polymorphic functions\n\n## Type Annotations Implementation\n- For mathematical functions:\n  ```python\n  def calculate_lattice_energy(positions: np.ndarray, charges: np.ndarray) -> float:\n      \"\"\"Calculate the electrostatic lattice energy.\"\"\"\n  ```\n\n- For matrix operations:\n  ```python\n  def transform_coordinates(matrix: np.ndarray, coordinates: np.ndarray) -> np.ndarray:\n      \"\"\"Apply transformation matrix to atomic coordinates.\"\"\"\n  ```\n\n- For polymorphic functions:\n  ```python\n  T = TypeVar('T', bound=np.ndarray)\n  def apply_symmetry_operations(structure: T, operations: List[SymmetryOperation]) -> T:\n      \"\"\"Apply symmetry operations to crystal structure.\"\"\"\n  ```\n\n## Type Checking Implementation\n- Configure mypy with strict settings in `pyproject.toml`:\n  ```toml\n  [tool.mypy]\n  python_version = \"3.8\"\n  warn_return_any = true\n  warn_unused_configs = true\n  disallow_untyped_defs = true\n  disallow_incomplete_defs = true\n  ```\n- Create custom type definitions in `crystal_types.py` for domain-specific types\n- Document any `# type: ignore` comments with explanations\n\n## Documentation\n- Add typing decisions section to developer documentation\n- Document any challenging typing scenarios and their solutions\n- Include examples of properly typed function signatures for contributors\n</info added on 2025-04-16T18:50:03.285Z>"
+        },
+        {
+          "id": 3,
+          "title": "Add type hints to class attributes and methods",
+          "status": "pending",
+          "dependencies": [
+            1
+          ],
+          "parentTaskId": 4,
+          "details": "\n\n<info added on 2025-04-16T18:50:18.636Z>\n# Implementation Details for Type Hints\n\n## Crystallographic Data Structures\n- Define `UnitCell` type as a dataclass with lattice parameters (a, b, c, alpha, beta, gamma)\n- Create `SymmetryOperation` type alias for transformation matrices: `SymmetryOperation = tuple[np.ndarray, np.ndarray]`  \n- Use `AtomicPosition = tuple[str, np.ndarray, float, float]` for element, coordinates, occupancy, and displacement\n- Implement `SpaceGroup` class with proper typing for symmetry operations\n\n## Custom Type Aliases\n- `HKL = tuple[int, int, int]` for Miller indices\n- `LatticeParameters = tuple[float, float, float, float, float, float]`\n- `AtomicStructure = dict[str, list[AtomicPosition]]`\n- `DiffractionPattern = dict[HKL, float]`\n\n## Generic Types\n- `DataSeries[T] = list[tuple[float, T]]` for various data series\n- `StructureCollection[T_Structure] = dict[str, T_Structure]`\n- `ResultMap[T_Input, T_Output] = dict[T_Input, T_Output]`\n\n## Protocol Classes\n- Define `Transformable` protocol with `transform(matrix: np.ndarray) -> Self`\n- Create `Serializable` protocol with `to_dict()` and `from_dict()` methods\n- Implement `Measurable` protocol for objects that provide physical measurements\n\n## Type Integration with Class Hierarchy\n- Use `TypeVar` with bounds for crystallographic class hierarchies\n- Implement proper return type annotations for inheritance chains\n- Add `@overload` decorators for methods with multiple signatures\n\n## Serialization Types\n- Define `JSONDict = dict[str, Union[str, int, float, list, dict]]`\n- Create type aliases for different serialization formats\n- Implement `TypedDict` classes for strict dictionary structure typing\n\n## Runtime Type Checking\n- Add `isinstance()` checks at critical boundaries\n- Implement custom validators using `@validate_argument` decorators\n- Add optional runtime type enforcement with `typeguard` integration\n</info added on 2025-04-16T18:50:18.636Z>"
+        },
+        {
+          "id": 4,
+          "title": "Create stub files for external dependencies",
+          "status": "pending",
+          "dependencies": [
+            1
+          ],
+          "parentTaskId": 4,
+          "details": "\n\n<info added on 2025-04-16T18:50:41.296Z>\n# Implementation Details for Creating Stub Files\n\n## Dependency Identification\n- Scan project imports using tools like `pipreqs` or `importlib.metadata` to identify external dependencies\n- Prioritize dependencies used in core crystallography calculations and data processing\n- Create a dependency classification system (critical/secondary/optional) to prioritize stub creation\n\n## Stub Generation Process\n- Use mypy's stubgen: `stubgen -p package_name -o stubs/`\n- Create a script to batch process all identified dependencies\n- Example command: `python -m mypy.stubgen numpy scipy matplotlib -o ./stubs`\n\n## Enhancing Auto-Generated Stubs\n- Add proper return types for functions where stubgen uses `Any`\n- Document array shapes for numpy functions (e.g., `def func() -> np.ndarray[Shape[\"n,m\"], np.float64]: ...`)\n- Use `typing.Protocol` for duck-typed interfaces\n- Add `@overload` decorations for functions with multiple signatures\n\n## Scientific Library Handling\n- For numpy: focus on ndarray, linalg, and fft modules with crystallography-relevant functions\n- For scipy: prioritize spatial, optimize, and signal modules\n- Use numpy-stubs project as reference: https://github.com/numpy/numpy-stubs\n\n## Crystallography-Specific Packages\n- Create custom stubs for packages like CrystFEL, DIALS, or CCP4\n- Document expected data structures for diffraction patterns\n- Define proper types for Miller indices, space groups, and unit cell parameters\n\n## Version Compatibility\n- Include version conditionals: `if sys.version_info >= (3, 8): ...`\n- Add package version checks: `if NUMPY_VERSION >= (1, 20): ...`\n- Document minimum supported versions in stub file headers\n\n## Validation Process\n- Run mypy with strict mode on sample code using the stubs\n- Create test cases that exercise different API aspects\n- Implement CI check that verifies stub compatibility with actual packages\n\n## IDE Integration\n- Configure VSCode/PyCharm to recognize custom stub directory\n- Add mypy.ini configuration to include stub paths\n- Document stub usage in project README for new developers\n</info added on 2025-04-16T18:50:41.296Z>"
+        },
+        {
+          "id": 5,
+          "title": "Configure and run type checker to validate all type hints",
+          "status": "pending",
+          "dependencies": [
+            2,
+            3,
+            4
+          ],
+          "parentTaskId": 4
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Fix Linter Errors and Standardize Code Style",
+      "description": "Set up linting tools and standardize code style across the codebase.",
+      "status": "pending",
+      "priority": "medium",
+      "dependencies": [
+        1,
+        3,
+        4
+      ],
+      "details": "Set up linting configuration files, run linters to identify code style issues, implement automated code formatting, and manually fix remaining linter errors. The goal is to establish and enforce consistent code style throughout the codebase.\n\nDetailed implementation plan:\n1. Select appropriate linters for Python (flake8, pylint, etc.) based on project needs\n2. Create configuration files (.flake8, .pylintrc, etc.) with project-specific settings\n3. Configure rules to match agreed-upon code style (line length, indentation, naming conventions, etc.)\n4. Set up automated code formatting with tools like black or autopep8\n5. Create pre-commit hooks to enforce linting on code commits\n6. Run linters against the codebase to identify all style issues\n7. Fix automated formatting issues first, then address more complex linting errors manually\n8. Document exceptions to linting rules where appropriate with inline comments",
+      "testStrategy": "Run linters in CI/CD pipeline to ensure all code conforms to the established style guidelines.",
+      "subtasks": [
+        {
+          "id": 1,
+          "title": "Set up linting configuration files",
+          "status": "pending",
+          "dependencies": [],
+          "parentTaskId": 5
+        },
+        {
+          "id": 2,
+          "title": "Run linters to identify all code style issues",
+          "status": "pending",
+          "dependencies": [
+            1
+          ],
+          "parentTaskId": 5
+        },
+        {
+          "id": 3,
+          "title": "Implement automated code formatting",
+          "status": "pending",
+          "dependencies": [
+            1,
+            2
+          ],
+          "parentTaskId": 5
+        },
+        {
+          "id": 4,
+          "title": "Manually fix remaining linter errors",
+          "status": "pending",
+          "dependencies": [
+            2,
+            3
+          ],
+          "parentTaskId": 5
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Implement Error Handling and Logging",
+      "description": "Add comprehensive error handling and logging throughout the codebase.",
+      "status": "pending",
+      "priority": "medium",
+      "dependencies": [
+        1,
+        3
+      ],
+      "details": "Develop a robust error handling and logging system for the library. Define a custom exception hierarchy, implement a logging configuration system, refactor critical code sections with appropriate try-except blocks, implement progress tracking for long-running operations, and add comprehensive error handling to all API endpoints.\n\nDetailed approach:\n1. Create a custom exception hierarchy that extends from built-in exceptions (ValueError, TypeError, etc.)\n2. Define specific exception classes for domain-specific error conditions (CrystalStructureError, CIFParsingError, etc.)\n3. Implement a centralized logging configuration system using Python's logging module\n4. Define appropriate log levels (DEBUG, INFO, WARNING, ERROR, CRITICAL) for different operations\n5. Add contextual information to log messages (file, line number, operation context, etc.)\n6. Implement progress tracking for long-running operations with appropriate callbacks\n7. Wrap critical code sections with appropriate try-except blocks to handle potential errors gracefully\n8. Ensure all API endpoints validate inputs and handle errors consistently\n9. Provide clear error messages that guide users on how to resolve issues",
+      "testStrategy": "Test error scenarios to ensure appropriate exceptions are raised and logged. Verify logging captures all necessary information.",
+      "subtasks": [
+        {
+          "id": 1,
+          "title": "Define custom exception hierarchy",
+          "status": "pending",
+          "dependencies": [],
+          "parentTaskId": 6
+        },
+        {
+          "id": 2,
+          "title": "Implement logging configuration system",
+          "status": "pending",
+          "dependencies": [],
+          "parentTaskId": 6
+        },
+        {
+          "id": 3,
+          "title": "Refactor critical code sections with try-except blocks",
+          "status": "pending",
+          "dependencies": [
+            1,
+            2
+          ],
+          "parentTaskId": 6
+        },
+        {
+          "id": 4,
+          "title": "Implement progress tracking for long-running operations",
+          "status": "pending",
+          "dependencies": [
+            2
+          ],
+          "parentTaskId": 6
+        },
+        {
+          "id": 5,
+          "title": "Add comprehensive error handling to API endpoints",
+          "status": "pending",
+          "dependencies": [
+            1,
+            2,
+            3
+          ],
+          "parentTaskId": 6
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Create Comprehensive Documentation",
+      "description": "Create thorough documentation for the library, including API documentation, usage examples, and guides.",
+      "status": "pending",
+      "priority": "medium",
+      "dependencies": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "details": "Create comprehensive documentation for the library, including a detailed README with project overview, inline docstrings for all code components, generated API documentation, detailed usage examples, and contribution and installation guides.\n\nImplementation details:\n1. Create a detailed README.md with project overview, installation instructions, and basic usage examples\n2. Add comprehensive docstrings to all modules, classes, functions, and methods following a consistent format (NumPy, Google, or reST style)\n3. Include type information, parameter descriptions, return values, and exceptions in docstrings\n4. Set up Sphinx or another documentation generator to create API reference documentation\n5. Create detailed usage examples demonstrating common workflows and advanced features\n6. Document crystallographic concepts and algorithms implemented in the library\n7. Create installation guides for different platforms and environments\n8. Develop contribution guidelines for future contributors\n9. Include troubleshooting sections for common issues\n10. Add diagrams and visualizations where appropriate to illustrate concepts",
+      "testStrategy": "Review documentation for completeness, clarity, and accuracy. Ensure all modules, classes, and functions are properly documented.",
+      "subtasks": [
+        {
+          "id": 1,
+          "title": "Create README.md with Project Overview",
+          "status": "pending",
+          "dependencies": [],
+          "parentTaskId": 7
+        },
+        {
+          "id": 2,
+          "title": "Add Docstrings to All Code Components",
+          "status": "pending",
+          "dependencies": [],
+          "parentTaskId": 7
+        },
+        {
+          "id": 3,
+          "title": "Generate API Documentation",
+          "status": "pending",
+          "dependencies": [
+            2
+          ],
+          "parentTaskId": 7
+        },
+        {
+          "id": 4,
+          "title": "Create Detailed Usage Examples",
+          "status": "pending",
+          "dependencies": [
+            1,
+            2
+          ],
+          "parentTaskId": 7
+        },
+        {
+          "id": 5,
+          "title": "Write Contribution and Installation Guides",
+          "status": "pending",
+          "dependencies": [
+            1
+          ],
+          "parentTaskId": 7
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Develop Unit Tests",
+      "description": "Create comprehensive unit tests for all components of the library.",
+      "status": "pending",
+      "priority": "high",
+      "dependencies": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "details": "Develop a comprehensive suite of unit tests for all components of the library. Set up a testing framework and structure, create test fixtures and utilities, implement tests for core functions and classes, add tests for edge cases and error conditions, and measure and improve test coverage.\n\nDetailed implementation approach:\n1. Select and configure a testing framework (pytest recommended) with appropriate plugins\n2. Establish a consistent directory structure and naming convention for tests\n3. Create common test fixtures and utilities to facilitate testing (mock data, helper functions, etc.)\n4. Implement tests for each module, class, and function, focusing on core functionality first\n5. Create parametrized tests to cover multiple input scenarios efficiently\n6. Develop specific tests for edge cases, boundary conditions, and error handling\n7. Use mocking to isolate units being tested from their dependencies\n8. Set up test coverage measurement with tools like pytest-cov\n9. Establish coverage targets (aim for >90% code coverage) and identify hard-to-test areas\n10. Implement additional tests to improve coverage in critical areas\n11. Create regression tests for any bugs discovered during development",
+      "testStrategy": "Run tests regularly during development. Aim for high test coverage and ensure all critical functionality is thoroughly tested.",
+      "subtasks": [
+        {
+          "id": 1,
+          "title": "Set up testing framework and structure",
+          "status": "pending",
+          "dependencies": [],
+          "parentTaskId": 8
+        },
+        {
+          "id": 2,
+          "title": "Create test fixtures and utilities",
+          "status": "pending",
+          "dependencies": [
+            1
+          ],
+          "parentTaskId": 8
+        },
+        {
+          "id": 3,
+          "title": "Implement core function tests",
+          "status": "pending",
+          "dependencies": [
+            1,
+            2
+          ],
+          "parentTaskId": 8
+        },
+        {
+          "id": 4,
+          "title": "Implement class and integration tests",
+          "status": "pending",
+          "dependencies": [
+            3
+          ],
+          "parentTaskId": 8
+        },
+        {
+          "id": 5,
+          "title": "Add edge case and error condition tests",
+          "status": "pending",
+          "dependencies": [
+            3,
+            4
+          ],
+          "parentTaskId": 8
+        },
+        {
+          "id": 6,
+          "title": "Measure and improve test coverage",
+          "status": "pending",
+          "dependencies": [
+            5
+          ],
+          "parentTaskId": 8
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Implement Integration Tests",
+      "description": "Develop integration tests to verify system components work correctly together.",
+      "status": "pending",
+      "priority": "medium",
+      "dependencies": [
+        8
+      ],
+      "details": "Develop comprehensive integration tests to verify that all system components work correctly together. Set up an integration test framework, implement tests for CIF parsing, symmetry operations, end-to-end workflows, and error handling and edge cases.\n\nDetailed implementation plan:\n1. Extend the existing test framework to support integration testing\n2. Create test configurations for integration tests separate from unit tests\n3. Develop integration tests that verify CIF file parsing with real-world CIF files\n4. Implement tests for symmetry operations that validate results against known reference values\n5. Create end-to-end workflow tests that process structures from parsing to analysis to visualization\n6. Test error handling pathways across component boundaries\n7. Create tests that verify database integration with actual or mock databases\n8. Develop tests for performance characteristics under various conditions\n9. Implement tests that verify compatibility with external tools and libraries\n10. Create integration tests for the command-line interface that verify full execution paths",
+      "testStrategy": "Run integration tests in CI/CD pipeline. Ensure all critical integrations between components are thoroughly tested.",
+      "subtasks": [
+        {
+          "id": 1,
+          "title": "Set up integration test framework",
+          "status": "pending",
+          "dependencies": [],
+          "parentTaskId": 9
+        },
+        {
+          "id": 2,
+          "title": "Implement CIF parsing integration tests",
+          "status": "pending",
+          "dependencies": [
+            1
+          ],
+          "parentTaskId": 9
+        },
+        {
+          "id": 3,
+          "title": "Implement symmetry operations integration tests",
+          "status": "pending",
+          "dependencies": [
+            1,
+            2
+          ],
+          "parentTaskId": 9
+        },
+        {
+          "id": 4,
+          "title": "Implement end-to-end workflow tests",
+          "status": "pending",
+          "dependencies": [
+            1,
+            2,
+            3
+          ],
+          "parentTaskId": 9
+        },
+        {
+          "id": 5,
+          "title": "Implement error handling and edge case integration tests",
+          "status": "pending",
+          "dependencies": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "parentTaskId": 9
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Set Up CI/CD Pipeline",
+      "description": "Configure continuous integration and deployment for the project.",
+      "status": "pending",
+      "priority": "low",
+      "dependencies": [
+        2,
+        5,
+        8,
+        9
+      ],
+      "details": "Set up a continuous integration and deployment pipeline for the project. This includes setting up a basic GitHub Actions workflow, implementing automated testing across Python versions, adding code quality checks with linting and type checking, configuring documentation building and publishing, and implementing test coverage reporting and status badges.\n\nDetailed implementation approach:\n1. Create GitHub Actions workflow configuration files for CI/CD processes\n2. Configure the CI workflow to run on pull requests and pushes to main branches\n3. Set up test execution across multiple Python versions (3.7, 3.8, 3.9, 3.10, etc.)\n4. Implement parallel testing to optimize CI pipeline performance\n5. Add code quality checks including linting, type checking, and security scanning\n6. Configure documentation building and automatic publishing to GitHub Pages or ReadTheDocs\n7. Set up test coverage reporting and integration with services like Codecov\n8. Add status badges to the README file for build status, test coverage, etc.\n9. Implement automated release creation when version tags are pushed\n10. Configure automated package publishing to PyPI for releases\n11. Set up notification systems for CI/CD failures (email, Slack, etc.)\n12. Document the CI/CD process for other contributors",
+      "testStrategy": "Verify CI/CD pipeline runs successfully on all PRs and pushes to relevant branches. Ensure all checks accurately report status.",
+      "subtasks": [
+        {
+          "id": 1,
+          "title": "Set up basic GitHub Actions workflow",
+          "status": "pending",
+          "dependencies": [],
+          "parentTaskId": 10
+        },
+        {
+          "id": 2,
+          "title": "Implement automated testing across Python versions",
+          "status": "pending",
+          "dependencies": [
+            1
+          ],
+          "parentTaskId": 10
+        },
+        {
+          "id": 3,
+          "title": "Add code quality checks with linting and type checking",
+          "status": "pending",
+          "dependencies": [
+            1
+          ],
+          "parentTaskId": 10
+        },
+        {
+          "id": 4,
+          "title": "Configure documentation building and publishing",
+          "status": "pending",
+          "dependencies": [
+            1
+          ],
+          "parentTaskId": 10
+        },
+        {
+          "id": 5,
+          "title": "Implement test coverage reporting and status badges",
+          "status": "pending",
+          "dependencies": [
+            2,
+            3,
+            4
+          ],
+          "parentTaskId": 10
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "projectName": "Crystal Symmetry",
+    "projectVersion": "0.1.0",
+    "description": "Python package for crystal symmetry analysis and crystallographic information processing",
+    "author": "Project Team",
+    "dateCreated": "2023-07-10T12:00:00.000Z",
+    "dateUpdated": "2023-07-20T15:30:00.000Z"
+  }
+}
