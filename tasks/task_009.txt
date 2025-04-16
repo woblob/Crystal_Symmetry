@@ -55,61 +55,20 @@ Run integration tests in CI/CD pipeline. Ensure all critical integrations betwee
 3. Implement base test classes for common patterns
 4. Configure separate test running for CI
 
-## Directory Structure
-```
-tests/
-├── integration/
-│   ├── conftest.py           # Integration-specific fixtures
-│   ├── test_workflows/       # End-to-end workflow tests
-│   ├── test_interfaces/      # Component interface tests
-│   └── test_performance/     # Performance/load tests
-├── test_data/
-│   ├── cif_samples/          # Real CIF files
-│   └── expected_results/     # Reference outputs
-└── helpers/
-    ├── workflow_runner.py    # Test workflow automation
-    └── result_validator.py   # Output validation tools
-```
+### Execution Plan
+1. Install required test dependencies
+2. Create basic directory structure and helpers
+3. Implement test environment setup/teardown
+4. Create initial integration test examples
+5. Document integration test patterns
 
-## Configuration Sample
-```python
-# tests/integration/conftest.py
-import pytest
-import tempfile
-import os
-import shutil
-from pathlib import Path
-
-@pytest.fixture(scope="session")
-def test_data_dir():
-    """Return the path to the test data directory."""
-    return Path(__file__).parent.parent / "test_data"
-
-@pytest.fixture(scope="function")
-def isolated_test_dir():
-    """Create an isolated test directory that is cleaned up after the test."""
-    with tempfile.TemporaryDirectory() as tmpdir:
-        original_dir = os.getcwd()
-        os.chdir(tmpdir)
-        yield Path(tmpdir)
-        os.chdir(original_dir)
-
-@pytest.fixture(scope="session")
-def sample_cif_files(test_data_dir):
-    """Return a dictionary of sample CIF files for testing."""
-    cif_dir = test_data_dir / "cif_samples"
-    return {
-        f.stem: f for f in cif_dir.glob("*.cif")
-    }
-```
-
-## Technical Considerations
+### Technical Considerations
 - Use pytest-xdist for parallel test execution
 - Implement custom markers for slow/resource-intensive tests
 - Create mock services for external dependencies
 - Set up Docker containers for isolated testing environments
 
-## Recommended Libraries
+### Recommended Libraries
 - pytest-mock for mocking dependencies
 - pytest-cov for coverage reporting
 - pytest-benchmark for performance testing

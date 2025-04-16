@@ -154,16 +154,25 @@ class MyCell:
         """
         Extract crystal information and prepare supercell data.
 
+        This method performs the following steps:
+        1. Generate a supercell of the specified size
+        2. Extract atomic numbers and fractional coordinates
+        3. Remove duplicate points and scale to unit cell
+        4. Transform to cartesian coordinates
+
         Args:
             file: Crystal object containing structural data
-            size: Size multiplier for the supercell
+            size: Size multiplier for the supercell (e.g., 2 creates a 2x2x2 supercell)
         """
-        full_info_cell = list(file.supercell(size, size, size).itersorted())
+        # Generate supercell and convert to list for processing
+        supercell = file.supercell(size, size, size)
+        full_info_cell = list(supercell.itersorted())
 
-        # Convert Crystal's lattice_vectors to numpy array before processing
+        # Convert Crystal's lattice_vectors to numpy array and prepare for transformations
         lattice_array = np.array(file.lattice_vectors)
         self.lattice_vectors = self.prepare_lattice_vectors(lattice_array)
 
+        # Extract atomic numbers for each point in the supercell
         self.super_cell_atomic_numbers = np.array(
             [atom_point.atomic_number for atom_point in full_info_cell]
         )
@@ -171,18 +180,18 @@ class MyCell:
         # Extract fractional coordinates from the supercell
         cell = np.array([atom_point.coords_fractional for atom_point in full_info_cell])
 
-        # Sort and make unique
+        # Remove duplicate points (atoms at the same position)
         sorted_cell = np.unique(cell, axis=0)
 
-        # Scale back to unit cell
+        # Scale coordinates back to unit cell (0-1 range)
         compact_cell = sorted_cell / size
 
-        # Prepare for transformation to cartesian
+        # Prepare for transformation by adding a column of ones (homogeneous coordinates)
         augmented_cell = np.column_stack(
             [compact_cell, np.ones(len(compact_cell))]
         )
 
-        # Transform to cartesian coordinates
+        # Transform to cartesian coordinates using lattice vectors
         self.super_cell = (self.lattice_vectors @ augmented_cell.T).T
 
     def _handle_negative_zeroes(self) -> None:
@@ -195,11 +204,15 @@ class MyCell:
         """
         Adjust points to lie within the unit cell.
 
+        This method transforms points to fractional coordinates, adjusts them to be
+        within the unit cell (0-1 range), and transforms them back to cartesian coordinates.
+
         Args:
-            points: Array of points in cartesian coordinates
+            points: Array of points in cartesian coordinates with shape (n, m, 3)
+                   where n is the number of matrices and m is the number of points
 
         Returns:
-            Adjusted points that lie within the unit cell
+            Adjusted points that lie within the unit cell with the same shape as input
         """
         inverse = np.linalg.inv(self.lattice_vectors)
 
@@ -213,17 +226,13 @@ class MyCell:
         scaled_points[mask_points_above_cell] -= 1
         scaled_points[mask_points_under_cell] += 1
 
-        # Handle zero values
+        # Handle zero values to avoid negative zeros and precision issues
         mask_zero = scaled_points == 0
         scaled_points[mask_zero] -= 1
         scaled_points[mask_zero] += 1
 
         # Transform back to cartesian coordinates
         adjusted_points = np.einsum("ij,klj->kli", self.lattice_vectors, scaled_points)
-
-        print(adjusted_points)
-        print(points)
-        print(adjusted_points - points)
 
         return cast(np.ndarray, adjusted_points)
 
@@ -248,16 +257,17 @@ class MyCell:
 
     def __str__(self) -> str:
         """Generate a string representation for debugging."""
+        # Create a list of fields to include in the string representation
         fields: List[Tuple[str, Any]] = [
-            # ("super_cell", self.super_cell),
-            # ("super_cell_atomic_numbers", self.super_cell_atomic_numbers),
-            # ("super_cell_indexes", self.super_cell_indexes),
-            # ("lattice_vectors", self.lattice_vectors),
-            # ("base_type", self.base_type),
-            # ("symmetry_operations", self.symmetry_operations),
-            # ("symmetry_operations_inverses", self.symmetry_operations_inverses),
+            ("base_type", self.base_type),
+            ("super_cell_shape", self.super_cell.shape if self.super_cell.size > 0 else "empty"),
+            ("atomic_numbers_count", len(self.super_cell_atomic_numbers)),
+            ("symmetry_operations_count", len(self.symmetry_operations)),
+            ("volume", self.volume)
         ]
-        with open("file.txt", "w", encoding="utf-8") as f:
+
+        # Write detailed symmetry operations to a file for inspection
+        with open("symmetry_operations.txt", "w", encoding="utf-8") as f:
             operations = [
                 ("symmetry_operations", self.symmetry_operations),
                 ("symmetry_operations_inverses", self.symmetry_operations_inverses)
@@ -268,7 +278,8 @@ class MyCell:
                     f.write(str(mat) + "\n")
                 f.write("\n")
 
-        return "\n\n".join(f"{name}: \n{value}" for (name, value) in fields)
+        # Return a concise string representation
+        return "MyCell(" + ", ".join(f"{name}={value}" for (name, value) in fields) + ")"
 
 
 if __name__ == "__main__":

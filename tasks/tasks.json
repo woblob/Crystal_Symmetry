@@ -113,7 +113,7 @@
       "id": 3,
       "title": "Fix Undefined Variables in cifParsing.py",
       "description": "Identify and fix all undefined variables in the CIF parsing module.",
-      "status": "in-progress",
+      "status": "done",
       "priority": "high",
       "dependencies": [
         1
@@ -124,7 +124,7 @@
         {
           "id": 1,
           "title": "Analyze cifParsing.py to identify all undefined variables",
-          "status": "in-progress",
+          "status": "done",
           "dependencies": [],
           "parentTaskId": 3,
           "details": "\n\n<info added on 2025-04-16T18:49:35.663Z>\nTo enhance the subtask, I'll add implementation details for analyzing undefined variables in cifParsing.py:\n\n## Implementation Approach\n\n### Static Analysis Tools\n- Use `pyflakes` to perform initial scan: `pyflakes cifParsing.py > undefined_vars.txt`\n- Apply `pylint` with focus on undefined variables: `pylint --disable=all --enable=undefined-variable cifParsing.py`\n- Consider using AST module to build custom analyzer:\n```python\nimport ast\n\nclass UndefinedVarVisitor(ast.NodeVisitor):\n    def __init__(self):\n        self.defined_names = set()\n        self.used_names = set()\n        self.undefined = []\n        \n    def visit_Name(self, node):\n        if isinstance(node.ctx, ast.Store):\n            self.defined_names.add(node.id)\n        elif isinstance(node.ctx, ast.Load):\n            self.used_names.add(node.id)\n        self.generic_visit(node)\n```\n\n### Runtime Analysis\n- Instrument code with custom variable tracker:\n```python\ndef track_variables(frame, event, arg):\n    if event == 'line':\n        local_vars = frame.f_locals\n        # Log variables accessed\n    return track_variables\n```\n- Create test suite with edge cases focusing on:\n  - Conditional code paths\n  - Exception handlers\n  - List comprehensions and generator expressions\n\n### Variable Inventory Format\nCreate structured JSON output:\n```json\n{\n  \"variable_name\": {\n    \"type\": \"detected_type\",\n    \"defined_at\": [\"line_numbers\"],\n    \"used_at\": [\"line_numbers\"],\n    \"scope\": \"local/instance/global\",\n    \"dependencies\": [\"other_variables\"],\n    \"undefined_contexts\": [\"context_descriptions\"]\n  }\n}\n```\n\n### Recommended Refactoring Patterns\n- Document common patterns requiring fixes:\n  - Move implicit globals to explicit parameters\n  - Convert module-level variables to class attributes\n  - Replace dynamic attribute access with defined properties\n</info added on 2025-04-16T18:49:35.663Z>"
@@ -132,7 +132,7 @@
         {
           "id": 2,
           "title": "Define appropriate types and initial values for each variable",
-          "status": "pending",
+          "status": "done",
           "dependencies": [
             1
           ],
@@ -142,7 +142,7 @@
         {
           "id": 3,
           "title": "Implement fixes for undefined variables",
-          "status": "pending",
+          "status": "done",
           "dependencies": [
             2
           ],
@@ -152,7 +152,7 @@
         {
           "id": 4,
           "title": "Refactor code for improved clarity and maintainability",
-          "status": "pending",
+          "status": "done",
           "dependencies": [
             3
           ],
