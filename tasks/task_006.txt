@@ -28,11 +28,148 @@ Test error scenarios to ensure appropriate exceptions are raised and logged. Ver
 ### Details:
 
 
+<info added on 2025-04-16T19:07:40.550Z>
+# Custom Exception Hierarchy Implementation Details
+
+## Error Categories Analysis
+- **Input Validation Errors**: For invalid crystallographic parameters, malformed CIF files
+- **Calculation Errors**: For mathematical issues in symmetry operations, matrix inversions
+- **Resource Errors**: For file access problems, network issues when fetching structure data
+- **State Errors**: For operations attempted in invalid states (e.g., accessing properties before initialization)
+
+## Implementation Structure
+```python
+class CrystalSymmetryError(Exception):
+    """Base exception for all Crystal Symmetry related errors."""
+    
+class InputError(CrystalSymmetryError):
+    """Raised when input data is invalid."""
+    
+class CalculationError(CrystalSymmetryError):
+    """Raised when a calculation fails."""
+    
+class ResourceError(CrystalSymmetryError):
+    """Raised when a resource cannot be accessed."""
+```
+
+## Context Enhancement
+- Include relevant data in exception instances (e.g., problematic values, expected formats)
+- Implement `__str__` methods that provide actionable information
+- Add traceback context for debugging complex issues
+
+## Documentation Guidelines
+- Document each exception with examples of when it's raised
+- Include recovery strategies where applicable
+- Cross-reference related exceptions
+
+## Testing Strategy
+- Create test cases that verify exceptions are raised in appropriate circumstances
+- Test exception inheritance relationships
+- Verify context information is correctly included in exception instances
+</info added on 2025-04-16T19:07:40.550Z>
+
 ## 2. Implement logging configuration system [pending]
 ### Dependencies: None
 ### Description: 
 ### Details:
 
+
+<info added on 2025-04-16T19:10:26.709Z>
+# Implementation Details for Logging Configuration System
+
+## Library Selection
+- Use Python's built-in `logging` module as the foundation
+- Integrate `structlog` for structured logging capabilities
+- Consider `rich` for enhanced console output formatting
+
+## Configuration Design
+- Implement YAML-based configuration files with schema validation
+- Define verbosity levels: ERROR, WARNING, INFO, DEBUG, TRACE
+- Create domain-specific log categories: COMPUTATION, IO, VISUALIZATION, SYMMETRY_OPERATIONS
+
+## Crystallography Context
+- Design log formatters that include:
+  - Space group information
+  - Current crystal system being processed
+  - Computation stage (preprocessing, analysis, visualization)
+  - Performance metrics for long-running operations
+
+## Implementation Example
+```python
+import logging
+import structlog
+from pathlib import Path
+
+def setup_logging(config_path=None, verbosity="INFO"):
+    """Configure application logging system.
+    
+    Args:
+        config_path: Path to YAML configuration file
+        verbosity: Default verbosity level
+    """
+    # Base configuration
+    log_config = {
+        "version": 1,
+        "formatters": {
+            "crystal_fmt": {
+                "format": "%(asctime)s [%(levelname)s] %(crystal_context)s: %(message)s"
+            }
+        },
+        "handlers": {
+            "console": {
+                "class": "logging.StreamHandler",
+                "formatter": "crystal_fmt",
+                "level": verbosity
+            },
+            "file": {
+                "class": "logging.handlers.RotatingFileHandler",
+                "filename": "crystal_symmetry.log",
+                "maxBytes": 10485760,  # 10MB
+                "backupCount": 5,
+                "formatter": "crystal_fmt"
+            }
+        },
+        "loggers": {
+            "crystal_symmetry": {
+                "level": verbosity,
+                "handlers": ["console", "file"],
+                "propagate": False
+            }
+        }
+    }
+    
+    # Load user configuration if provided
+    if config_path:
+        # Implementation for loading and merging user config
+        pass
+        
+    # Configure structlog for structured logging
+    structlog.configure(
+        processors=[
+            structlog.stdlib.add_log_level,
+            structlog.stdlib.PositionalArgumentsFormatter(),
+            structlog.processors.TimeStamper(fmt="iso"),
+            structlog.processors.JSONRenderer()
+        ],
+        context_class=dict,
+        logger_factory=structlog.stdlib.LoggerFactory(),
+    )
+    
+    return logging.getLogger("crystal_symmetry")
+```
+
+## User Customization
+- Provide a `LoggingManager` class with methods to:
+  - Override log levels at runtime
+  - Add custom log handlers
+  - Define context filters for specific crystallography operations
+- Create a CLI option for verbosity control
+
+## Integration with Exception System
+- Implement context managers for operation logging with automatic exception capture
+- Add crystal-specific context to exception logs (lattice parameters, space group)
+- Create debug log dumps for unexpected failures
+</info added on 2025-04-16T19:10:26.709Z>
 
 ## 3. Refactor critical code sections with try-except blocks [pending]
 ### Dependencies: 6.1, 6.2
@@ -40,15 +177,417 @@ Test error scenarios to ensure appropriate exceptions are raised and logged. Ver
 ### Details:
 
 
+<info added on 2025-04-16T19:12:55.000Z>
+# Implementation Approach for Error Handling Refactoring
+
+## Critical Code Section Identification
+- File I/O operations for CIF parsing and data loading
+- Numerical calculations with potential for division by zero or overflow
+- Network requests for retrieving crystallographic databases
+- Symmetry operations with potential for invalid transformations
+- Memory-intensive operations with large crystal structures
+
+## Error Handling Patterns
+
+### Pattern 1: Validation-First Approach
+```python
+def calculate_unit_cell_volume(a, b, c, alpha, beta, gamma):
+    # Validate inputs first
+    if any(param <= 0 for param in [a, b, c]):
+        raise InputError("Unit cell parameters must be positive")
+    if any(not 0 < angle < 180 for angle in [alpha, beta, gamma]):
+        raise InputError("Unit cell angles must be between 0 and 180 degrees")
+        
+    try:
+        # Calculation that might fail
+        return compute_volume(a, b, c, alpha, beta, gamma)
+    except ValueError as e:
+        # Convert to domain-specific exception with context
+        raise CalculationError(f"Failed to calculate unit cell volume: {e}") from e
+```
+
+### Pattern 2: Resource Management
+```python
+def process_cif_file(filepath):
+    try:
+        with open(filepath, 'r') as file:
+            content = file.read()
+    except FileNotFoundError:
+        raise ResourceError(f"CIF file not found: {filepath}")
+    except PermissionError:
+        raise ResourceError(f"No permission to read CIF file: {filepath}")
+    except Exception as e:
+        raise ResourceError(f"Error reading CIF file {filepath}: {str(e)}") from e
+        
+    # Process content knowing file access succeeded
+    return parse_cif_content(content)
+```
+
+### Pattern 3: Transaction-like Operations
+```python
+def transform_crystal_structure(structure, operations):
+    # Create a copy to work with
+    working_copy = copy.deepcopy(structure)
+    
+    try:
+        # Apply all operations
+        for op in operations:
+            apply_operation(working_copy, op)
+        
+        # If we get here, all operations succeeded
+        return working_copy
+    except Exception as e:
+        # Log the failure with structure details
+        logger.error(f"Failed to transform structure {structure.id}", 
+                    exc_info=True,
+                    extra={"structure_type": structure.type,
+                           "operation_count": len(operations)})
+        # Re-raise as domain-specific exception
+        raise CalculationError(f"Structure transformation failed: {e}") from e
+```
+
+## Recovery Strategies
+- For I/O errors: Implement retry mechanisms with exponential backoff
+- For calculation errors: Provide fallback algorithms when high-precision calculations fail
+- For memory issues: Implement chunking and streaming processing for large structures
+- For network errors: Cache previously retrieved data for offline operation
+
+## Testing Approach
+- Create test cases that deliberately trigger each exception type
+- Verify exception types, messages, and context information
+- Test recovery mechanisms and fallback strategies
+- Simulate resource constraints (memory limits, disk space issues)
+</info added on 2025-04-16T19:12:55.000Z>
+
 ## 4. Implement progress tracking for long-running operations [pending]
 ### Dependencies: 6.2
 ### Description: 
 ### Details:
 
 
+<info added on 2025-04-16T19:15:36.000Z>
+# Progress Tracking Implementation Details
+
+## Requirements Analysis
+- Long-running operations in crystallography code include:
+  - Large CIF file parsing
+  - Symmetry operations on complex structures
+  - Visualization rendering
+  - Database search operations
+  - Batch processing of multiple structures
+
+## Design Approach
+- Create a flexible callback-based system
+- Implement both text-based and GUI progress indicators
+- Support cancellation of operations
+- Provide meaningful progress metrics (not just percentage)
+
+## Core Progress Tracker Implementation
+```python
+from typing import Callable, Optional, Any
+import time
+
+class ProgressTracker:
+    """Track progress of long-running operations with callback support."""
+    
+    def __init__(self, total_steps: int, 
+                 description: str = "", 
+                 callback: Optional[Callable[[float, str], Any]] = None):
+        """Initialize progress tracker.
+        
+        Args:
+            total_steps: Total number of steps in the operation
+            description: Human-readable description of the operation
+            callback: Function to call on progress updates, receives
+                      (progress_fraction, status_message)
+        """
+        self.total_steps = total_steps
+        self.current_step = 0
+        self.description = description
+        self.callback = callback
+        self.start_time = time.time()
+        self.cancelled = False
+        
+        # Initial progress report
+        self._report_progress("Started")
+    
+    def update(self, steps: int = 1, status: Optional[str] = None) -> None:
+        """Update progress by specified number of steps."""
+        if self.cancelled:
+            raise CancellationError("Operation was cancelled")
+            
+        self.current_step += steps
+        self._report_progress(status or f"Step {self.current_step}/{self.total_steps}")
+    
+    def _report_progress(self, status_message: str) -> None:
+        """Report progress to callback if available."""
+        progress = min(1.0, self.current_step / self.total_steps) if self.total_steps > 0 else 0
+        
+        # Calculate ETA
+        elapsed = time.time() - self.start_time
+        if progress > 0:
+            eta = elapsed * (1 - progress) / progress
+            status_message = f"{status_message} (ETA: {self._format_time(eta)})"
+        
+        if self.callback:
+            self.callback(progress, status_message)
+    
+    def _format_time(self, seconds: float) -> str:
+        """Format time duration in human-readable format."""
+        if seconds < 60:
+            return f"{seconds:.1f}s"
+        elif seconds < 3600:
+            return f"{seconds/60:.1f}m"
+        else:
+            return f"{seconds/3600:.1f}h"
+```
+
+## Integration Examples
+
+### CLI Progress Bar
+```python
+from tqdm import tqdm
+
+def process_large_structure(filepath, progress_callback=None):
+    # Estimate total operations
+    file_size = os.path.getsize(filepath)
+    estimated_steps = file_size // 1024  # Rough estimate
+    
+    # Create progress tracker with tqdm integration
+    with tqdm(total=estimated_steps, desc="Processing structure") as pbar:
+        def update_progress(fraction, message):
+            if progress_callback:
+                progress_callback(fraction, message)
+            pbar.n = int(fraction * estimated_steps)
+            pbar.set_description(message)
+            pbar.refresh()
+        
+        tracker = ProgressTracker(estimated_steps, 
+                                "Processing structure", 
+                                update_progress)
+        
+        # Actual processing with periodic tracker.update() calls
+        # ...
+```
+
+## Cancellation Support
+```python
+# In the worker thread
+try:
+    for i, item in enumerate(items):
+        if tracker.cancelled:
+            break
+        process_item(item)
+        tracker.update(1, f"Processed item {i+1}/{len(items)}")
+ except Exception as e:
+    logger.error("Processing failed", exc_info=True)
+    return False
+```
+
+## Best Practices
+- Update progress at appropriate granularity (not too frequent, not too sparse)
+- Include meaningful status messages beyond just percentages
+- Provide accurate total step estimates when possible
+- Include time estimates for better user experience
+- Support both determinate (known steps) and indeterminate progress
+- Make progress tracking optional with clean fallbacks
+</info added on 2025-04-16T19:15:36.000Z>
+
 ## 5. Add comprehensive error handling to API endpoints [pending]
 ### Dependencies: 6.1, 6.2, 6.3
 ### Description: 
 ### Details:
 
+
+<info added on 2025-04-16T19:17:38.000Z>
+# API Error Handling Implementation Details
+
+## API Endpoint Analysis
+- Key public API functions to focus on:
+  - `parse_cif_file()` and related parsing functions
+  - `calculate_symmetry_operations()`
+  - `transform_structure()`
+  - `analyze_crystal_system()`
+  - `visualize_structure()`
+
+## Input Validation Pattern
+```python
+def parse_cif_file(filepath, options=None):
+    """Parse a CIF file and return the structure data.
+    
+    Args:
+        filepath: Path to CIF file
+        options: Optional dictionary of parsing options
+        
+    Returns:
+        CrystalStructure object representing the parsed data
+        
+    Raises:
+        ResourceError: If the file cannot be accessed or read
+        CIFParseError: If the file cannot be parsed
+        ValueError: If options contain invalid values
+    """
+    # 1. Input validation
+    if not isinstance(filepath, (str, Path)):
+        raise TypeError(f"Expected string or Path for filepath, got {type(filepath).__name__}")
+    
+    if options is not None and not isinstance(options, dict):
+        raise TypeError(f"Expected dict for options, got {type(options).__name__}")
+    
+    # 2. Default options handling
+    options = options or {}
+    default_options = {
+        "ignore_errors": False,
+        "parse_symmetry": True,
+        "validate_structure": True
+    }
+    effective_options = {**default_options, **options}
+    
+    # 3. Validate option values
+    if not isinstance(effective_options["ignore_errors"], bool):
+        raise ValueError(f"ignore_errors must be a boolean")
+    
+    # 4. Execute with error handling
+    logger.info(f"Parsing CIF file: {filepath}", 
+               extra={"filepath": str(filepath), "options": effective_options})
+    
+    try:
+        structure = _perform_cif_parsing(filepath, effective_options)
+        logger.debug(f"Successfully parsed CIF file with {len(structure.atoms)} atoms")
+        return structure
+    except Exception as e:
+        logger.error(f"Failed to parse CIF file: {filepath}", exc_info=True,
+                   extra={"filepath": str(filepath), "options": effective_options})
+        if isinstance(e, (ResourceError, CIFParseError)):
+            raise
+        raise CIFParseError(f"Failed to parse CIF file {filepath}: {str(e)}") from e
+```
+
+## API Response Structure
+```python
+class APIResponse:
+    """Standard response structure for API functions."""
+    
+    def __init__(self, success, data=None, error=None, warnings=None):
+        self.success = success
+        self.data = data
+        self.error = error
+        self.warnings = warnings or []
+    
+    @classmethod
+    def success_response(cls, data, warnings=None):
+        return cls(True, data=data, warnings=warnings)
+    
+    @classmethod
+    def error_response(cls, error, warnings=None):
+        if isinstance(error, Exception):
+            error = {
+                "type": error.__class__.__name__,
+                "message": str(error),
+                "details": getattr(error, "details", None)
+            }
+        return cls(False, error=error, warnings=warnings)
+
+# Usage example
+def safe_api_call(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        try:
+            result = func(*args, **kwargs)
+            return APIResponse.success_response(result)
+        except Exception as e:
+            logger.exception(f"API error in {func.__name__}")
+            return APIResponse.error_response(e)
+    return wrapper
+
+@safe_api_call
+def get_crystal_symmetry(crystal_id):
+    # Implementation
+```
+
+## REST API Integration
+```python
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+@app.errorhandler(Exception)
+def handle_exception(e):
+    # Log the error
+    logger.exception("Unhandled exception in API endpoint")
+    
+    # Determine appropriate status code
+    if isinstance(e, ResourceError):
+        status_code = 404
+    elif isinstance(e, InputError):
+        status_code = 400
+    elif isinstance(e, AuthorizationError):
+        status_code = 403
+    else:
+        status_code = 500
+    
+    # Create error response
+    response = {
+        "success": False,
+        "error": {
+            "type": e.__class__.__name__,
+            "message": str(e),
+            "code": getattr(e, "code", None)
+        }
+    }
+    
+    return jsonify(response), status_code
+
+@app.route("/api/v1/structures/<structure_id>", methods=["GET"])
+def get_structure(structure_id):
+    try:
+        # Input validation
+        if not structure_id.isalnum():
+            raise InputError("Structure ID must be alphanumeric")
+        
+        # Process request
+        structure = crystal_symmetry.get_structure(structure_id)
+        if structure is None:
+            raise ResourceError(f"Structure {structure_id} not found")
+        
+        # Successful response
+        return jsonify({
+            "success": True,
+            "data": structure.to_dict()
+        })
+    except Exception as e:
+        # Let the errorhandler deal with it
+        raise
+```
+
+## Client-Side Error Handling
+```python
+def handle_api_response(response):
+    """Process API response and handle errors appropriately."""
+    if not response.success:
+        error = response.error
+        error_type = error.get("type")
+        error_msg = error.get("message")
+        
+        if error_type == "ResourceError":
+            raise ResourceNotFoundError(error_msg)
+        elif error_type in ["InputError", "ValidationError"]:
+            raise ValidationError(error_msg)
+        else:
+            raise APIError(f"{error_type}: {error_msg}")
+    
+    # Handle any warnings
+    for warning in response.warnings:
+        logger.warning(f"API warning: {warning}")
+    
+    return response.data
+```
+
+## Testing Strategy
+- Create test cases for each possible error condition
+- Verify correct error types, status codes, and messages
+- Test rate limiting and throttling behavior
+- Verify error details provide actionable information
+- Test authentication and authorization error handling
+</info added on 2025-04-16T19:17:38.000Z>
 
