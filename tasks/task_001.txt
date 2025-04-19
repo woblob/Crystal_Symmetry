@@ -31,22 +31,22 @@ Validated package structure by installing in a clean virtual environment and ver
 - Created crystallography package structure with:
   ```
   crystal_symmetry/
-  ├── __init__.py          # Main package initialization
-  ├── core/               # Core symmetry algorithms
-  │   ├── __init__.py     # Core module exports
-  │   ├── lattice.py      # Lattice operations
-  │   └── symmetry.py     # Symmetry operations
-  ├── io/                 # Input/output operations
-  │   ├── __init__.py     # IO module exports
-  │   ├── cif.py          # CIF file parsing
-  │   └── exporters.py    # Data export functions
-  ├── utils/              # Utility functions
-  │   ├── __init__.py     # Utils module exports
-  │   ├── math.py         # Math helpers
-  │   └── validation.py   # Data validation
-  └── visualization/      # Visualization components
-      ├── __init__.py     # Visualization exports
-      └── plotting.py     # Plotting functions
+  |-- __init__.py          # Main package initialization
+  |-- core/               # Core symmetry algorithms
+  |   |-- __init__.py     # Core module exports
+  |   |-- lattice.py      # Lattice operations
+  |   `-- symmetry.py     # Symmetry operations
+  |-- io/                 # Input/output operations
+  |   |-- __init__.py     # IO module exports
+  |   |-- cif.py          # CIF file parsing
+  |   `-- exporters.py    # Data export functions
+  |-- utils/              # Utility functions
+  |   |-- __init__.py     # Utils module exports
+  |   |-- math.py         # Math helpers
+  |   `-- validation.py   # Data validation
+  `-- visualization/      # Visualization components
+      |-- __init__.py     # Visualization exports
+      `-- plotting.py     # Plotting functions
   ```
 
 ## Configuration Files
@@ -85,7 +85,7 @@ Validated package structure by installing in a clean virtual environment and ver
   - lattice.py: Unit cell operations and transformations
   - symmetry.py: Space group operations and symmetry calculations
 - **io/**: Added data input/output functionality
-  - cif.py: CIF file parser implementation 
+  - cif.py: CIF file parser implementation
   - exporters.py: Data export to various formats
 - **utils/**: Created utility modules
   - math.py: Mathematical helper functions
@@ -154,7 +154,7 @@ Validated package structure by installing in a clean virtual environment and ver
   ```python
   # Before
   from ..utils import helpers
-  
+
   # After
   from crystal_symmetry.utils import helpers
   ```
@@ -206,7 +206,7 @@ Validated package structure by installing in a clean virtual environment and ver
   from crystal_symmetry.io import cif, exporters
   from crystal_symmetry.utils import math, validation
   from crystal_symmetry.visualization import plotting
-  
+
   print(f"Package version: {__version__}")
   print("All imports successful")
   ```

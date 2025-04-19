@@ -138,20 +138,23 @@ Run mypy or another type checker to confirm type correctness. Verify that all fu
 - For mathematical functions:
   ```python
   def calculate_lattice_energy(positions: np.ndarray, charges: np.ndarray) -> float:
-      """Calculate the electrostatic lattice energy."""
+      # Calculate the electrostatic lattice energy.
+      pass
   ```
 
 - For matrix operations:
   ```python
   def transform_coordinates(matrix: np.ndarray, coordinates: np.ndarray) -> np.ndarray:
-      """Apply transformation matrix to atomic coordinates."""
+      # Apply transformation matrix to atomic coordinates.
+      pass
   ```
 
 - For polymorphic functions:
   ```python
   T = TypeVar('T', bound=np.ndarray)
   def apply_symmetry_operations(structure: T, operations: List[SymmetryOperation]) -> T:
-      """Apply symmetry operations to crystal structure."""
+      # Apply symmetry operations to crystal structure.
+      pass
   ```
 
 ## Type Checking Implementation
