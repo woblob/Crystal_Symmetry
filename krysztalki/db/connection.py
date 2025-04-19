@@ -19,6 +19,10 @@ class DatabaseConnection:
     executing queries, and managing transactions.
     """
 
+    db_path: Path
+    _connection: Optional[sqlite3.Connection]
+    _cursor: Optional[sqlite3.Cursor]
+
     def __init__(self, db_path: Union[str, Path]):
         """
         Initialize a database connection.
@@ -27,15 +31,20 @@ class DatabaseConnection:
             db_path: Path to the SQLite database file
         """
         self.db_path = Path(db_path)
-        self._connection: Optional[sqlite3.Connection] = None
-        self._cursor: Optional[sqlite3.Cursor] = None
+        self._connection = None
+        self._cursor = None
 
-    def __enter__(self):
+    def __enter__(self) -> "DatabaseConnection":
         """Context manager entry point."""
         self.connect()
         return self
 
-    def __exit__(self, exc_type, exc_val, exc_tb):
+    def __exit__(
+        self,
+        exc_type: Optional[type],
+        exc_val: Optional[Exception],
+        exc_tb: Optional[object],
+    ) -> None:
         """Context manager exit point."""
         self.close()
 
@@ -55,6 +64,7 @@ class DatabaseConnection:
         # Return rows as dictionaries
         self._connection.row_factory = sqlite3.Row
         self._cursor = self._connection.cursor()
+
         return self
 
     def close(self) -> None:

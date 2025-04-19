@@ -94,6 +94,9 @@ def create_tables(db_conn: DatabaseConnection) -> None:
 class CrystalStructure:
     """
     Class for interacting with crystal_structures table.
+
+    This class provides static methods for creating, retrieving, and deleting
+    crystal structure records in the database.
     """
 
     @staticmethod
@@ -129,7 +132,7 @@ class CrystalStructure:
 
         db_conn.execute(
             """
-            INSERT INTO crystal_structures 
+            INSERT INTO crystal_structures
             (name, source, cod_id, file_path, lattice_parameters, space_group, formula)
             VALUES (?, ?, ?, ?, ?, ?, ?)
             """,
@@ -211,6 +214,9 @@ class CrystalStructure:
 class SymmetryAnalysis:
     """
     Class for interacting with symmetry_analyses table.
+
+    This class provides static methods for creating, retrieving, and managing
+    symmetry analysis records in the database.
     """
 
     @staticmethod
@@ -240,7 +246,7 @@ class SymmetryAnalysis:
 
         db_conn.execute(
             """
-            INSERT INTO symmetry_analyses 
+            INSERT INTO symmetry_analyses
             (crystal_id, supercell_size, symmetry_operations, point_group)
             VALUES (?, ?, ?, ?)
             """,
@@ -295,6 +301,9 @@ class SymmetryAnalysis:
 class VacancyConfiguration:
     """
     Class for interacting with vacancy_configurations table.
+
+    This class provides static methods for creating, retrieving, and managing
+    vacancy configuration records in the database.
     """
 
     @staticmethod
@@ -328,7 +337,7 @@ class VacancyConfiguration:
 
         db_conn.execute(
             """
-            INSERT INTO vacancy_configurations 
+            INSERT INTO vacancy_configurations
             (crystal_id, analysis_id, num_vacancies, vacancy_positions, energy, is_stable)
             VALUES (?, ?, ?, ?, ?, ?)
             """,
@@ -384,8 +393,8 @@ class VacancyConfiguration:
         """
         db_conn.execute(
             """
-            SELECT * FROM vacancy_configurations 
-            WHERE crystal_id = ? 
+            SELECT * FROM vacancy_configurations
+            WHERE crystal_id = ?
             ORDER BY created_at DESC
             """,
             (crystal_id,),
@@ -408,8 +417,8 @@ class VacancyConfiguration:
         """
         db_conn.execute(
             """
-            SELECT * FROM vacancy_configurations 
-            WHERE analysis_id = ? 
+            SELECT * FROM vacancy_configurations
+            WHERE analysis_id = ?
             ORDER BY created_at DESC
             """,
             (analysis_id,),

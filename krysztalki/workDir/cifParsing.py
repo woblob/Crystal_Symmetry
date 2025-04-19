@@ -14,6 +14,16 @@ class MyCell:
     and handles transformations of points within the crystal.
     """
 
+    # Class attributes with type annotations
+    symmetry_operations: np.ndarray
+    symmetry_operations_inverses: np.ndarray
+    lattice_vectors: np.ndarray
+    super_cell: np.ndarray
+    super_cell_atomic_numbers: np.ndarray
+    super_cell_indexes: np.ndarray
+    base_type: str
+    task_manager: CrystalTaskManager
+
     def __init__(self, file_name: Union[str, int], size: int):
         """
         Initialize a crystal cell from a CIF file or COD identifier.
