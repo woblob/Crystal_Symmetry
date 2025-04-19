@@ -2,11 +2,14 @@
 import ast
 import sys
 
+
 class UndefinedVariableFinder(ast.NodeVisitor):
     def __init__(self):
         self.defined_names = set()
         self.undefined_names = []
-        self.special_import_aliases = {}  # For tracking special import aliases like 'np' for 'numpy'
+        self.special_import_aliases = (
+            {}
+        )  # For tracking special import aliases like 'np' for 'numpy'
 
     def visit_Name(self, node):
         if isinstance(node.ctx, ast.Store):
@@ -14,18 +17,24 @@ class UndefinedVariableFinder(ast.NodeVisitor):
             self.defined_names.add(node.id)
         elif isinstance(node.ctx, ast.Load):
             # Variable is being used
-            if node.id not in self.defined_names and node.id not in dir(__builtins__) and node.id not in self.special_import_aliases:
-                self.undefined_names.append((node.id, node.lineno, node.col_offset))
+            if (
+                node.id not in self.defined_names
+                and node.id not in dir(__builtins__)
+                and node.id not in self.special_import_aliases
+            ):
+                self.undefined_names.append(
+                    (node.id, node.lineno, node.col_offset)
+                )
         self.generic_visit(node)
 
     def visit_Import(self, node):
         for name in node.names:
-            module_name = name.name.split('.')[0]
+            module_name = name.name.split(".")[0]
             self.defined_names.add(module_name)
 
             # Special case for numpy import as np
-            if name.name == 'numpy' and name.asname == 'np':
-                self.special_import_aliases['np'] = 'numpy'
+            if name.name == "numpy" and name.asname == "np":
+                self.special_import_aliases["np"] = "numpy"
             # Handle other imports with aliases
             elif name.asname:
                 self.defined_names.add(name.asname)
@@ -34,8 +43,10 @@ class UndefinedVariableFinder(ast.NodeVisitor):
 
     def visit_ImportFrom(self, node):
         for name in node.names:
-            if name.name == '*':
-                print(f"Warning: '*' import at line {node.lineno} makes static analysis difficult")
+            if name.name == "*":
+                print(
+                    f"Warning: '*' import at line {node.lineno} makes static analysis difficult"
+                )
             else:
                 if name.asname:
                     self.defined_names.add(name.asname)
@@ -63,8 +74,9 @@ class UndefinedVariableFinder(ast.NodeVisitor):
             self.defined_names.add(node.name)
         self.generic_visit(node)
 
+
 def find_undefined_variables(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
+    with open(file_path, "r", encoding="utf-8") as file:
         content = file.read()
 
     try:
@@ -84,14 +96,15 @@ def find_undefined_variables(file_path):
     filtered_undefined = []
     for var, line, col in finder.undefined_names:
         # Special case for numpy module imported as np
-        if var == 'np' and "import numpy as np" in content:
+        if var == "np" and "import numpy as np" in content:
             continue
         # Skip atom_point which is properly defined in the loop variable
-        if var == 'atom_point' and "atom_point" in content:
+        if var == "atom_point" and "atom_point" in content:
             continue
         filtered_undefined.append((var, line, col))
 
     return filtered_undefined
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
@@ -103,12 +116,16 @@ if __name__ == "__main__":
     undefined_vars = find_undefined_variables(file_path)
 
     if undefined_vars:
-        print(f"Found {len(undefined_vars)} potentially undefined variables in {file_path}:")
+        print(
+            f"Found {len(undefined_vars)} potentially undefined variables in {file_path}:"
+        )
         for var, line, col in undefined_vars:
             print(f"Line {line}, Column {col}: '{var}'")
     else:
         print(f"✓ No undefined variables found in {file_path} ✓")
-        print("All variables are properly defined! The code should run without undefined variable errors.")
+        print(
+            "All variables are properly defined! The code should run without undefined variable errors."
+        )
 
     # Print always
-    print(f"Analysis completed for {file_path}") 
+    print(f"Analysis completed for {file_path}")

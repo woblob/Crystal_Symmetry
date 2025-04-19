@@ -4,6 +4,40 @@ This directory contains scripts for managing Task Master tasks, particularly for
 
 ## Scripts
 
+### update_all_tasks.py
+
+Updates all tasks in `tasks.json` based on markdown files in the `tasks/docs/` directory. This script can update multiple tasks at once and includes comprehensive error handling and testing.
+
+**Features:**
+
+- Updates all tasks at once (or a specified range of tasks)
+- Provides detailed logging of changes
+- Includes test mode to verify functionality without making changes
+- Comprehensive error handling and validation
+- Uses Click for a user-friendly command-line interface
+
+**Usage:**
+
+```bash
+python update_all_tasks.py [OPTIONS]
+```
+
+**Options:**
+
+- `--start-id INTEGER`: Start updating from this task ID (inclusive)
+- `--end-id INTEGER`: Stop updating at this task ID (inclusive)
+- `--test`: Run in test mode without making changes
+- `--verbose`: Show detailed logging
+- `--help`: Show this message and exit
+
+**Examples:**
+
+```bash
+python update_all_tasks.py
+python update_all_tasks.py --start-id 3 --end-id 5
+python update_all_tasks.py --test --verbose
+```
+
 ### update_tasks.py
 
 The main script that combines all functionality. It updates a task from markdown files, regenerates task files, and fixes encoding issues in a single operation.
@@ -82,15 +116,41 @@ python fix_encoding.py
 The typical workflow for updating tasks is:
 
 1. Edit markdown files in `tasks/docs/task_XXX/` directory
+
    - Update `overview.md` for the main task details
    - Update `subtask_XXX.md` files for each subtask
-2. Run `update_tasks.py <task_id>` to update the task in `tasks.json`, regenerate task files, and fix encoding issues
+
+2. Choose one of the following approaches to update tasks:
+
+   - **For updating all tasks at once:**
+
+     ```bash
+     python update_all_tasks.py
+     ```
+
+   - **For updating a specific task:**
+
+     ```bash
+     python update_tasks.py <task_id>
+     ```
+
+   - **For updating a range of tasks:**
+
+     ```bash
+     python update_all_tasks.py --start-id <start> --end-id <end>
+     ```
+
+   - **For testing updates without making changes:**
+     ```bash
+     python update_all_tasks.py --test --verbose
+     ```
 
 For more granular control, you can run the individual scripts separately:
 
 1. `update_task_from_md.py <task_id>` - Update task details from markdown files
-2. `regenerate_tasks.py` - Regenerate task files
-3. `fix_encoding.py [task_id]` - Fix encoding issues in task files
+2. `update_all_tasks.py [options]` - Update multiple tasks at once
+3. `regenerate_tasks.py` - Regenerate task files
+4. `fix_encoding.py [task_id]` - Fix encoding issues in task files
 
 ## Requirements
 
