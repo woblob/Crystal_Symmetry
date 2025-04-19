@@ -33,25 +33,24 @@ class MyCell:
 
         # Create task for analyzing this crystal
         self.task_manager = CrystalTaskManager()
-        task: Optional[Dict[str, Any]] = self.task_manager.add_crystal_analysis_task(file_name)
+        task: Optional[Dict[str, Any]] = self.task_manager.add_crystal_analysis_task(
+            file_name
+        )
 
         try:
             file = self.getfile(file_name)
             self.task_manager.create_task(
-                f"Parsed {file_name}",
-                "Successfully loaded CIF file",
-                "medium"
+                f"Parsed {file_name}", "Successfully loaded CIF file", "medium"
             )
 
             self.symmetry_operations = np.array(file.symmetry_operations())
             self.task_manager.create_task(
                 "Extracted symmetry operations",
                 f"Found {len(self.symmetry_operations)} operations",
-                "medium"
+                "medium",
             )
 
-            self.symmetry_operations_inverses = \
-                self.get_symmetry_operations_inverses()
+            self.symmetry_operations_inverses = self.get_symmetry_operations_inverses()
             self.base_type = self.miller_or_weber(file)
             self.extract_info(file, size)
             self._handle_negative_zeroes()
@@ -59,13 +58,13 @@ class MyCell:
 
             # Mark main task as complete
             if task:
-                self.task_manager.mark_task_done(task['id'])
+                self.task_manager.mark_task_done(task["id"])
 
         except Exception as error:
             self.task_manager.create_task(
                 "Error in crystal analysis",
                 f"Error processing {file_name}: {str(error)}",
-                "high"
+                "high",
             )
             raise
 
@@ -79,11 +78,9 @@ class MyCell:
         Returns:
             4×4 transformation matrix with augmented dimension
         """
-        expanded_lattice_vectors = \
-            np.column_stack((lattice_vectors, np.zeros(3)))
+        expanded_lattice_vectors = np.column_stack((lattice_vectors, np.zeros(3)))
 
-        expanded_lattice_vectors = \
-            np.vstack((expanded_lattice_vectors, np.zeros(4)))
+        expanded_lattice_vectors = np.vstack((expanded_lattice_vectors, np.zeros(4)))
 
         expanded_lattice_vectors[-1, -1] = 1
 
@@ -187,9 +184,7 @@ class MyCell:
         compact_cell = sorted_cell / size
 
         # Prepare for transformation by adding a column of ones (homogeneous coordinates)
-        augmented_cell = np.column_stack(
-            [compact_cell, np.ones(len(compact_cell))]
-        )
+        augmented_cell = np.column_stack([compact_cell, np.ones(len(compact_cell))])
 
         # Transform to cartesian coordinates using lattice vectors
         self.super_cell = (self.lattice_vectors @ augmented_cell.T).T
@@ -260,17 +255,20 @@ class MyCell:
         # Create a list of fields to include in the string representation
         fields: List[Tuple[str, Any]] = [
             ("base_type", self.base_type),
-            ("super_cell_shape", self.super_cell.shape if self.super_cell.size > 0 else "empty"),
+            (
+                "super_cell_shape",
+                self.super_cell.shape if self.super_cell.size > 0 else "empty",
+            ),
             ("atomic_numbers_count", len(self.super_cell_atomic_numbers)),
             ("symmetry_operations_count", len(self.symmetry_operations)),
-            ("volume", self.volume)
+            ("volume", self.volume),
         ]
 
         # Write detailed symmetry operations to a file for inspection
         with open("symmetry_operations.txt", "w", encoding="utf-8") as f:
             operations = [
                 ("symmetry_operations", self.symmetry_operations),
-                ("symmetry_operations_inverses", self.symmetry_operations_inverses)
+                ("symmetry_operations_inverses", self.symmetry_operations_inverses),
             ]
             for name, value in operations:
                 f.write(f"{name}: \n")
@@ -279,7 +277,9 @@ class MyCell:
                 f.write("\n")
 
         # Return a concise string representation
-        return "MyCell(" + ", ".join(f"{name}={value}" for (name, value) in fields) + ")"
+        return (
+            "MyCell(" + ", ".join(f"{name}={value}" for (name, value) in fields) + ")"
+        )
 
 
 if __name__ == "__main__":

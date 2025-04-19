@@ -1,14 +1,13 @@
 """Main module for crystal symmetry analysis and vacancy calculations."""
 
-from itertools import combinations
 from time import time
-from typing import Set, Tuple, List, Dict, Any, Union
+from typing import Union
 
 import click
-import numpy as np
 
 from krysztalki.core.symmetry import analyze_symmetry
-from krysztalki.io.cif import read_cif, getSCell
+from krysztalki.io.cif import read_cif
+from krysztalki.cli.db_commands import db_commands
 
 
 def process_file_path(file_path_str: str) -> Union[str, int]:
@@ -26,14 +25,15 @@ def main():
     This tool provides commands for analyzing crystal structures,
     calculating symmetry operations, and studying vacancy configurations.
     """
-    pass
+
+
+# Add database commands to the main CLI
+main.add_command(db_commands)
 
 
 @main.command()
 @click.argument("file", type=str)
-@click.option(
-    "--supercell", "-s", type=int, default=1, help="Supercell size (default: 1)"
-)
+@click.option("--supercell", "-s", type=int, default=1, help="Supercell size")
 @click.option(
     "--vacancies",
     "-v",
@@ -51,11 +51,12 @@ def main():
 def analyze(file: str, supercell: int, vacancies: int, output: str) -> None:
     """Analyze crystal symmetry from a CIF file or COD ID.
 
-    FILE can be either a path to a CIF file or a Crystallography Open Database (COD) ID.
+    FILE can be either a path to a CIF file or a Crystallography Open
+    Database (COD) ID.
 
     Examples:
         krysztalki analyze 1000041  # Analyze NaCl structure from COD
-        krysztalki analyze path/to/file.cif  # Analyze structure from local file
+        krysztalki analyze path/to/file.cif  # Analyze structure from file
     """
     # Process file path
     file_path = process_file_path(file)
@@ -74,11 +75,12 @@ def analyze(file: str, supercell: int, vacancies: int, output: str) -> None:
     result = analyze_symmetry(read_cif(file_path), vacancy_count=vacancies)
 
     click.echo(f"Analysis completed in {(time() - start):.2f} seconds")
-    click.echo(f"Found {len(result['symmetry_operations'])} symmetry operations")
+    num_ops = len(result["symmetry_operations"])
+    click.echo(f"Found {num_ops} symmetry operations")
     click.echo(f"Writing results to {output}")
 
     # Write results to output file
-    with open(output, "w") as f:
+    with open(output, "w", encoding="utf-8") as f:
         f.write(f"Crystal file: {file_path}\n")
         f.write(f"Supercell size: {supercell}\n")
         f.write(f"Vacancy count: {vacancies}\n\n")
@@ -95,15 +97,16 @@ def analyze(file: str, supercell: int, vacancies: int, output: str) -> None:
 
 @main.command()
 @click.argument("file", type=str)
-@click.option("--verbose", "-v", is_flag=True, help="Show detailed crystal information")
+@click.option("--verbose", "-v", is_flag=True, help="Show detailed info")
 def info(file: str, verbose: bool) -> None:
     """Display information about a crystal structure.
 
-    FILE can be either a path to a CIF file or a Crystallography Open Database (COD) ID.
+    FILE can be either a path to a CIF file or a Crystallography Open
+    Database (COD) ID.
 
     Examples:
         krysztalki info 1000041  # Show info about NaCl structure from COD
-        krysztalki info --verbose path/to/file.cif  # Show detailed info about local file
+        krysztalki info --verbose path/to/file.cif  # Show detailed info
     """
     # Process file path
     file_path = process_file_path(file)
@@ -117,25 +120,26 @@ def info(file: str, verbose: bool) -> None:
     crystal = read_cif(file_path)
 
     # Display basic information
-    click.echo(f"\nCrystal Structure Information:")
-    click.echo(f"---------------------------")
+    click.echo("\nCrystal Structure Information:")
+    click.echo("---------------------------")
     click.echo(f"Formula: {crystal.composition}")
     click.echo(f"Space group: {crystal.symmetry()['international']}")
     click.echo(f"Number of atoms: {len(crystal)}")
 
     # Display detailed information if verbose flag is set
     if verbose:
-        click.echo(f"\nDetailed Information:")
-        click.echo(f"---------------------------")
-        click.echo(f"Space group number: {crystal.symmetry()['international_number']}")
-        click.echo(f"Lattice parameters:")
+        click.echo("\nDetailed Information:")
+        click.echo("---------------------------")
+        sg_num = crystal.symmetry()["international_number"]
+        click.echo(f"Space group number: {sg_num}")
+        click.echo("Lattice parameters:")
         click.echo(f"  a = {crystal.lattice_parameters[0]:.4f} Å")
         click.echo(f"  b = {crystal.lattice_parameters[1]:.4f} Å")
         click.echo(f"  c = {crystal.lattice_parameters[2]:.4f} Å")
         click.echo(f"  α = {crystal.lattice_parameters[3]:.2f}°")
         click.echo(f"  β = {crystal.lattice_parameters[4]:.2f}°")
         click.echo(f"  γ = {crystal.lattice_parameters[5]:.2f}°")
-        click.echo(f"\nAtom types:")
+        click.echo("\nAtom types:")
         for element, count in crystal.chemical_composition.items():
             click.echo(f"  {element}: {count}")
 

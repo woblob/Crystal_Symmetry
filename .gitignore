@@ -104,7 +104,7 @@ venv.bak/
 .mypy_cache/
 
 Opis.txt
-README.md
+scripts/README.md
 
 .idea
 /.idea/
