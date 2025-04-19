@@ -195,7 +195,7 @@
         {
           "id": 3,
           "title": "Add type hints to class attributes and methods",
-          "status": "pending",
+          "status": "done",
           "dependencies": [
             1
           ],

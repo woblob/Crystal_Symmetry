@@ -172,7 +172,7 @@ Run mypy or another type checker to confirm type correctness. Verify that all fu
 - Document any challenging typing scenarios and their solutions
 - Include examples of properly typed function signatures for contributors
 
-## 3. Add type hints to class attributes and methods [pending]
+## 3. Add type hints to class attributes and methods [done]
 ### Dependencies: 4.1
 ### Description: Apply type hints to all class attributes and methods throughout the codebase.
 ### Details:

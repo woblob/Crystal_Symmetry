@@ -1,4 +1,12 @@
+"""Module for finding all combinations of symmetry matrices.
+
+This module combines symmetry matrices to find all possible combinations
+and writes the results to files.
+"""
+
 from itertools import combinations
+from time import time
+from typing import Any, Tuple
 
 import numpy as np
 from krysztalki.workDir.Matrix.matrices_new_extended import _matrix_ID_000, all_matrices
@@ -352,16 +360,49 @@ names = [
 
 
 class Matrix:
-    def __init__(self, mat1, mat2):
+    """Class for combining symmetry matrices.
+
+    This class combines two symmetry matrices into a new matrix,
+    handling the rotation and translation components separately.
+
+    Attributes:
+        result: The resulting combined matrix
+    """
+
+    result: np.ndarray
+
+    def __init__(self, mat1: np.ndarray, mat2: np.ndarray) -> None:
+        """Initialize a Matrix by combining two matrices.
+
+        Args:
+            mat1: First symmetry matrix
+            mat2: Second symmetry matrix
+        """
         rot_cell, trans = Matrix._calculate_matrix(mat1, mat2)
         result = Matrix._compose_matrix(rot_cell, trans)
         self.result = result
 
     def __hash__(self) -> int:
+        """Hash function for the matrix.
+
+        Returns:
+            Hash value based on the matrix data
+        """
         return hash(self.result.tostring())
 
     @staticmethod
-    def _calculate_matrix(mat1, mat2):
+    def _calculate_matrix(
+        mat1: np.ndarray, mat2: np.ndarray
+    ) -> Tuple[np.ndarray, np.ndarray]:
+        """Calculate the rotation and translation components of the combined matrix.
+
+        Args:
+            mat1: First symmetry matrix
+            mat2: Second symmetry matrix
+
+        Returns:
+            Tuple of (rotation_matrix, translation_vector)
+        """
         rot1 = mat1[:-1, :-1]
         rot2 = mat2[:-1, :-1]
         new_rot_cell = rot1 @ rot2
@@ -373,7 +414,16 @@ class Matrix:
         return new_rot_cell, trans
 
     @staticmethod
-    def _compose_matrix(rot_cell, trans):
+    def _compose_matrix(rot_cell: np.ndarray, trans: np.ndarray) -> np.ndarray:
+        """Compose a 4x4 matrix from rotation and translation components.
+
+        Args:
+            rot_cell: 3x3 rotation matrix
+            trans: Translation vector
+
+        Returns:
+            4x4 transformation matrix
+        """
         result = np.empty((4, 4), dtype=float)
         result[:-1, :-1] = rot_cell
         result[:-1, -1] = trans
@@ -381,7 +431,15 @@ class Matrix:
         result[-1, -1] = 1
         return result
 
-    def __eq__(self, other):
+    def __eq__(self, other: Any) -> bool:
+        """Check if two matrices are equal.
+
+        Args:
+            other: Another Matrix object
+
+        Returns:
+            True if the matrices are equal, False otherwise
+        """
         return np.array_equal(self.result, other.result)
 
 
@@ -394,7 +452,16 @@ class Matrix:
 #
 
 
-def M(M1, M2):
+def M(M1: np.ndarray, M2: np.ndarray) -> np.ndarray:
+    """Combine two matrices and normalize the result.
+
+    Args:
+        M1: First matrix
+        M2: Second matrix
+
+    Returns:
+        Combined matrix with normalized values
+    """
     M = M1 @ M2
     mask = M[:-1, -1] < 0
     M[:-1, -1][mask] += 2
@@ -406,7 +473,15 @@ def M(M1, M2):
     return M
 
 
-def transpose(mat):
+def transpose(mat: np.ndarray) -> np.ndarray:
+    """Transpose the rotation part of a 4x4 transformation matrix.
+
+    Args:
+        mat: 4x4 transformation matrix
+
+    Returns:
+        Matrix with transposed rotation part
+    """
     new_mat = mat.copy()
     rot = new_mat[:-1, :-1]
     rot = rot.T
@@ -414,9 +489,7 @@ def transpose(mat):
     return new_mat
 
 
-from time import time
-
-
+# Create a dictionary mapping matrix string representations to their names
 all_hashed_M = {M.tostring(): name for M, name in zip(all_matrices, names)}
 lol = []
 
@@ -488,7 +561,9 @@ for M1, M2 in combinations(range(1, len(all_matrices)), 2):
     str_temp2 = all_matrices[M2].tostring()
     val = all_hashed_M.get(str_temp)
     val2 = all_hashed_M.get(str_temp2)
-    with open(f"output_of_group_combinator/{val}, {val2}.txt", "w", encoding="utf-8") as f:
+    with open(
+        f"output_of_group_combinator/{val}, {val2}.txt", "w", encoding="utf-8"
+    ) as f:
         elapsed = time() - start
         string = "; ".join(
             (
