@@ -1,10 +1,17 @@
 # Task ID: 9
+
 # Title: Implement Integration Tests
+
 # Status: pending
+
 # Dependencies: 8
+
 # Priority: medium
+
 # Description: Develop integration tests to verify system components work correctly together.
+
 # Details:
+
 Develop comprehensive integration tests to verify that all system components work correctly together. Set up an integration test framework, implement tests for CIF parsing, symmetry operations, end-to-end workflows, and error handling and edge cases.
 
 Detailed implementation plan:
@@ -20,21 +27,28 @@ Detailed implementation plan:
 10. Create integration tests for the command-line interface that verify full execution paths
 
 # Test Strategy:
+
 Run integration tests in CI/CD pipeline. Ensure all critical integrations between components are thoroughly tested.
 
 # Subtasks:
-## 1. Set up integration test framework [pending]
-### Dependencies: None
-### Description: Extend the existing test infrastructure to support integration testing between components.
-### Details:
-# Integration Test Framework Implementation Plan
 
-## Framework Structure
+## 1. Set up integration test framework [pending]
+
+### Dependencies: None
+
+### Details:
+
+
+
+<info added on 2025-04-16T19:47:37.339Z>
+## Integration Test Framework Implementation Details
+
+### Framework Structure
 - Extend the unit test framework for integration testing
 - Create dedicated test fixtures for integration scenarios
 - Set up test environment isolation
 
-## Key Components
+### Key Components
 1. **End-to-End Test Helpers**
    - Functions to simulate complete workflows
    - Utilities to compare actual vs. expected outputs
@@ -49,7 +63,7 @@ Run integration tests in CI/CD pipeline. Ensure all critical integrations betwee
    - Temporary directory management
    - Mock external dependencies
 
-## Implementation Approach
+### Implementation Approach
 1. Create integration test directory structure
 2. Set up shared fixtures and utilities
 3. Implement base test classes for common patterns
@@ -72,477 +86,20 @@ Run integration tests in CI/CD pipeline. Ensure all critical integrations betwee
 - pytest-mock for mocking dependencies
 - pytest-cov for coverage reporting
 - pytest-benchmark for performance testing
+</info added on 2025-04-16T19:47:37.339Z>
 
 ## 2. Implement CIF parsing integration tests [pending]
-### Dependencies: 9.1
-### Description: Create integration tests to verify CIF file parsing with real-world examples.
-### Details:
-# CIF Parsing Integration Tests Implementation Plan
 
-## Test Objectives
-- Verify parsing of real-world CIF files
-- Test handling of various CIF dialects and formats
-- Validate structure extraction from complex CIF data
-- Ensure proper error handling for malformed CIF files
-
-## Test Data Sources
-- Crystallography Open Database (COD)
-- Cambridge Structural Database (CSD) samples
-- Custom CIF files with known challenging features
-- Published structures from literature
-
-## Test Categories
-1. **Standard Format Parsing**
-   - Simple crystal structures
-   - Multiple data blocks
-   - Various crystal systems
-
-2. **Complex Format Handling**
-   - Multi-model structures
-   - Loop structures with multiple categories
-   - Files with extended syntax features
-
-3. **Error Case Handling**
-   - Malformed syntax
-   - Incomplete data
-   - Contradictory information
-
-## Implementation Example
-```python
-import pytest
-from pathlib import Path
-from crystal_symmetry.io import CIFParser
-from crystal_symmetry.structure import CrystalStructure
-
-def test_parse_simple_cubic(sample_cif_files):
-    """Test parsing a simple cubic structure CIF file."""
-    # Get the CIF file path from the fixture
-    cif_path = sample_cif_files["simple_cubic"]
-    
-    # Parse the CIF file
-    parser = CIFParser()
-    structure = parser.parse_file(cif_path)
-    
-    # Validate structure properties
-    assert isinstance(structure, CrystalStructure)
-    assert structure.lattice_type == "cubic"
-    assert len(structure.atoms) > 0
-    
-    # Check specific properties
-    a, b, c, alpha, beta, gamma = structure.lattice_parameters
-    assert a == pytest.approx(b)
-    assert b == pytest.approx(c)
-    assert alpha == pytest.approx(90.0)
-    assert beta == pytest.approx(90.0)
-    assert gamma == pytest.approx(90.0)
-
-def test_parse_multiblock_cif(sample_cif_files, tmp_path):
-    """Test parsing a CIF file with multiple data blocks."""
-    cif_path = sample_cif_files["multi_block"]
-    
-    parser = CIFParser()
-    structures = parser.parse_file(cif_path, multi_block=True)
-    
-    # Verify multiple structures were parsed
-    assert isinstance(structures, list)
-    assert len(structures) > 1
-    
-    # Check that each structure has valid properties
-    for structure in structures:
-        assert isinstance(structure, CrystalStructure)
-        assert hasattr(structure, "lattice_parameters")
-        assert hasattr(structure, "space_group")
-        assert len(structure.atoms) > 0
-```
-
-## Performance Considerations
-- Benchmark parsing speed for large CIF files
-- Test memory usage during parse operations
-- Evaluate incremental parsing for large files
-
-## Validation Strategy
-- Compare parsed results against reference data
-- Verify key properties (unit cell, space group, atom positions)
-- Validate symmetry operation generation from parsed data
+### Dependencies: 1
 
 ## 3. Implement symmetry operations integration tests [pending]
-### Dependencies: 9.1, 9.2
-### Description: Validate symmetry operations against known reference values across integrated components.
-### Details:
-# Symmetry Operations Integration Tests Implementation Plan
 
-## Test Objectives
-- Verify correctness of symmetry operations generation
-- Test integration between space group identification and symmetry operations
-- Validate application of symmetry operations to crystal structures
-- Ensure consistency across different representations of symmetry elements
-
-## Reference Data Sources
-- International Tables for Crystallography
-- Published symmetry databases
-- Pre-computed reference results
-
-## Test Categories
-1. **Space Group to Symmetry Operations**
-   - Generate operations from space group symbol
-   - Validate completeness of symmetry sets
-   - Test different space group settings (origin choice)
-
-2. **Structure Analysis and Symmetry Discovery**
-   - Detect symmetry elements from atomic positions
-   - Identify space group from structure data
-   - Validate symmetry element detection
-
-3. **Symmetry Application**
-   - Apply operations to generate equivalent positions
-   - Test site symmetry determination
-   - Verify special position handling
-
-## Implementation Example
-```python
-import pytest
-import numpy as np
-from crystal_symmetry.symmetry import (
-    generate_symmetry_operations,
-    apply_symmetry_operation,
-    identify_space_group
-)
-from crystal_symmetry.io import CIFParser
-
-def test_space_group_operations_integration(sample_cif_files):
-    """Test integration between CIF parsing and symmetry operation generation."""
-    # Parse a CIF file
-    parser = CIFParser()
-    structure = parser.parse_file(sample_cif_files["cubic_structure"])
-    
-    # Generate symmetry operations from the parsed space group
-    space_group = structure.space_group
-    symmetry_ops = generate_symmetry_operations(space_group)
-    
-    # Validate the operations count for this space group
-    # Pm-3m (space group 221) has 48 operations
-    assert len(symmetry_ops) == 48
-    
-    # Apply first symmetry operation to an atom and verify result
-    atom_pos = structure.atoms[0]["position"]
-    op = symmetry_ops[1]  # Get the second operation (first is identity)
-    
-    transformed_pos = apply_symmetry_operation(op, atom_pos)
-    
-    # Verify the transformed position is either the same (if on special position)
-    # or a new valid position within the unit cell
-    for coord in transformed_pos:
-        assert 0 <= coord < 1.0 or np.isclose(coord, 1.0)
-    
-    # Identify space group from atomic positions and compare with input
-    identified_group = identify_space_group(structure)
-    assert identified_group == space_group or identified_group in space_group.alternative_settings
-
-def test_symmetry_element_detection(sample_cif_files):
-    """Test integration between structure analysis and symmetry element detection."""
-    parser = CIFParser()
-    structure = parser.parse_file(sample_cif_files["complex_structure"])
-    
-    # Detect symmetry elements directly from the structure
-    from crystal_symmetry.symmetry import detect_symmetry_elements
-    symmetry_elements = detect_symmetry_elements(structure)
-    
-    # Verify detected elements match the expected elements for this structure
-    expected_elements = {
-        "rotation_axes": [2, 3, 4],  # 2-fold, 3-fold, and 4-fold rotation axes
-        "mirror_planes": True,       # Structure has mirror planes
-        "inversion_centers": True    # Structure has inversion centers
-    }
-    
-    for axis in expected_elements["rotation_axes"]:
-        assert axis in [elem["order"] for elem in symmetry_elements["rotation_axes"]]
-    
-    assert symmetry_elements["has_mirror_planes"] == expected_elements["mirror_planes"]
-    assert symmetry_elements["has_inversion_center"] == expected_elements["inversion_centers"]
-```
-
-## Validation Methodology
-- Compare generated operations with reference data
-- Verify that applying all operations generates all expected equivalent positions
-- Test symmetry detection with artificially distorted structures
-- Validate consistency across different symmetry representations (Hall, Hermann-Mauguin, Schoenflies)
-
-## Cross-Component Integration
-- Test symmetry operations applied to search algorithms
-- Verify consistency between different symmetry calculation methods
-- Validate visualization of symmetry elements
+### Dependencies: 1, 2
 
 ## 4. Implement end-to-end workflow tests [pending]
-### Dependencies: 9.1, 9.2, 9.3
-### Description: Create tests that verify complete processing pipelines from input to final output.
-### Details:
-# End-to-End Workflow Tests Implementation Plan
 
-## Test Objectives
-- Validate complete processing pipelines
-- Test realistic user workflows from input to output
-- Verify data consistency across component boundaries
-- Test performance and resource usage in full workflows
-
-## Workflow Test Categories
-1. **Structure Analysis Pipeline**
-   - CIF file parsing
-   - Structure validation and normalization
-   - Symmetry analysis
-   - Property calculation
-   - Result output generation
-
-2. **Transformation Workflows**
-   - Structure manipulation
-   - Symmetry preservation/breaking
-   - Export to various formats
-   - Visualization pipeline
-
-3. **Database Integration Workflows**
-   - Structure lookup
-   - Search and filter operations
-   - Structure comparison
-   - Batch processing
-
-## Implementation Example
-```python
-import pytest
-from pathlib import Path
-from crystal_symmetry.workflows import StructureAnalysisWorkflow
-from crystal_symmetry.io import OutputFormatter
-
-def test_structure_analysis_workflow(sample_cif_files, isolated_test_dir):
-    """Test a complete structure analysis workflow."""
-    # Set up input and output paths
-    input_file = sample_cif_files["complex_zeolite"]
-    output_dir = isolated_test_dir / "results"
-    output_dir.mkdir()
-    
-    # Configure the workflow
-    workflow = StructureAnalysisWorkflow(
-        input_file=input_file,
-        output_dir=output_dir,
-        calculate_properties=["volume", "symmetry", "pore_size"],
-        output_formats=["json", "cif", "report"]
-    )
-    
-    # Execute the workflow
-    results = workflow.run()
-    
-    # Verify workflow completion
-    assert results["status"] == "success"
-    
-    # Check output files were generated
-    assert (output_dir / "structure.json").exists()
-    assert (output_dir / "modified.cif").exists()
-    assert (output_dir / "analysis_report.html").exists()
-    
-    # Validate output content
-    with open(output_dir / "structure.json") as f:
-        import json
-        data = json.load(f)
-        
-    # Verify key results
-    assert "unit_cell_volume" in data
-    assert "space_group" in data
-    assert "symmetry_operations_count" in data
-    assert "pore_diameter_angstrom" in data
-    
-    # Check consistency between input and output
-    assert data["original_source"] == input_file.name
-    assert data["chemical_formula"] is not None
-
-def test_batch_processing_workflow(sample_cif_files, isolated_test_dir):
-    """Test batch processing of multiple structures."""
-    from crystal_symmetry.workflows import BatchProcessor
-    
-    # Create a batch processor
-    processor = BatchProcessor(
-        output_dir=isolated_test_dir / "batch_results",
-        parallel_jobs=2
-    )
-    
-    # Add multiple files for processing
-    input_files = [
-        sample_cif_files["simple_cubic"],
-        sample_cif_files["complex_zeolite"],
-        sample_cif_files["molecule_crystal"]
-    ]
-    
-    for f in input_files:
-        processor.add_file(f)
-    
-    # Run the batch job
-    results = processor.process_all()
-    
-    # Verify all files were processed
-    assert len(results) == len(input_files)
-    assert all(r["status"] == "success" for r in results)
-    
-    # Check summary report
-    summary = processor.generate_summary()
-    assert len(summary["processed_files"]) == len(input_files)
-    assert "total_processing_time" in summary
-    assert "average_structure_volume" in summary
-```
-
-## Validation Strategy
-- Compare workflow outputs with pre-computed reference results
-- Measure performance metrics (execution time, memory usage)
-- Validate logging and error reporting
-- Test workflow resumption after interruption
-
-## Command-Line Interface Testing
-- Test CLI commands for executing workflows
-- Verify parameter handling and validation
-- Test various input/output scenarios
-- Validate interactive mode behavior
-
-## Visualization Testing
-- Verify structure visualization outputs
-- Test interactive visualization components
-- Validate vector/raster output formats
+### Dependencies: 1, 2, 3
 
 ## 5. Implement error handling and edge case integration tests [pending]
-### Dependencies: 9.1, 9.2, 9.3, 9.4
-### Description: Test error handling paths and edge cases across component boundaries.
-### Details:
-# Error Handling and Edge Case Integration Tests Implementation Plan
 
-## Test Objectives
-- Verify error handling across component boundaries
-- Test system behavior with edge case inputs
-- Validate error recovery mechanisms
-- Ensure proper error reporting and logging
-
-## Error Categories to Test
-1. **Input Data Errors**
-   - Malformed CIF files
-   - Files with missing required data
-   - Extremely large or complex structures
-   - Non-standard file encodings
-
-2. **Processing Errors**
-   - Numerical instability in calculations
-   - Memory limitations with large structures
-   - Timeout conditions for long-running operations
-   - Concurrency and thread safety issues
-
-3. **Integration Errors**
-   - Component version mismatches
-   - API contract violations
-   - Data format incompatibilities
-   - Resource contention
-
-## Implementation Example
-```python
-import pytest
-import logging
-from pathlib import Path
-from crystal_symmetry.io import CIFParser
-from crystal_symmetry.workflows import StructureAnalysisWorkflow
-from crystal_symmetry.exceptions import (
-    ParsingError,
-    SymmetryError,
-    ResourceExhaustionError
-)
-
-def test_malformed_cif_error_handling(isolated_test_dir):
-    """Test error handling with malformed CIF files."""
-    # Create a malformed CIF file
-    malformed_cif = isolated_test_dir / "malformed.cif"
-    with open(malformed_cif, "w") as f:
-        f.write("""
-        data_test
-        _cell_length_a 5.0
-        _cell_length_b 5.0
-        # Missing _cell_length_c
-        _cell_angle_alpha 90.0
-        _cell_angle_beta 90.0
-        _cell_angle_gamma 90.0
-        loop_
-        _atom_site_label
-        _atom_site_fract_x
-        # Incorrect number of columns below
-        Cu 0.0
-        """)
-    
-    # Test parser error handling
-    parser = CIFParser(strict_mode=False)
-    
-    # Should raise a ParsingError but with useful info
-    with pytest.raises(ParsingError) as excinfo:
-        structure = parser.parse_file(malformed_cif)
-    
-    # Verify error contains useful information
-    assert "line" in str(excinfo.value)
-    assert "Cu" in str(excinfo.value)
-    
-    # Test parser in non-strict mode
-    parser = CIFParser(strict_mode=False, recovery_mode=True)
-    
-    # Should not raise but log warnings
-    with pytest.warns(UserWarning) as warnings:
-        structure = parser.parse_file(malformed_cif)
-    
-    assert structure is not None
-    assert any("Missing required cell parameter" in str(w.message) for w in warnings)
-
-def test_resource_exhaustion_handling(sample_cif_files, isolated_test_dir, monkeypatch):
-    """Test handling of resource exhaustion during processing."""
-    from crystal_symmetry.symmetry import generate_symmetry_operations
-    import resource
-    
-    # Mock a resource limit scenario by patching memory allocation
-    def mock_generate_operations(*args, **kwargs):
-        raise MemoryError("Out of memory while generating operations")
-    
-    monkeypatch.setattr(
-        "crystal_symmetry.symmetry.generate_symmetry_operations", 
-        mock_generate_operations
-    )
-    
-    # Set up a workflow that would trigger the error
-    workflow = StructureAnalysisWorkflow(
-        input_file=sample_cif_files["complex_zeolite"],
-        output_dir=isolated_test_dir / "results",
-        calculate_properties=["symmetry"]
-    )
-    
-    # Execute and check error handling
-    results = workflow.run(handle_errors=True)
-    
-    # Workflow should complete but mark the symmetry calculation as failed
-    assert results["status"] == "partial"
-    assert results["errors"][0]["type"] == "MemoryError"
-    assert "symmetry" in results["errors"][0]["failed_component"]
-    
-    # Other properties should still be calculated
-    assert "unit_cell_volume" in results
-```
-
-## Testing Error Propagation
-- Verify errors are properly propagated up the component stack
-- Test error translation between components
-- Validate error context preservation
-- Ensure human-readable error messages
-
-## Edge Case Testing Strategy
-- Create specialized test fixtures for edge cases
-- Inject errors at component boundaries
-- Test timeout and cancellation behavior
-- Verify resource cleanup after errors
-
-## Error Recovery Verification
-- Test partial results retrieval
-- Verify system state after errors
-- Test automatic retry mechanisms
-- Validate transaction rollback
-
-## Logging and Monitoring
-- Verify error logging across components
-- Test log aggregation and correlation
-- Validate error metrics collection
-- Ensure sensitive information is not exposed in errors
-
-
+### Dependencies: 1, 2, 3, 4

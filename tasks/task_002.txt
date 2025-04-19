@@ -1,20 +1,33 @@
 # Task ID: 2
+
 # Title: Create Setup Files and Installation Process
+
 # Status: done
+
 # Dependencies: 1
+
 # Priority: high
+
 # Description: Create all necessary files for package distribution and installation.
+
 # Details:
+
 Create all necessary files for packaging and distributing the library. This includes version information, requirements, setup configuration, documentation, and license information. Ensure the package can be installed via pip and includes all necessary dependencies.
 
 # Test Strategy:
+
 Verify installation via pip in a clean virtual environment and confirm all functionality is accessible.
 
 # Subtasks:
+
 ## 1. Create __version__.py and requirements.txt files [done]
+
 ### Dependencies: None
+
 ### Description: Create version tracking and dependency specification files for the package.
+
 ### Details:
+
 # Version and Requirements Files Implementation
 
 ## __version__.py
@@ -41,9 +54,13 @@ Verify installation via pip in a clean virtual environment and confirm all funct
 - Include development dependencies in separate section
 
 ## 2. Create README.md and LICENSE files [done]
+
 ### Dependencies: None
+
 ### Description: Develop essential project documentation files for user information and legal compliance.
+
 ### Details:
+
 # README and LICENSE Implementation
 
 ## README.md Creation
@@ -72,9 +89,13 @@ Verify installation via pip in a clean virtual environment and confirm all funct
 - Properly format Markdown for readability
 
 ## 3. Create setup.py with package metadata and configuration [done]
-### Dependencies: 2.1, 2.2
+
+### Dependencies: 1, 2
+
 ### Description: Develop the setup.py file with all necessary metadata, dependencies, and configuration for package installation.
+
 ### Details:
+
 # Setup.py Implementation Guide
 
 ## Core Components
@@ -100,4 +121,3 @@ Verify installation via pip in a clean virtual environment and confirm all funct
 - Define zip_safe parameter
 - Add project URLs for documentation, issues, etc.
 - Configure entry points for command-line scripts
-
