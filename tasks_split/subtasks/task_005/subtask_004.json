@@ -1,0 +1,11 @@
+{
+  "id": 4,
+  "title": "Manually fix remaining linter errors",
+  "status": "pending",
+  "dependencies": [
+    2,
+    3
+  ],
+  "parentTaskId": 5,
+  "details": "\n\n<info added on 2025-04-16T19:07:25.868Z>\n## Implementation Approach\n\n1. **Systematic Process**:\n   - Run `eslint --max-warnings=0 --format=json > linting-errors.json` to export all errors\n   - Group errors by type and file location using a script: `node scripts/group-lint-errors.js`\n   - Create JIRA tickets for each major error category\n\n2. **Prioritization Strategy**:\n   - Critical: Security-related linting errors (e.g., no-eval, no-unsafe-innerhtml)\n   - High: Errors affecting runtime behavior (e.g., no-unused-vars, no-undef)\n   - Medium: Code quality issues (e.g., complexity, naming conventions)\n   - Low: Stylistic issues not caught by Prettier\n\n3. **Common Error Patterns**:\n   - For `no-unused-vars`: Implement prefix convention with `_` for intentionally unused parameters\n   - For `import/no-cycle`: Refactor circular dependencies using service/mediator pattern\n   - For `complexity`: Extract complex conditionals into named functions with clear purposes\n\n4. **Disabling Rules Documentation**:\n   ```javascript\n   // eslint-disable-next-line no-console -- Needed for critical debugging in production\n   console.log('Critical system state:', systemState);\n   ```\n\n5. **Verification Process**:\n   - Create pre/post snapshots of application behavior for affected components\n   - Implement unit tests for any logic modified during lint fixing\n   - Run full test suite after each category of fixes\n\n6. **Progress Tracking**:\n   - Implement a dashboard using `eslint-stats` to visualize progress\n   - Track error count reduction in CI/CD pipeline reports\n   - Set up weekly lint error reduction goals\n\n7. **Knowledge Base Structure**:\n   - Create a wiki page with common error patterns and approved solutions\n   - Document edge cases requiring rule exceptions with examples\n   - Include before/after code samples for complex fixes\n</info added on 2025-04-16T19:07:25.868Z>"
+}

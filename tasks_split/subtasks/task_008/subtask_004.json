@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Implement class and integration tests",
+  "status": "pending",
+  "dependencies": [
+    3
+  ],
+  "parentTaskId": 8
+}

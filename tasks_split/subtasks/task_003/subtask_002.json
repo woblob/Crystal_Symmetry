@@ -1,0 +1,10 @@
+{
+  "id": 2,
+  "title": "Define appropriate types and initial values for each variable",
+  "status": "done",
+  "dependencies": [
+    1
+  ],
+  "parentTaskId": 3,
+  "details": "# Variable Type Definition Implementation\n\n## Variable Catalog Structure\n- Create a structured catalog using this format:\n```python\nclass VariableDefinition:\n    def __init__(self, name, type_hint, default_value, scope, usage, rationale):\n        self.name = name\n        self.type_hint = type_hint\n        self.default_value = default_value\n        self.scope = scope  # 'global', 'class', 'instance', or 'local'\n        self.usage = usage\n        self.rationale = rationale\n```\n\n## Type Assignment Guidelines\n- For numeric values: Use specific types (`int`, `float`) based on usage pattern\n- For collections: Specify contained types (e.g., `List[str]`, `Dict[str, Any]`)\n- For objects: Create proper interface definitions\n\n## Default Value Selection Strategies\n- Numeric values: Use domain-appropriate zero values (0, 0.0) or sentinel values (-1 for uninitialized indices)\n- Strings: Use empty string `''` for concatenation contexts, `None` when representing optional text\n- Collections: Initialize as empty containers (`[]`, `{}`, `set()`) rather than None\n- Complex objects: Use factory functions that produce valid default states\n\n## Scope-Based Initialization Patterns\n- Global: Initialize at declaration time with meaningful defaults\n- Class: Define in static initializer blocks with documentation\n- Instance: Initialize in constructors with parameters providing override capability\n- Local: Initialize as close as possible to first usage\n\n## Type Documentation Template\n```python\n\"\"\"\n@var {type} name - Brief description\n@default defaultValue\n@scope scope\n@rationale Explanation of type and default value choice\n\"\"\"\n```"
+}

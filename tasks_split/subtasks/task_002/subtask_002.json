@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "title": "Create README.md and LICENSE files",
+  "description": "Develop essential project documentation files for user information and legal compliance.",
+  "status": "done",
+  "dependencies": [],
+  "parentTaskId": 2,
+  "details": "# README and LICENSE Implementation\n\n## README.md Creation\n- Write clear project overview and purpose\n- Include installation instructions for different platforms\n- Add basic usage examples with code snippets\n- Document dependencies and requirements\n- Include contribution guidelines and contact information\n\n## LICENSE File\n- Select appropriate open-source license (MIT recommended)\n- Include full license text with correct year and copyright holder\n- Add license notice at the top of source files\n- Document license choice in README\n\n## Implementation Steps\n- Research similar crystallography libraries for README structure\n- Create template with standard sections (Overview, Installation, Usage, etc.)\n- Ensure license compatibility with dependencies\n- Add badges for build status, version, and license\n\n## Content Guidelines\n- Keep README concise but informative\n- Use code blocks for installation and usage examples\n- Include links to more detailed documentation\n- Properly format Markdown for readability"
+}

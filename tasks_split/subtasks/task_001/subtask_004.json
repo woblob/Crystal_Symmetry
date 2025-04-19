@@ -1,0 +1,11 @@
+{
+  "id": 4,
+  "title": "Update import statements throughout codebase",
+  "description": "Refactored all import statements in the crystallography codebase to use the new package structure.",
+  "status": "done",
+  "dependencies": [
+    3
+  ],
+  "parentTaskId": 1,
+  "details": "# Import Refactoring Implementation\n\n## Import Style Implementation\n- Updated all imports to follow consistent style guidelines\n- Organized imports into three groups:\n  1. Standard library imports\n  2. Third-party package imports\n  3. Local package imports\n- Used explicit imports rather than wildcard imports\n- Maintained alphabetical ordering within import groups\n\n## Import Path Updates\n- Changed direct file imports to package-based imports\n- Updated relative imports to use the proper syntax\n- Example refactoring:\n  ```python\n  # Before\n  from ..utils import helpers\n  \n  # After\n  from crystal_symmetry.utils import helpers\n  ```\n\n## Circular Import Resolution\n- Identified and resolved circular import issues\n- Moved shared interfaces to common modules\n- Used strategic import placements to break dependency cycles\n\n## Import Alias Usage\n- Applied meaningful aliases for clarity where needed\n- Example:\n  ```python\n  import numpy as np\n  from crystal_symmetry.core.symmetry import SymmetryOperation as SymOp\n  ```"
+}

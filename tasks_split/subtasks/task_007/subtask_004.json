@@ -1,0 +1,12 @@
+{
+  "id": 4,
+  "title": "Create Detailed Usage Examples",
+  "description": "Create a comprehensive set of usage examples for the library, organized by difficulty level.",
+  "details": "# Usage Examples Implementation Details\n\n## Example Categories\n\n1. **Beginner Examples**\n   - Basic CIF file parsing\n   - Simple structure analysis\n   - Basic symmetry operations\n   - Simple visualization\n\n2. **Intermediate Examples**\n   - Space group identification\n   - Symmetry transformations\n   - Unit cell manipulation\n   - Advanced visualization\n\n3. **Advanced Examples**\n   - Integration with other libraries\n   - Performance optimization\n   - Batch processing\n\n## Example Structure\n\n```python\n\"\"\"\nExample: [Title]\n\nDescription of what this example demonstrates.\n\nThis example shows how to:\n- Learning objective 1\n- Learning objective 2\n- Learning objective 3\n\"\"\"\n\n# Imports\n\n# Main example code with clear comments\ndef main():\n    # Step 1: First operation\n    \n    # Step 2: Second operation\n    \n    # Step 3: Display results\n\nif __name__ == \"__main__\":\n    main()\n```\n\n## Directory Organization\n\n```\nexamples/\n\u00e2\u201d\u015b\u00e2\u201d\u20ac\u00e2\u201d\u20ac README.md\n\u00e2\u201d\u015b\u00e2\u201d\u20ac\u00e2\u201d\u20ac beginner/\n\u00e2\u201d\u015b\u00e2\u201d\u20ac\u00e2\u201d\u20ac intermediate/\n\u00e2\u201d\u015b\u00e2\u201d\u20ac\u00e2\u201d\u20ac advanced/\n\u00e2\u201d\u201d\u00e2\u201d\u20ac\u00e2\u201d\u20ac data/\n```\n\n## Implementation Plan\n\n1. Set up directory structure (1 day)\n2. Create sample data files (1 day)\n3. Implement beginner examples (3 days)\n4. Develop intermediate examples (5 days)\n5. Create advanced examples (3 days)\n6. Write documentation (2 days)\n7. Test all examples (1 day)",
+  "status": "pending",
+  "dependencies": [
+    1,
+    2
+  ],
+  "parentTaskId": 7
+}

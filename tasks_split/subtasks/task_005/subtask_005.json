@@ -1,0 +1,11 @@
+{
+  "id": 5,
+  "title": "Create linting workflow script",
+  "description": "Create a script that implements a proper linting workflow: first run linters that check for code-breaking errors, fix errors immediately, then apply code formatters. The script should treat warnings as errors and stop the process if any issues are found.",
+  "details": "",
+  "status": "pending",
+  "dependencies": [
+    1
+  ],
+  "parentTaskId": 5
+}

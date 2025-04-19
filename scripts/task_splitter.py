@@ -35,6 +35,8 @@ def setup_logging(log_level: str = "INFO") -> None:
     if not isinstance(numeric_level, int):
         raise ValueError(f"Invalid log level: {log_level}")
 
+    # Configure logging with standard format including level name
+    # Note: "levelname" is a standard logging placeholder, not a typo
     logging.basicConfig(
         level=numeric_level,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",

@@ -1,0 +1,11 @@
+{
+  "id": 5,
+  "title": "Implement test coverage reporting and status badges",
+  "status": "pending",
+  "dependencies": [
+    2,
+    3,
+    4
+  ],
+  "parentTaskId": 10
+}

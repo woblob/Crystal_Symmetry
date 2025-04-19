@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Add code quality checks with linting and type checking",
+  "status": "pending",
+  "dependencies": [
+    1
+  ],
+  "parentTaskId": 10
+}

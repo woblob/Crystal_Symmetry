@@ -35,6 +35,8 @@ def setup_logging(log_level: str = "INFO") -> None:
     if not isinstance(numeric_level, int):
         raise ValueError(f"Invalid log level: {log_level}")
 
+    # Configure logging with standard format including level name
+    # Note: "levelname" is a standard logging placeholder, not a typo
     logging.basicConfig(
         level=numeric_level,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -204,7 +206,7 @@ def merge_tasks(input_dir: str) -> Tuple[Optional[Dict[str, Any]], List[str]]:
     input_path = Path(input_dir)
 
     # Initialize the result structure
-    result = {"tasks": []}
+    result: Dict[str, Any] = {"tasks": []}
 
     # Validate input directory
     if not validate_directory(input_path):
@@ -219,7 +221,7 @@ def merge_tasks(input_dir: str) -> Tuple[Optional[Dict[str, Any]], List[str]]:
         metadata_data, error = load_json_file(metadata_path)
         if error:
             errors.append(error)
-        elif metadata_data:
+        elif metadata_data and isinstance(metadata_data, dict):
             result["metadata"] = metadata_data
 
     # Get all task files
@@ -265,7 +267,7 @@ def merge_tasks(input_dir: str) -> Tuple[Optional[Dict[str, Any]], List[str]]:
             continue
 
         # Remove subtask_ids field (we'll replace it with actual subtasks)
-        subtask_ids = task_data.pop("subtask_ids", [])
+        task_data.pop("subtask_ids", [])
 
         # Initialize subtasks list
         task_data["subtasks"] = []
@@ -341,9 +343,9 @@ def main() -> int:
             return 1
 
         logger.info(f"Saving merged tasks to {args.output}...")
-        error = save_json_file(merged_data, Path(args.output))
-        if error:
-            logger.error(f"Failed to save merged tasks: {error}")
+        save_error = save_json_file(merged_data, Path(args.output))
+        if save_error:
+            logger.error(f"Failed to save merged tasks: {save_error}")
             return 1
 
         logger.info(f"Done! Tasks have been merged into {args.output}")

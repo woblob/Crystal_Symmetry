@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "title": "Add type hints to core function parameters and return values",
+  "status": "done",
+  "dependencies": [
+    1
+  ],
+  "parentTaskId": 4,
+  "details": "# Implementation Details for Core Function Type Hints",
+  "description": "Apply type hints to all core function parameters and return values in the codebase."
+}

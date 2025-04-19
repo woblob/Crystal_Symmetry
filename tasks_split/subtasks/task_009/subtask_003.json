@@ -1,0 +1,10 @@
+{
+  "id": 3,
+  "title": "Implement symmetry operations integration tests",
+  "status": "pending",
+  "dependencies": [
+    1,
+    2
+  ],
+  "parentTaskId": 9
+}

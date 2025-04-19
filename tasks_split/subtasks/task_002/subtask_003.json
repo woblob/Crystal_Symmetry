@@ -1,0 +1,12 @@
+{
+  "id": 3,
+  "title": "Create setup.py with package metadata and configuration",
+  "description": "Develop the setup.py file with all necessary metadata, dependencies, and configuration for package installation.",
+  "status": "done",
+  "dependencies": [
+    1,
+    2
+  ],
+  "parentTaskId": 2,
+  "details": "# Setup.py Implementation Guide\n\n## Core Components\n- Define package metadata (name, version, description, author, etc.)\n- Specify Python version requirements\n- List all dependencies with version constraints\n- Configure package discovery\n- Set up entry points for CLI tools\n\n## Implementation Details\n- Import version from __version__.py\n- Use find_packages() for automatic module discovery\n- Group dependencies into required and optional\n- Include classifiers for PyPI categorization\n- Add long_description from README.md\n\n## Testing Configuration\n- Set up test_suite parameter\n- Include test dependencies\n- Configure package data inclusion\n\n## Distribution Settings\n- Define zip_safe parameter\n- Add project URLs for documentation, issues, etc.\n- Configure entry points for command-line scripts"
+}

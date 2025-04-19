@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "title": "Create __version__.py and requirements.txt files",
+  "description": "Create version tracking and dependency specification files for the package.",
+  "status": "done",
+  "dependencies": [],
+  "parentTaskId": 2,
+  "details": "# Version and Requirements Files Implementation\n\n## __version__.py\n- Create a dedicated file for version information\n- Implement semantic versioning (MAJOR.MINOR.PATCH)\n- Add metadata like __author__ and __license__\n- Include a version history comment\n\n## requirements.txt\n- List all direct dependencies with version constraints\n- Group dependencies by purpose (core, visualization, testing)\n- Specify minimum compatible versions\n- Include optional dependencies with comments\n\n## Version Management\n- Set up initial version number (0.1.0 for pre-release)\n- Document version bumping process for future releases\n- Ensure version is accessible via the package API\n\n## Best Practices\n- Use pinned versions for critical dependencies\n- Allow flexible versions for compatible libraries\n- Document Python version requirements\n- Include development dependencies in separate section"
+}

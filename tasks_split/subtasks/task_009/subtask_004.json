@@ -1,0 +1,11 @@
+{
+  "id": 4,
+  "title": "Implement end-to-end workflow tests",
+  "status": "pending",
+  "dependencies": [
+    1,
+    2,
+    3
+  ],
+  "parentTaskId": 9
+}

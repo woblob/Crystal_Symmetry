@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "Configure documentation building and publishing",
+  "status": "pending",
+  "dependencies": [
+    1
+  ],
+  "parentTaskId": 10
+}

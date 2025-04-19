@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Measure and improve test coverage",
+  "status": "pending",
+  "dependencies": [
+    5
+  ],
+  "parentTaskId": 8
+}
