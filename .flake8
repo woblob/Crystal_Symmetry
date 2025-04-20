@@ -1,10 +1,11 @@
 [flake8]
 max-line-length = 79
 exclude = .git,__pycache__,build,dist,.venv,venv
-extend-ignore = W503  # Line break before binary operator (conflicts with W504)
+# Line break before binary operator (conflicts with W504)
+extend-ignore = W503
 per-file-ignores =
     __init__.py:F401
 docstring-convention = google
 statistics = True
 count = True
-show-source = True 
+show-source = True
