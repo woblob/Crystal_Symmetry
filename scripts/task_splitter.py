@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
+
 """
 Task Splitter
 
-This script parses a tasks.json file and splits it into individual files for each task and subtask.
-It creates a new directory structure with separate JSON files for better organization.
+This script parses a tasks.json file and splits it into individual files
+for each task and subtask. It creates a new directory structure.
 
 Usage:
-    python task_splitter.py [--input INPUT] [--output OUTPUT] [--log-level {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+    python task_splitter.py [--input INPUT] [--output OUTPUT] \
+    [--log-level {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
 
 Arguments:
     --input INPUT      Path to the tasks.json file (default: tasks/tasks.json)
@@ -188,6 +190,43 @@ def save_json_file(data: Dict[str, Any], file_path: Path) -> Optional[str]:
         return error_msg
 
 
+def process_subtasks(
+    subtasks: List[Dict[str, Any]], task_id: int, subtask_dir: Path
+) -> Tuple[int, List[str]]:
+    """Process subtasks for a task.
+
+    Args:
+        subtasks: List of subtasks to process
+        task_id: ID of the parent task
+        subtask_dir: Directory to save subtask files
+
+    Returns:
+        A tuple with the number of subtasks processed and a list of errors
+    """
+    subtasks_processed = 0
+    errors = []
+
+    for subtask in subtasks:
+        subtask_id = subtask.get("id")
+        if subtask_id is None:
+            logger.warning(
+                f"Subtask without ID found in task {task_id}, skipping."
+            )
+            continue
+
+        # Save subtask file
+        subtask_file = subtask_dir / f"subtask_{subtask_id:03d}.json"
+        error = save_json_file(subtask, subtask_file)
+        if error:
+            errors.append(error)
+            continue
+
+        subtasks_processed += 1
+        logger.debug(f"Processed subtask {task_id}.{subtask_id}")
+
+    return subtasks_processed, errors
+
+
 def process_tasks(
     tasks_data: Dict[str, Any], paths: Dict[str, Path]
 ) -> Tuple[int, int, List[str]]:
@@ -198,8 +237,7 @@ def process_tasks(
         paths: Dictionary of paths for output files
 
     Returns:
-        A tuple containing the number of tasks processed, the number of subtasks processed,
-        and a list of error messages if any
+        A tuple with (tasks_processed, subtasks_processed, errors)
     """
     errors = []
     tasks_processed = 0
@@ -226,9 +264,7 @@ def process_tasks(
 
         # Add subtask references
         task_copy["subtask_ids"] = [
-            subtask.get("id")
-            for subtask in subtasks
-            if subtask.get("id") is not None
+            s.get("id") for s in subtasks if s.get("id") is not None
         ]
 
         # Save task file
@@ -247,25 +283,13 @@ def process_tasks(
                 subtask_dir = paths["subtasks"] / f"task_{task_id:03d}"
                 subtask_dir.mkdir(exist_ok=True)
 
-                for subtask in subtasks:
-                    subtask_id = subtask.get("id")
-                    if subtask_id is None:
-                        logger.warning(
-                            f"Subtask without ID found in task {task_id}, skipping."
-                        )
-                        continue
+                subtasks_count, subtask_errors = process_subtasks(
+                    subtasks, task_id, subtask_dir
+                )
 
-                    # Save subtask file
-                    subtask_file = (
-                        subtask_dir / f"subtask_{subtask_id:03d}.json"
-                    )
-                    error = save_json_file(subtask, subtask_file)
-                    if error:
-                        errors.append(error)
-                        continue
+                subtasks_processed += subtasks_count
+                errors.extend(subtask_errors)
 
-                    subtasks_processed += 1
-                    logger.debug(f"Processed subtask {task_id}.{subtask_id}")
             except Exception as e:
                 error_msg = (
                     f"Error processing subtasks for task {task_id}: {e}"
@@ -313,7 +337,8 @@ def main() -> int:
                 logger.warning(f"- {error}")
 
         logger.info(
-            f"Done! Processed {tasks_processed} tasks and {subtasks_processed} subtasks"
+            f"Done! Processed {tasks_processed} tasks and "
+            f"{subtasks_processed} subtasks"
         )
         logger.info(f"Output directory: {args.output}")
         return 0

@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
+
 """
 Task Merger
 
-This script merges individual task and subtask files back into a single tasks.json file.
-It's the reverse operation of task_splitter.py.
+This script merges task and subtask files into a single tasks.json file.
+It reverses the operation of task_splitter.py.
 
 Usage:
-    python task_merger.py [--input INPUT] [--output OUTPUT] [--log-level {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+    python task_merger.py [--input INPUT] [--output OUTPUT] \
+    [--log-level {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
 
 Arguments:
-    --input INPUT      Path to the directory containing split task files (default: tasks_split)
-    --output OUTPUT    Path to the output tasks.json file (default: tasks/tasks_merged.json)
+    --input INPUT      Directory with split task files (default: tasks_split)
+    --output OUTPUT    Output file path (default: tasks/tasks_merged.json)
     --log-level LEVEL  Set the logging level (default: INFO)
 """
 
@@ -57,13 +59,13 @@ def parse_args() -> argparse.Namespace:
         "--input",
         type=str,
         default="tasks_split",
-        help="Path to the directory containing split task files (default: tasks_split)",
+        help="Directory with split task files (default: tasks_split)",
     )
     parser.add_argument(
         "--output",
         type=str,
         default="tasks/tasks_merged.json",
-        help="Path to the output tasks.json file (default: tasks/tasks_merged.json)",
+        help="Path to the output file (default: tasks/tasks_merged.json)",
     )
     parser.add_argument(
         "--log-level",
@@ -193,14 +195,84 @@ def validate_directory(dir_path: Path) -> bool:
         return False
 
 
-def merge_tasks(input_dir: str) -> Tuple[Optional[Dict[str, Any]], List[str]]:
-    """Merge individual task and subtask files into a single tasks.json structure.
+def process_subtasks(
+    task_id: int, subtasks_dir: Path
+) -> Tuple[List[Dict[str, Any]], int, List[str]]:
+    """Process subtasks for a task.
 
     Args:
-        input_dir: Path to the directory containing split task files
+        task_id: ID of the parent task
+        subtasks_dir: Directory containing subtask files
 
     Returns:
-        A tuple containing the merged tasks data and a list of error messages if any
+        A tuple with (subtasks, subtasks_processed, errors)
+    """
+    subtasks = []
+    subtasks_processed = 0
+    errors = []
+
+    try:
+        # Sort subtask files by ID
+        subtask_files = sorted(
+            list(subtasks_dir.glob("subtask_*.json")),
+            key=lambda f: int(f.stem.split("_")[1]),
+        )
+
+        # Process each subtask file
+        for subtask_file in subtask_files:
+            subtask_data, error = load_json_file(subtask_file)
+            if error:
+                errors.append(
+                    f"Error loading subtask file {subtask_file}: {error}"
+                )
+                continue
+
+            if subtask_data:
+                subtasks.append(subtask_data)
+                subtasks_processed += 1
+                subtask_id = subtask_data.get("id")
+                logger.debug(f"Processed subtask {task_id}.{subtask_id}")
+    except Exception as e:
+        error_msg = f"Error processing subtasks for task {task_id}: {e}"
+        logger.error(error_msg)
+        errors.append(error_msg)
+
+    return subtasks, subtasks_processed, errors
+
+
+def load_metadata(
+    input_path: Path,
+) -> Tuple[Optional[Dict[str, Any]], List[str]]:
+    """Load metadata from the input directory.
+
+    Args:
+        input_path: Path to the input directory
+
+    Returns:
+        A tuple containing the metadata and a list of errors
+    """
+    errors = []
+    metadata = None
+
+    metadata_path = input_path / "metadata.json"
+    if metadata_path.exists():
+        metadata_data, error = load_json_file(metadata_path)
+        if error:
+            errors.append(error)
+        elif metadata_data and isinstance(metadata_data, dict):
+            metadata = metadata_data
+
+    return metadata, errors
+
+
+def merge_tasks(input_dir: str) -> Tuple[Optional[Dict[str, Any]], List[str]]:
+    """Merge task and subtask files into a single tasks.json structure.
+
+    Args:
+        input_dir: Directory containing split task files
+
+    Returns:
+        A tuple with (merged_data, errors)
     """
     errors = []
     input_path = Path(input_dir)
@@ -210,19 +282,15 @@ def merge_tasks(input_dir: str) -> Tuple[Optional[Dict[str, Any]], List[str]]:
 
     # Validate input directory
     if not validate_directory(input_path):
-        errors.append(
-            f"Input directory {input_dir} is not valid or accessible"
-        )
+        errors.append(f"Input dir {input_dir} is invalid or inaccessible")
         return None, errors
 
     # Load metadata if it exists
-    metadata_path = input_path / "metadata.json"
-    if metadata_path.exists():
-        metadata_data, error = load_json_file(metadata_path)
-        if error:
-            errors.append(error)
-        elif metadata_data and isinstance(metadata_data, dict):
-            result["metadata"] = metadata_data
+    metadata, metadata_errors = load_metadata(input_path)
+    if metadata_errors:
+        errors.extend(metadata_errors)
+    if metadata:
+        result["metadata"] = metadata
 
     # Get all task files
     tasks_dir = input_path / "tasks"
@@ -235,7 +303,7 @@ def merge_tasks(input_dir: str) -> Tuple[Optional[Dict[str, Any]], List[str]]:
     # Sort task files by ID (extracted from filename)
     try:
         task_files = sorted(
-            [f for f in tasks_dir.glob("task_*.json")],
+            list(tasks_dir.glob("task_*.json")),
             key=lambda f: int(f.stem.split("_")[1]),
         )
     except Exception as e:
@@ -275,34 +343,13 @@ def merge_tasks(input_dir: str) -> Tuple[Optional[Dict[str, Any]], List[str]]:
         # Load subtasks for this task
         subtasks_dir = input_path / "subtasks" / f"task_{task_id:03d}"
         if subtasks_dir.exists() and subtasks_dir.is_dir():
-            try:
-                # Sort subtask files by ID
-                subtask_files = sorted(
-                    [f for f in subtasks_dir.glob("subtask_*.json")],
-                    key=lambda f: int(f.stem.split("_")[1]),
-                )
+            subtasks, subtasks_count, subtask_errors = process_subtasks(
+                task_id, subtasks_dir
+            )
 
-                # Process each subtask file
-                for subtask_file in subtask_files:
-                    subtask_data, error = load_json_file(subtask_file)
-                    if error:
-                        errors.append(
-                            f"Error loading subtask file {subtask_file}: {error}"
-                        )
-                        continue
-
-                    if subtask_data:
-                        task_data["subtasks"].append(subtask_data)
-                        subtasks_processed += 1
-                        logger.debug(
-                            f"Processed subtask {task_id}.{subtask_data.get('id')}"
-                        )
-            except Exception as e:
-                error_msg = (
-                    f"Error processing subtasks for task {task_id}: {e}"
-                )
-                logger.error(error_msg)
-                errors.append(error_msg)
+            task_data["subtasks"] = subtasks
+            subtasks_processed += subtasks_count
+            errors.extend(subtask_errors)
 
         # Add task to result
         result["tasks"].append(task_data)
